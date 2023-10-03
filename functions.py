@@ -36,7 +36,7 @@ def find_examples(query, k=8):
 
         df = pd.read_csv('Reposite Examples - Taylor Examples.csv')
         try:
-            output = df.loc[df['User Message'] == lookup_value, 'Assistant Message'].iloc[0]
+            output = df.loc[df['User Message'] == lookup_value, 'Full Convo'].iloc[0]
         except:
             print('found error for input')
 
