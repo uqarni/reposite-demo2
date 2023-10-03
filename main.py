@@ -122,7 +122,7 @@ def main():
     if st.button("Send"):
         #prep the json
         newline = {"role": "user", "content": userresponse}
-
+        
         #append to database
         with open('database.jsonl', 'a') as f:
         # Write the new JSON object to the file
