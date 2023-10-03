@@ -61,10 +61,11 @@ def main():
     #need to push this then make sure it works
     if st.button('Click to Start or Restart'):
         initial_text = initial_text_info(initial_text_choice)
-        if initial_text_choice == options[0] or initial_text_choice == options[1]:
-            data, count = supabase.table("bots_dev").select("*").eq("id", "TaylorNMQR").execute()
-        else:
-            data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()
+        # if initial_text_choice == options[0] or initial_text_choice == options[1]:
+        #     data, count = supabase.table("bots_dev").select("*").eq("id", "TaylorNMQR").execute()
+        # else:
+        #     data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()
+        data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()      
         bot_info = data[1][0]
         initial_text = initial_text.format(FirstName = lead_first_name, Quote_Lead_Company_Name = reseller_org_name, Supplier_Organization_Name = supplier_name, Category = category, Quote_Lead_Destination = destination)
         
