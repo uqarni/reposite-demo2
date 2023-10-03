@@ -47,6 +47,16 @@ def find_examples(query, k=8):
     
 #generate openai response; returns messages with openai response
 def ideator(messages):
+    prompt = messages[0]['content']
+    messages = messages[1]
+    new_message = messages[-1]['content']
+
+    #perform similarity search
+    examples = find_examples(new_message)
+    prompt = prompt + '\n\n' + examples
+    prompt = {'role': 'system', 'content': prompt}
+    messages.insert(0,prompt)
+    
     for i in range(5):
       try:
         key = os.environ.get("OPENAI_API_KEY")
