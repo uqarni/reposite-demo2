@@ -10,20 +10,40 @@ import time
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
+import pandas as pd
 
-def pull_examples(inquiry):
-    loader = CSVLoader(file_path="Reposite Examples - just inputs.csv")
-    
-    data = loader.load()
-    embeddings = OpenAIEmbeddings()
-    
-    
-    db = FAISS.from_documents(data, embeddings)
-    
-    query = "I dont see any leads when I click on the link." 
-    docs = db.similarity_search(query, k=5)
+
+loader = CSVLoader(file_path="Reposite Examples - just inputs.csv")
+
+data = loader.load()
+embeddings = OpenAIEmbeddings()
+
+
+db = FAISS.from_documents(data, embeddings)
+query = "I dont see any leads when I click on the link." 
+
+def find_examples(query, k=8):
+    examples = ''
+    docs = db.similarity_search(query, k)
+    df = pd.read_csv('Reposite Examples - Taylor Examples.csv')
+    i = 1
     for doc in docs:
-        print(doc)
+        input_text = doc.page_content[14:]
+        row = doc.metadata['row']
+
+
+        lookup_value = input_text  # The value you want to look up in column 1
+
+        df = pd.read_csv('Reposite Examples - Taylor Examples.csv')
+        try:
+            output = df.loc[df['User Message'] == lookup_value, 'Assistant Message'].iloc[0]
+        except:
+            print('found error for input')
+
+        examples += f'Example {i}: \n\nLead Email: {input_text} \n\nTaylor Response: {output} \n\n'
+        i += 1
+    return examples
+
     
 #generate openai response; returns messages with openai response
 def ideator(messages):
