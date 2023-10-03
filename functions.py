@@ -6,8 +6,25 @@ from datetime import datetime, timedelta
 import random
 import time
 
+#similarity search
+from langchain.document_loaders.csv_loader import CSVLoader
+from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
 
-
+def pull_examples(inquiry):
+    loader = CSVLoader(file_path="Reposite Examples - just inputs.csv")
+    
+    data = loader.load()
+    embeddings = OpenAIEmbeddings()
+    
+    
+    db = FAISS.from_documents(data, embeddings)
+    
+    query = "I dont see any leads when I click on the link." 
+    docs = db.similarity_search(query, k=5)
+    for doc in docs:
+        print(doc)
+    
 #generate openai response; returns messages with openai response
 def ideator(messages):
     for i in range(5):
