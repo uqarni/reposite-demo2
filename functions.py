@@ -13,16 +13,17 @@ from langchain.vectorstores import FAISS
 import pandas as pd
 
 
-loader = CSVLoader(file_path="Reposite Examples - just inputs.csv")
 
-data = loader.load()
-embeddings = OpenAIEmbeddings()
-
-
-db = FAISS.from_documents(data, embeddings)
-query = "I dont see any leads when I click on the link." 
 
 def find_examples(query, k=8):
+    loader = CSVLoader(file_path="Reposite Examples - just inputs.csv")
+
+    data = loader.load()
+    embeddings = OpenAIEmbeddings()
+
+
+    db = FAISS.from_documents(data, embeddings)
+    query = "I dont see any leads when I click on the link." 
     examples = ''
     docs = db.similarity_search(query, k)
     df = pd.read_csv('Reposite Examples - Taylor Examples.csv')
@@ -36,7 +37,7 @@ def find_examples(query, k=8):
 
         df = pd.read_csv('Reposite Examples - Taylor Examples.csv')
         try:
-            output = df.loc[df['User Message'] == lookup_value, 'Full Convo'].iloc[0]
+            output = df.loc[df['User Message'] == lookup_value, 'Assistant Message'].iloc[0]
         except:
             print('found error for input')
 
@@ -47,12 +48,13 @@ def find_examples(query, k=8):
     
 #generate openai response; returns messages with openai response
 def ideator(messages):
+    print('message length: ' + str(len(messages)))
     prompt = messages[0]['content']
-    messages = messages[1]
+    messages = messages[1:]
     new_message = messages[-1]['content']
 
     #perform similarity search
-    examples = find_examples(new_message)
+    examples = find_examples(new_message, k=5)
     prompt = prompt + '\n\n' + examples
     prompt = {'role': 'system', 'content': prompt}
     messages.insert(0,prompt)
@@ -197,3 +199,7 @@ Taylor
       return list(dictionary.keys())
     
     return dictionary[selection]
+
+
+test = find_examples('I dont see any quote when I log in')
+print(test)

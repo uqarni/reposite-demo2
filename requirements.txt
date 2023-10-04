@@ -3,3 +3,6 @@ openai
 supabase
 streamlit
 langchain
+pandas
+tiktoken
+faiss-cpu
