@@ -16,28 +16,21 @@ import pandas as pd
 
 
 def find_examples(query, k=8):
-    loader = CSVLoader(file_path="Reposite Examples - just inputs.csv")
+    loader = CSVLoader(file_path="Oct7col1.csv")
 
     data = loader.load()
     embeddings = OpenAIEmbeddings()
 
 
     db = FAISS.from_documents(data, embeddings)
-    query = "I dont see any leads when I click on the link." 
     examples = ''
     docs = db.similarity_search(query, k)
-    df = pd.read_csv('Reposite Examples - Taylor Examples.csv')
+    df = pd.read_csv('Oct7.csv')
     i = 1
     for doc in docs:
         input_text = doc.page_content[14:]
-        row = doc.metadata['row']
-
-
-        lookup_value = input_text  # The value you want to look up in column 1
-
-        df = pd.read_csv('Reposite Examples - Taylor Examples.csv')
         try:
-            output = df.loc[df['User Message'] == lookup_value, 'Assistant Message'].iloc[0]
+            output = df.loc[df['User Message'] == input_text, 'Assistant Message'].iloc[0]
         except:
             print('found error for input')
 
