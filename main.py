@@ -6,6 +6,7 @@ import os
 import sys
 from datetime import datetime
 from supabase import create_client, Client
+from reminderwrapper import run_conversation
 
 #connect to supabase database
 urL: str = os.environ.get("SUPABASE_URL")
@@ -60,6 +61,8 @@ def main():
     
     #need to push this then make sure it works
     if st.button('Click to Start or Restart'):
+        with open('day.txt', 'w') as f:
+            f.truncate(0)
         initial_text = initial_text_info(initial_text_choice)
         # if initial_text_choice == options[0] or initial_text_choice == options[1]:
         #     data, count = supabase.table("bots_dev").select("*").eq("id", "TaylorNMQR").execute()
@@ -150,16 +153,73 @@ def main():
                 for i in range(count):
                     f.write(json.dumps(messages[-count + i]) + '\n')
 
-
-
         # Display the response in the chat interface
         string = ""
 
         for message in messages[1:]:
-            string = string + message["role"] + ": " + message["content"] + "\n\n"
+            if "[secret internal thought" not in str(message):
+                string = string + message["role"] + ": " + message["content"] + "\n\n"
         st.write(string)
             
+    if st.button("Increment 3 Days"):
+        #read day.txt
+        with open('day.txt', 'r+') as f:
+            content = f.read().strip()
+            
+            if not content:
+                f.seek(0)
+                f.write('3')
+                day = 3
+            elif content == '3':
+                f.seek(0)
+                f.truncate()
+                f.write('6')
+                day = 6
+            elif content == '6':
+                day = 9
 
+        newline = {"role": "assistant", "content": "[secret internal thought; the User cannot see this message] 3 days have gone by since the lead responded to me. I should followup with a super short email pitching the benefits of the premium Reposite membership, ending with a question."}
+        
+        #append to database
+        with open('database.jsonl', 'a') as f:
+        # Write the new JSON object to the file
+            f.write(json.dumps(newline) + '\n')
+
+        #extract messages out to list
+        messages = []
+
+        with open('database.jsonl', 'r') as f:
+            for line in f:
+                json_obj = json.loads(line)
+                messages.append(json_obj)
+
+        #check run_conversation
+        checkit = run_conversation(messages[1:-1])
+        if checkit == 'yes':
+            #generate OpenAI response
+            file_path = 'lead_dict_info.json'
+            with open(file_path, 'r') as f:
+                lead_dict_info = json.load(f)
+            messages, count = ideator(messages, lead_dict_info)
+
+            #append to database
+            with open('database.jsonl', 'a') as f:
+                    for i in range(count):
+                        f.write(json.dumps(messages[-count + i]) + '\n')
+
+            # Display the response in the chat interface
+            string = ""
+
+            for message in messages[1:]:
+                if "[secret internal thought" not in str(message):
+                    string = string + message["role"] + ": " + message["content"] + "\n\n"
+            if day == 3 or day == 6:
+                st.write(string)
+                st.write(f'*Day {day}*')
+            elif day == 9:
+                st.write('max followups reached. please reset')
+        elif checkit == 'no':
+            print('followup not warranted')
 if __name__ == '__main__':
     main()
 
