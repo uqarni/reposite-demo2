@@ -1,13 +1,8 @@
 User Message
-
 "Hi Taylor, this is {lead_first_name}. What can I help you with?"
-
-
 "I don’t know what this means. I have not received any quote about anything.
 {lead_first_name} {lead_last_name}
 {email}"
-
-
 "Dear Taylor,
 
 Hope this email finds you very well.
@@ -15,24 +10,17 @@ View emails from our groups and sales team for proper follow-up to your requests
 groupspuj@royaltonresorts.com groups2puj@royaltonresorts.com
 
 Best regards,"
-
-
 "Hi Taylor,
 Yes we did receive a request! Thanks for reaching out.
 My name is {lead_first_name} and I'll be your point of contact for scheduling group reservations. Currently awaiting a response from Tim Cotter at Reposite before finalizing a quote for you. Let me know if you need anything else from our side regarding setting up future events/group reservations.
 
 Thanks, {lead_first_name}"
-
 "Good Morning Taylor, Can this be made within monthly payments? Can you please explain how your platform works?"
-
-
 "Hello Taylor,
 At present, we are looking for some additional partners to expand our market. In the past, we were ideally suited to groups as we have a majority of 2 Bed (Queen Size Rooms). A past colleague introduced us to Reposite however, I am not sure if I am using your application to its fullest.
 Would you happen to know if you have any training courses? At the same time, I was wondering how I could get a receipt for the last charge I placed on my credit Card.
 Cheers,
 {lead_first_name} Plumb"
-
-
 "Good morning Taylor,
 
 In order to quote please provide the following information:
@@ -45,11 +33,7 @@ I'll be sending you a link with a video of our restaurant for your reference.
 Best,
 
 {lead_first_name}"
-
-
 "Yes give me a call, imnot sure what this is. 512-480-0200"
-
-
 "Good day,
 
 Thank you for contacting {supplier_name}.
@@ -83,7 +67,6 @@ www.usvipservices.com
 General cancellation policy: service fee is non-refundable for cancellations within 24 hours of the scheduled service, and no-shows will be charged the full service fee. Cancellation notices between 24-48 hours prior to the service are subject to a 50% charge. Modifications must be done at least 24 hours in advance of the scheduled service and may be subject to additional fees up to 100% of the value of the booking. In such circumstances, any service fees already paid to SkyVIP Services will be non-refundable. A transaction processing fee of 4% will be deducted from all refunds.
 Please be aware that our cancellation policies for Amsterdam, Australia airports, Providenciales, Japan airports, and all VIP Tarmac services differ from our general policy. For more information, please refer to our terms and conditions at  https://usvipservices.com/terms-and-conditions/ 
 All reservation fees for VIP Tarmac Services arranged through either VIP Terminal or VIP Lounge are non-refundable and non-transferable. If you make a reservation less than 28 hours before your scheduled travel time, a surcharge of 50% will apply. Additionally, any changes to a reservation made between 28 and 48 hours before travel will incur an extra charge of 50%. If a cancellation is made more than 48 hours before the scheduled travel time, 50% of the reservation cost will be applied as a credit towards a future reservation. However, please note that this credit does not constitute a credit or refund of any kind and the original reservation fees remain non-refundable. Exceptions may be made for airline cancellations or changes with proper documentation. Please review our terms and conditions before utilizing our services. "
-
 "Dear Taylor,
 Thank you for your email and we appreciate you reaching out to us.
 Please be informed that the information was forwarded to our management team. 
@@ -97,8 +80,6 @@ General cancellation policy: service fee is non-refundable for cancellations wit
 Please be aware that our cancellation policies for Amsterdam, Australia airports, Providenciales, Japan airports, and all VIP Tarmac services differ from our general policy. For more information, please refer to our terms and conditions at  https://usvipservices.com/terms-and-conditions/ 
 All reservation fees for VIP Tarmac Services arranged through either VIP Terminal or VIP Lounge are non-refundable and non-transferable. If you make a reservation less than 28 hours before your scheduled travel time, a surcharge of 50% will apply. Additionally, any changes to a reservation made between 28 and 48 hours before travel will incur an extra charge of 50%. If a cancellation is made more than 48 hours before the scheduled travel time, 50% of the reservation cost will be applied as a credit towards a future reservation. However, please note that this credit does not constitute a credit or refund of any kind and the original reservation fees remain non-refundable. Exceptions may be made for airline cancellations or changes with proper documentation. Please review our terms and conditions before utilizing our services. 
 "
-
-
 "Hi Taylor -
 Please direct all group reservations to myself at manager@baobrewhouse.com 
 Thank you,
@@ -106,8 +87,6 @@ Thank you,
 General Manager & Event Coordinator
 w. 720.949.1345
 c. 269.568.9656"
-
-
 "Taylor, 
 Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
 I popped over to the we
@@ -162,8 +141,6 @@ cocktailsbyspiritforward.com
 ig: @spirit_forward
 
 "
-
-
 "Hi Taylor, 
 
 Thanks, yes I am the correct contact for group reservations. 
@@ -177,8 +154,6 @@ I hope it works to play music for you!
 
 Thanks, 
 {lead_first_name} {lead_last_name}"
-
-
 "Hi Taylor,
 Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. I met with Brenden and Anand from your team the other day and they got me all caught up on your platform!
 {lead_first_name} {lead_last_name}, SENIOR EVENTS MANAGER 
@@ -194,8 +169,6 @@ I spoke with our team and they approved me to sign up for the Membership once it
 Empire Pass | Tuhaye | Main Street | Outpost 
 9875 N. Tuhaye Park Drive  | Kamas, UT 84036 
 TaliskerClub.com | {email}"
-
-
 "Hello, 
 Yes, I am. However, we have never signed up for Reposite nor are we affiliated with said company. 
 I am not aware of any new reservations through Reposite? {lead_first_name} {lead_last_name}"
@@ -204,8 +177,6 @@ Thank you for your response.
 We are definitely interested and will look into it.
 
 {lead_first_name} {lead_last_name}"
-
-
 "m not. The person you want to contact for group reservations is Jason Yelton (jason@dbrparkcity.com).
 
 He has all the information you'll need for available sections, group sizes, F&B minimums, menu options, etc.
@@ -214,8 +185,6 @@ Looking forward to working with you, though!
 {lead_first_name} {lead_last_name}
 Sent from my Galaxy
 "
-
-
 "Good Morning, Taylor, 
 
 Lex Turnbull (copied) coordinates space rentals for events, meetings, etc. Please know that we are not interested in signing up with Reposite, but are happy to arrange an event rental with interested parties. 
@@ -234,8 +203,6 @@ centerforcraft.org
 FacebookInstagram
 
 The Center respects, values, and celebrates the unique attributes, characteristics, and perspectives that make each person who they are.  All are welcome."
-
-
 "Greetings,
  
 My colleague forwards this information to my attention. We don’t see to have an account at Reposi.
@@ -279,8 +246,6 @@ T. 787-723-9020, ext. 359
  
 
 "
-
-
 "Dear All
 we are able to arrange transfer for FIT and Group
 Please send us your request.
@@ -317,8 +282,6 @@ Informativa Privacy - Ai sensi del D. Lgs n. 196/2003 (Codice Privacy) nonché d
 Privacy Information - This message, for the D. Lgs n. 196/2003 (Privacy Code) the legislative Decree 196/2003, along with the European regulation 2016/679 and the council of 27 april 2016 in relation to the protection of the individuals, may contain confidential and/or privileged information. If you are not the addressee or authorized to receive this for the addressee, you must not use, copy, disclose or take any action based on this message or any information herein. If you have received this message in error, please advise the sender immediately by reply e-mail and delete this message. Thank you for your cooperation.
 
 "
-
-
 "Hi Taylor,
  
 Can you please provide more information on this below group reservation you said came through to us?
@@ -373,8 +336,6 @@ Immediately book and confirm up to (25) guest rooms anytime, online here:
  
 Not a Hilton Honors member yet?  Click here to enroll and enjoy all the benefits!
  "
-
-
 "Not interested, but thank you anyways.
  
 {lead_first_name} {lead_last_name}
@@ -384,8 +345,6 @@ Poquitos ⋮ Rhein Haus ⋮ Macleods ⋮ Wally’s ⋮ Sabine ⋮ Stoneburner �
 www.weimann-maclise.com
  
  "
-
-
 "Good morning Dawn, 
 Do you want to reach out and see what he would like. 
 Thank you!  
@@ -408,8 +367,6 @@ www.grandbeachhotel.com          www.grandbeachhotel.com    �
                                                                         
  
 "
-
-
 "Hi Taylor,
  
 Thank you for emailing to our {supplier_name} in Bal Harbour, Florida.
@@ -431,8 +388,6 @@ Bal Harbour, FL 33154
 Sales@seaview-hotel.com
 Phone 305.866.4441 ex)39
 Fax :305.866.1898"
-
-
 "Hi
 Thank you for your email.
 Please can you update the email address to @Enquiries 1Wimpolestreet , this is to the sales team who will respond within 2 working hours.
@@ -450,8 +405,6 @@ As for the enquiry we received – we can’t login to respond to the enquiry.  
  
 Kind regards
 {lead_first_name} Kay | Deputy General Manager | T: 020 7290 2971"
-
-
 "Most certainly. 
 We love group reservations 
 
@@ -462,8 +415,6 @@ Get Outlook for Android"
 "Hi Taylor when I log into reposite website in my account I do not see any jobs listed or any requests for quote 
 
 Get Outlook for Android"
-
-
 "Good afternoon, Mr. Bowdin,
  
 Greetings from Group Sales Department from Barceló Bavaro Grand.
@@ -547,8 +498,6 @@ Disclaimer: The information contained in this communication is confidential.
 > Read privacy and personal data protection policies.
  
 "
-
-
 "hello.
 I tried to input the quote in your website.
 28 pax MiniBus 4hrs(4hrs Minimum)*$169= $676 All Inclusive
@@ -588,22 +537,14 @@ SAN DIEGO CA 92111
 (858) 764-4467                                      
 www.mibtransportation.com                 
         "
-
-
 "No. Thank you for calling our client services team
 
 Téléchargez Outlook pour iOS"
-
-
 Yes but we don’t open links.  Can you send us info in a general email and we will answer it.
 Thank you but  I have no interest in paying for a membership to receive work.
-
-
 "We don’t do reservations 
 
 Sent from my iPhone"
-
-
 "Hi Taylor,
 
 How did we get on this website? I'm not interested in paying for anything and I do not have time for a phone call.

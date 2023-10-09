@@ -69,28 +69,30 @@ def main():
         bot_info = data[1][0]
         initial_text = initial_text.format(FirstName = lead_first_name, Quote_Lead_Company_Name = reseller_org_name, Supplier_Organization_Name = supplier_name, Category = category, Quote_Lead_Destination = destination)
         
+        lead_dict_info = {
+            "bot_name": bot_name,
+            "membership_link": membership_link,
+            "email": email,
+            "supplier_name": supplier_name,
+            "lead_first_name": lead_first_name,
+            "lead_last_name": lead_last_name,
+            "nmqr_count": nmqr_count,
+            "reseller_org_name": reseller_org_name,
+            "category": category,
+            "date": date,
+            "current_date": current_date,
+            "destination": destination,
+            "group_size": group_size,
+            "trip_dates": trip_dates,
+            "nmqrurl": nmqrurl
+        }
+        file_path = 'lead_dict_info.json'
+        with open(file_path, 'w') as f:
+            json.dump(lead_dict_info, f)
     
         system_prompt = bot_info['system_prompt']
-        system_prompt = system_prompt.format(
-            #bot info
-            bot_name=bot_name, 
-            membership_link=membership_link,
-            #lead info
-            email=email, 
-            supplier_name=supplier_name, 
-            lead_first_name=lead_first_name, 
-            lead_last_name=lead_last_name, 
-            nmqr_count=nmqr_count, 
-            #most recent nmqr info
-            reseller_org_name=reseller_org_name, 
-            category=category, 
-            date=date, 
-            current_date=current_date, 
-            destination=destination, 
-            group_size=group_size,  # Note: You used 'date' for both 'date' and 'group size'
-            trip_dates=trip_dates,
-            nmqrurl = nmqrurl
-        )
+        system_prompt = system_prompt.format(**lead_dict_info)
+
         st.write(initial_text)
         restart_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         with open('database.jsonl', 'r') as db, open('archive.jsonl','a') as arch:
@@ -138,7 +140,10 @@ def main():
                 messages.append(json_obj)
 
         #generate OpenAI response
-        messages, count = ideator(messages)
+        file_path = 'lead_dict_info.json'
+        with open(file_path, 'r') as f:
+            lead_dict_info = json.load(f)
+        messages, count = ideator(messages, lead_dict_info)
 
         #append to database
         with open('database.jsonl', 'a') as f:

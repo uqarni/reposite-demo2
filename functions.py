@@ -13,10 +13,8 @@ from langchain.vectorstores import FAISS
 import pandas as pd
 
 
-
-
 def find_examples(query, k=8):
-    loader = CSVLoader(file_path="Oct7col1.csv")
+    loader = CSVLoader(file_path="oct7col1.csv")
 
     data = loader.load()
     embeddings = OpenAIEmbeddings()
@@ -25,7 +23,7 @@ def find_examples(query, k=8):
     db = FAISS.from_documents(data, embeddings)
     examples = ''
     docs = db.similarity_search(query, k)
-    df = pd.read_csv('Oct7.csv')
+    df = pd.read_csv('oct7.csv')
     i = 1
     for doc in docs:
         input_text = doc.page_content[14:]
@@ -34,20 +32,28 @@ def find_examples(query, k=8):
         except:
             print('found error for input')
 
-        examples += f'Example {i}: \n\nLead Email: {input_text} \n\nTaylor Response: {output} \n\n'
+        try:
+           examples += f'Example {i}: \n\nLead Email: {input_text} \n\nTaylor Response: {output} \n\n'
+        except:
+           continue
         i += 1
     return examples
 
     
 #generate openai response; returns messages with openai response
-def ideator(messages):
+def ideator(messages, lead_dict_info):
     print('message length: ' + str(len(messages)))
     prompt = messages[0]['content']
     messages = messages[1:]
     new_message = messages[-1]['content']
 
     #perform similarity search
-    examples = find_examples(new_message, k=5)
+    examples = find_examples(new_message, k=10)
+    examples = examples.format(**lead_dict_info)
+    prompt = examples
+    print('inbound message: ' + str(messages[-1]))
+    print(examples)
+    print('\n\n')
     prompt = prompt + '\n\n' + examples
     prompt = {'role': 'system', 'content': prompt}
     messages.insert(0,prompt)
@@ -59,9 +65,13 @@ def ideator(messages):
     
         result = openai.ChatCompletion.create(
           model="gpt-4",
-          messages= messages
+          messages= messages,
+          max_tokens = 300
         )
         response = result["choices"][0]["message"]["content"]
+        print('response:')
+        print(response)
+        print('\n\n')
         break
       except Exception as e: 
         error_message = f"Attempt {i + 1} failed: {e}"
@@ -192,7 +202,3 @@ Taylor
       return list(dictionary.keys())
     
     return dictionary[selection]
-
-
-test = find_examples('I dont see any quote when I log in')
-print(test)
