@@ -14,7 +14,7 @@ import pandas as pd
 
 
 def find_examples(query, k=8):
-    loader = CSVLoader(file_path="oct7col1.csv")
+    loader = CSVLoader(file_path="oct9col1.csv")
 
     data = loader.load()
     embeddings = OpenAIEmbeddings()
@@ -23,7 +23,7 @@ def find_examples(query, k=8):
     db = FAISS.from_documents(data, embeddings)
     examples = ''
     docs = db.similarity_search(query, k)
-    df = pd.read_csv('oct7.csv')
+    df = pd.read_csv('oct9.csv')
     i = 1
     for doc in docs:
         input_text = doc.page_content[14:]
@@ -48,13 +48,12 @@ def ideator(messages, lead_dict_info):
     new_message = messages[-1]['content']
 
     #perform similarity search
-    examples = find_examples(new_message, k=10)
+    examples = find_examples(new_message, k=6)
     examples = examples.format(**lead_dict_info)
-    prompt = examples
+    prompt = prompt + examples
     print('inbound message: ' + str(messages[-1]))
     print(examples)
     print('\n\n')
-    prompt = prompt + '\n\n' + examples
     prompt = {'role': 'system', 'content': prompt}
     messages.insert(0,prompt)
     

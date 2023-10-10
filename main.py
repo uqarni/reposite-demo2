@@ -126,9 +126,15 @@ def main():
 
     # Create a button to submit the user's message
     if st.button("Send"):
+
+
+        #get dict info to populate
+        file_path = 'lead_dict_info.json'
+        with open(file_path, 'r') as f:
+            lead_dict_info = json.load(f)
+
         #prep the json
-        newline = {"role": "user", "content": userresponse}
-        
+        newline = {"role": "user", "content": userresponse.format(**lead_dict_info)}
         #append to database
         with open('database.jsonl', 'a') as f:
         # Write the new JSON object to the file
@@ -143,9 +149,6 @@ def main():
                 messages.append(json_obj)
 
         #generate OpenAI response
-        file_path = 'lead_dict_info.json'
-        with open(file_path, 'r') as f:
-            lead_dict_info = json.load(f)
         messages, count = ideator(messages, lead_dict_info)
 
         #append to database
