@@ -1,4 +1,163 @@
 User Message
+"Hi Taylor,
+Yes we did receive a request! Thanks for reaching out.
+My name is {lead_first_name} and I'll be your point of contact for scheduling group reservations. Currently awaiting a response from Tim Cotter at Reposite before finalizing a quote for you. Let me know if you need anything else from our side regarding setting up future events/group reservations.
+
+Thanks, {lead_first_name}"
+"Dear Taylor,
+Thank you for your email and we appreciate you reaching out to us.
+Please be informed that the information was forwarded to our management team. 
+Best regards,
+{lead_first_name} {lead_last_name}
+{supplier_name}
+{email}
+"
+"Hi Taylor -
+Please direct all group reservations to myself at manager@baobrewhouse.com 
+Thank you,
+{lead_first_name} {lead_last_name}"
+"Taylor, 
+Thanks for responding, I wonder if anyone has ever answered no to your follow up question!! 
+So to be honest, I don’t 100% understand how I got connected with you guys, example how I got onto your platform initially without setting it up. That said, I did look at it, it seems reputable so I set up a cocktail class portal on there to see if there’s any traction. 
+I am happy you guys have a free tiered option, and I also totally understand that the main goal is to get people into the premium tier. I am apprehensive because a few years back I got burned pretty bad with WeddingWire. They tricked me into signing up by sending a fake request right after I signed up which gave me a false affirmation that I made a good decision. In the 6 or so months I was on their premium tier I didn’t get a single real lead and it cost a lot of money. This feels a little bit the same, so if/when I get any type of real traction i’ll be comfortable with looking at pricing for higher tiers. I’m excited at the prospect!! 
+Cheers,
+{lead_first_name} {lead_last_name}
+{supplier_name}
+
+
+"
+"I have gotten messages from multiple people, I don’t know who my representative would be. The newest person is Tim Cotter. Happy to provide honest feedback, us business owners tend to be that way sometimes! 
+Can you tell me about the commissions you mentioned below?
+{lead_first_name} {lead_last_name}
+{supplier_name}
+"
+"That all sounds good, tomorrow we’re working a show with Dan Levy and Adam Pally, if you watch Schitt’s Creek you might know them.
+
+
+{lead_first_name} {lead_last_name}
+{supplier_name}
+
+
+"
+"Hi Taylor,
+I spoke with our team and they approved me to sign up for the Membership once it looks like we will get a booking. For now, we will wait it out and see what comes our way. We primarily market with OpenTable for standard dining and directly to other local DMCs and concierges right now, but we are not using any formal platforms to do so.
+{lead_first_name} {lead_last_name}
+{supplier_name} {email}"
+"Good Morning, Taylor, 
+
+Lex Turnbull (copied) coordinates space rentals for events, meetings, etc. Please know that we are not interested in signing up with Reposite, but are happy to arrange an event rental with interested parties. 
+
+Many thanks, 
+
+{lead_first_name} {lead_last_name}"
+"Hi Taylor, Thanks for your email. How can I enter the free basic account?
+ 
+Yes, I work with group reservations; if the membership has annual fees, the right person is our Director of Sales, Ada Mabel Rivera. 
+ 
+ 
+{lead_first_name} {lead_last_name}
+
+E. {email}
+
+
+
+ "
+"Greetings Taylor, 
+ 
+The RFP was received from the email of reservations department and asked, and they don’t have it.
+ 
+The email of Ada is: adrivera@elconvento.com
+ 
+Thank you, 
+ 
+ 
+{lead_first_name} {lead_last_name}
+
+E. {email}
+
+
+
+ 
+
+"
+"Dear All
+could you please be so kind to keep in touch in December in order to give you more details and rates.
+Regards
+{lead_first_name}
+
+
+{lead_first_name}
+{supplier_name}
+
+{email} 
+   
+
+
+"
+"Hi Taylor,
+ 
+Can you please provide more information on this below group reservation you said came through to us?
+ 
+Thank you,
+ 
+ {lead_first_name} {lead_last_name}"
+"Not interested, but thank you anyways.
+ 
+{lead_first_name} {lead_last_name}
+
+ 
+ "
+"Hi Taylor when I log into reposite website in my account I do not see any jobs listed or any requests for quote 
+
+{lead_first_name} {lead_last_name}"
+"Good afternoon, Mr. Bowdin,
+ 
+Greetings from Group Sales Department from {supplier_name}.
+ 
+I will be your contact person if you are looking to book 25 rooms and over. Please let me know the date and number of rooms to verify our availability.
+ 
+I remain attentive to your comments.
+Kind regards / Saludos cordiales,
+{lead_first_name} {lead_last_name}
+"
+"hello.
+I tried to input the quote in your website.
+28 pax MiniBus 4hrs(4hrs Minimum)*$169= $676 All Inclusive
+Please let us know if you are interested .
+—
+Best Regards,
+ {lead_first_name}
+Thank you for choosing {supplier_name}.
+{supplier_name}                        
+{destination} "
+"Hello, we are not interested in any memberships which require some payments.
+Have a good one.
+—
+Best Regards,
+ {lead_first_name}
+Thank you for choosing {supplier_name}.
+{supplier_name}                        
+{destination}     "
+"No. Thank you for calling our client services team
+
+{lead_first_name} {lead_last_name}"
+"Thank you but  I have no interest in paying for a membership to receive work.
+{lead_first_name} {lead_last_name}"
+"Hi Taylor,
+
+How did we get on this website? I'm not interested in paying for anything and I do not have time for a phone call.
+
+Thanks,
+{lead_first_name} 
+
+
+
+-- 
+
+{lead_first_name} {lead_last_name}
+{supplier_name}
+{email}
+"
 "Hi Taylor, this is {lead_first_name}. What can I help you with?"
 "I don’t know what this means. I have not received any quote about anything.
 {lead_first_name} {lead_last_name}
