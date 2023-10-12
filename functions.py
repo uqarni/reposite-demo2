@@ -12,23 +12,43 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 import pandas as pd
 
+from langchain.document_loaders import TextLoader
+from langchain.text_splitter import CharacterTextSplitter
 
-def find_examples(query, k=8):
-    loader = CSVLoader(file_path="oct9col1.csv")
-
-    data = loader.load()
+def find_txt_examples(query, k=8):
+    loader = TextLoader("examples.txt")
+    documents = loader.load()
+    text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+    docs = text_splitter.split_documents(documents)
+    
     embeddings = OpenAIEmbeddings()
 
+    db = FAISS.from_documents(docs, embeddings)
+    docs = db.similarity_search(query, k=k)
+
+    examples = ""
+    for doc in docs:
+       examples += '\n\n' + doc.page_content
+    return examples
+
+
+def find_examples(query, k=8):
+    loader = CSVLoader(file_path="oct12col1.csv")
+    data = loader.load()
+
+    embeddings = OpenAIEmbeddings()
 
     db = FAISS.from_documents(data, embeddings)
+
     examples = ''
+    
     docs = db.similarity_search(query, k)
-    df = pd.read_csv('oct9.csv')
+    df = pd.read_csv('oct12.csv')
     i = 1
     for doc in docs:
-        input_text = doc.page_content[14:]
+        input_text = doc.page_content[14:] 
         try:
-            output = df.loc[df['User Message'] == input_text, 'Assistant Message'].iloc[0]
+            output = df.loc[df['User Message'] == input_text, 'Assistant Reference Message'].iloc[0]
         except:
             print('found error for input')
 
@@ -39,7 +59,46 @@ def find_examples(query, k=8):
         i += 1
     return examples
 
+
+def my_function(og, permuted):
+    try:
+        output = find_examples(permuted, k = 10)
+        if og in output:
+            return 'yes'
+        else:
+            return 'no'
+    except:
+        print('error')
+        print('\n\n')
+        return 'error'
     
+# Read CSV
+def find_in_examples_script():
+    df = pd.read_csv('oct12comparison.csv')
+
+    # Apply function to each row and store result in a new column
+    df['Output'] = df.apply(lambda row: my_function(row['Assistant Reference Message'], row['Modified user message']), axis=1)
+
+    # Write DataFrame back to CSV
+    df.to_csv('oct12comparison_modified.csv', index=False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #generate openai response; returns messages with openai response
 def ideator(messages, lead_dict_info):
     print('message length: ' + str(len(messages)))
@@ -48,11 +107,11 @@ def ideator(messages, lead_dict_info):
     new_message = messages[-1]['content']
 
     #perform similarity search
-    examples = find_examples(new_message, k=6)
+    examples = find_examples(new_message, k=10)
     examples = examples.format(**lead_dict_info)
     prompt = prompt + examples
     print('inbound message: ' + str(messages[-1]))
-    print(examples)
+    print('prompt' + prompt)
     print('\n\n')
     prompt = {'role': 'system', 'content': prompt}
     messages.insert(0,prompt)
@@ -65,7 +124,8 @@ def ideator(messages, lead_dict_info):
         result = openai.ChatCompletion.create(
           model="gpt-4",
           messages= messages,
-          max_tokens = 300
+          max_tokens = 300,
+          temperature = 0
         )
         response = result["choices"][0]["message"]["content"]
         print('response:')
@@ -122,38 +182,20 @@ def ideator(messages, lead_dict_info):
 
 
 
+
+
 def initial_text_info(selection=None):
     dictionary = {
-        'NTM $500 Membership - Received NMQR | First': '''
-        Hey {FirstName} -
-
-I noticed that you recently received your very first quote request from a planner {Quote_Lead_Company_Name} on Reposite - congrats!
-
-Are you the right person at {Supplier_Organization_Name} that handles group reservations?
-
-Cheers,
-Taylor
-''',
-
-        'NTM $500 Membership - Received NMQR | Subsequent':'''
-        Hey {FirstName} -
-
-I saw you got another group reservation request through Reposite from {Quote_Lead_Company_Name}!
-
-Are you the right person at {Supplier_Organization_Name} that handles group reservations?
-
-Cheers,
-Taylor
-''',
 
         'NTM $500 Membership - Newly Onboarded': '''
-        Hey {FirstName} -
+        Hey {lead_first_name} -
 
-I saw you just set up an account for {Supplier_Organization_Name} on Reposite! Congrats on being invited by {Quote_Lead_Company_Name}.
+I just saw you got a group reservation request through Reposite from {reseller_org_name}!
 
-So we can help tailor future leads for you: what's your ideal type of group business (corporate, student groups, international groups, luxury, etc.)?
+Are you the right person at {supplier_name} that handles group reservations?
 
 Cheers,
+
 Taylor
 ''',
 

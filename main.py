@@ -68,9 +68,9 @@ def main():
         #     data, count = supabase.table("bots_dev").select("*").eq("id", "TaylorNMQR").execute()
         # else:
         #     data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()
-        data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()      
+        data, count = supabase.table("bots_dev").select("*").eq("id", "taylorRAG").execute()      
         bot_info = data[1][0]
-        initial_text = initial_text.format(FirstName = lead_first_name, Quote_Lead_Company_Name = reseller_org_name, Supplier_Organization_Name = supplier_name, Category = category, Quote_Lead_Destination = destination)
+        initial_text = initial_text.format(lead_first_name = lead_first_name, reseller_org_name = reseller_org_name, supplier_name = supplier_name, category = category, destination = destination)
         
         lead_dict_info = {
             "bot_name": bot_name,
