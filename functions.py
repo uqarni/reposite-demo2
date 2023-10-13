@@ -33,7 +33,7 @@ def find_txt_examples(query, k=8):
 
 
 def find_examples(query, k=8):
-    loader = CSVLoader(file_path="oct12col1.csv")
+    loader = CSVLoader(file_path="oct13col1.csv")
     data = loader.load()
 
     embeddings = OpenAIEmbeddings()
@@ -43,22 +43,23 @@ def find_examples(query, k=8):
     examples = ''
     
     docs = db.similarity_search(query, k)
-    df = pd.read_csv('oct12.csv')
+    df = pd.read_csv('oct13.csv')
     i = 1
     for doc in docs:
         input_text = doc.page_content[14:] 
+        row = doc.metadata['row']
         try:
-            output = df.loc[df['User Message'] == input_text, 'Assistant Reference Message'].iloc[0]
-        except:
-            print('found error for input')
+            output = df.iloc[row]['Assistant Message']
+            #output = df.loc[df['User Message'] == input_text, 'Assistant Message'].iloc[0]
+        except Exception as e:
+            print('found error for input ' + input_text + ' with error ' + str(e))
 
         try:
-           examples += f'Example {i}: \n\nLead Email: {input_text} \n\nTaylor Response: {output} \n\n'
+           examples += f'Example {i}:\n\nLead Email:\n{input_text}\n\nTaylor Response:\n{output} \n\n'
         except:
            continue
         i += 1
     return examples
-
 
 def my_function(og, permuted):
     try:

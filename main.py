@@ -28,7 +28,7 @@ now = now.strftime("%Y-%m-%d %H:%M:%S")
 def main():
 
     # Create a title for the chat interface
-    st.title("Reposite Bot (named Taylor)")
+    st.title("Taylor RAG 10 Pairs")
     st.write("To test, first select some fields then click the button below.")
   
     #variables for system prompt
