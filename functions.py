@@ -75,14 +75,13 @@ def my_function(og, permuted):
     
 # Read CSV
 def find_in_examples_script():
-    df = pd.read_csv('oct12comparison.csv')
+    df = pd.read_csv('oct13comparison.csv')
 
     # Apply function to each row and store result in a new column
-    df['Output'] = df.apply(lambda row: my_function(row['Assistant Reference Message'], row['Modified user message']), axis=1)
+    df['Output'] = df.apply(lambda row: my_function(row['Assistant Message'], row['Modified user message']), axis=1)
 
     # Write DataFrame back to CSV
-    df.to_csv('oct12comparison_modified.csv', index=False)
-
+    df.to_csv('oct13comparison_pairs.csv', index=False)
 
 
 

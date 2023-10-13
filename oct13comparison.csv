@@ -1,4 +1,4 @@
-User Message,Assistant Message,Full Convo
+User Message,Assistant Message,Full Convo,Modified user message
 "Hi Taylor, this is {lead_first_name}. What can I help you with?","Hi {lead_first_name},
  
 Great to connect with you! Can definitely help provide some clarity here. One of the travel planners we work with {reseller_org_name} was sourcing {category}s via our Quote Request tool for their trip in {destination} for {group_size} people, and after doing some research you looked like a great fit so they reached out through Reposite. The request was originally sent to {email}, but if you're unable to find it in your inbox, you can view it and respond directly to {reseller_org_name} on this link {nmqrurl} 
@@ -37,7 +37,7 @@ There’s no cost to sign up for our basic free plan, create your profile, conne
 Have you been looking to grow your groups business?
  
  Best, 
-Taylor"
+Taylor","Hello Taylor, this is {lead_first_name}. How may I assist you today?"
 "I don’t know what this means. I have not received any quote about anything.
  {lead_first_name} {lead_last_name}
  {email}","Hey {lead_first_name} - Can definitely help provide some clarity here. One of the travel planners we work with {reseller_org_name} was sourcing {category}s via our Quote Request tool for their trip in {destination} for {group_size} people, and after doing some research you looked like a great fit so they reached out through Reposite. The request was originally sent to {email}, but if you're unable to find it in your inbox, you can view it and respond directly to {reseller_org_name} on this link {nmqrurl} 
@@ -72,7 +72,9 @@ There’s no cost to sign up for our basic free plan, create your profile, conne
 Do you leverage any other tools or platforms to help generate consistent group leads/business?
 
  Best, 
- Taylor"
+ Taylor","""I'm unsure where this is coming from. I have not received any quote yet.
+ {lead_first_name} {lead_last_name}
+ {email}"""
 "Dear Taylor,
  
 Hope this email finds you very well.
@@ -111,7 +113,15 @@ Hello {lead_first_name},
 Thank you for your quick response and for providing the additional contact information. I am going to reach out to them directly.
  
 Cheers,
-Taylor"
+Taylor","Dear Taylor,
+ 
+
+ Trust this email finds you in great spirits.
+ Please check emails from our groups and sales team to follow-up on your inquiries.
+ groupspuj@royaltonresorts.com groups2puj@royaltonresorts.com
+ 
+
+ Warm regards,"
 "Hi Taylor,
  Yes we did receive a request! Thanks for reaching out.
  My name is {lead_first_name} and I'll be your point of contact for scheduling group reservations. Currently awaiting a response from Tim Cotter at Reposite before finalizing a quote for you. Let me know if you need anything else from our side regarding setting up future events/group reservations.
@@ -156,7 +166,12 @@ Out of curiosity, are you currently using any other sources or tools to grow you
 Best, 
 Taylor
 
-"
+","Hello Taylor,
+ Indeed, we have received your request! Thank you for connecting.
+ I'm {lead_first_name}, and I'll be guiding you through the process of scheduling group reservations. Presently, we're waiting on a response from Tim Cotter at Reposite to finalize your quote. Please feel free to let me know if there's anything else you need regarding organizing future events/group bookings.
+ 
+
+ Thank you, {lead_first_name}"
 "Good Morning Taylor, Can this be made within monthly payments? Can you please explain how your platform works?","Currently, our membership is payable only as an annual upfront cost. Since you cover {destination}, the cost is $500 for the full membership year. If you have a specific payment schedule in mind, let me know what you think would work best for you, and I can try to get approval from our membership manager to make an exception.
  
  You can also chat with my colleague Dan, who runs office hours / Q&A sessions twice a week. Here are the sign up links: 
@@ -197,7 +212,7 @@ Currently, our membership is payable only as an annual upfront cost. Since you c
 Let me know once you pick a date/time so I can give him a heads up.
 
 Cheers,
-Taylor"
+Taylor","Good Morning Taylor, Is it possible to arrange monthly payments? Could you provide an explanation of how your platform operates?"
 "Hello Taylor,
  At present, we are looking for some additional partners to expand our market. In the past, we were ideally suited to groups as we have a majority of 2 Bed (Queen Size Rooms). A past colleague introduced us to Reposite however, I am not sure if I am using your application to its fullest.
  Would you happen to know if you have any training courses? At the same time, I was wondering how I could get a receipt for the last charge I placed on my credit Card.
@@ -252,7 +267,11 @@ I recommend a full Reposite membership to fully utilize our platform. Statistica
  Regarding your receipt inquiry, I’m going to email finance@reposite.io for support on your behalf. They will be more than happy to assist you!
  
 Best, 
-Taylor"
+Taylor","Hi Taylor,
+ Currently, we're exploring opportunities with additional partners to broaden our market scope. Historically, we've been a fit for groups due to predominantly offering 2-Bed (Queen Size) Rooms. A former colleague introduced us to Reposite, yet I'm uncertain if I’m leveraging your application to its maximum.
+ Do you offer any training courses? Also, I'm curious about how I might obtain a receipt for the most recent charge on my credit card.
+ Warm regards,
+ {lead_first_name} {lead_last_name}"
 "Good morning Taylor,
  
 
@@ -311,7 +330,20 @@ Hey {lead_first_name} - Thanks for your reply. I think I may have caused some co
  Do you already have a platform in place to help drive groups business your way?
  
 Cheers, 
-Taylor"
+Taylor","Good morning Taylor,
+ 
+
+ To provide a quote, I need the following details:
+ 
+
+ Date of the activity?
+ Time of the activity?
+ Duration of the activity?
+ Would you prefer a three-course meal and beverages, or a cocktail/butler style service? (implying plentiful food will be circulated during the event)
+ Kind regards,
+ 
+
+ {lead_first_name}"
 "Yes give me a call, imnot sure what this is. 512-480-0200","Hi {lead_first_name},
  
  Great to be connected! I understand it may be a little confusing initially. Reposite is a platform designed to connect travel and event planners with {category}s like {supplier_name}. It equips {category}s with tools and resources to win both inbound and outbound group business development efforts.
@@ -358,7 +390,7 @@ For Thursdays: https://us02web.zoom.us/meeting/register/tZUrcu2qqz0jE9EswvqkJHpk
 Let me know once you pick a date/time so I can give him a heads up.
  
 Best, 
-Taylor"
+Taylor","Absolutely, please call me; I'm unclear about what this is. 545-773-0210"
 "Good day,
  
 
@@ -456,7 +488,15 @@ It's free to sign up to our basic plan, where you can receive some direct inboun
 Does {supplier_name} already utilize a platform or sourcing tool to help drive group business your way? 
  
  Best, 
- Taylor"
+ Taylor","Good day,
+ 
+
+ Thank you for reaching out to {supplier_name}.
+ To get you the accurate information, kindly provide the number of passengers, quantity of luggage, and the airport requiring service.
+ Best regards,
+ {lead_first_name} {lead_last_name}
+ {supplier_name}
+ {email}"
 "Dear Taylor,
  Thank you for contacting {supplier_name}.
  We are delighted to be of service to you.
@@ -557,7 +597,22 @@ It's free to sign up to our basic plan, where you can receive some direct inboun
 Does {supplier_name} already utilize a platform or sourcing tool to help drive group business your way? 
  
  Best, 
- Taylor"
+ Taylor","Dear Taylor,
+ Thank you for reaching out to {supplier_name}.
+ We're pleased to assist you.
+ Your inquiries are important to us. To accurately assist you, we require additional details about the needed service. Kindly be informed that, in adherence to our policy, we cannot open any links.
+ Details can be sent through as an attachment instead.
+ For an accurate price quote and to verify service availability, we kindly request the following initial information:
+ 
+
+ Service Type (Arrival, Departure, or Connection)
+ Service airport
+ Flight details (flight number, date, and time; an itinerary, if available, is preferable)
+ Total number of passengers
+ Total number of pieces of luggage
+ Best Regards,
+ {lead_first_name} {lead_last_name}
+ {email}"
 "Dear Taylor,
  Thank you for your email and we appreciate you reaching out to us.
  Please be informed that the information was forwarded to our management team. 
@@ -653,7 +708,13 @@ It's free to sign up to our basic plan, where you can receive some direct inboun
 Does {supplier_name} already utilize a platform or sourcing tool to help drive group business your way? 
  
  Best, 
- Taylor"
+ Taylor","Dear Taylor,
+ Thank you for your email; we value your communication with us.
+ Kindly note that your information has been passed along to our management team.
+ Warm regards,
+ {lead_first_name} {lead_last_name}
+ {supplier_name}
+ {email}"
 "Hi Taylor -
  Please direct all group reservations to myself at manager@baobrewhouse.com 
  Thank you,
@@ -694,7 +755,10 @@ Our membership program gives you unlimited outbound prospecting for new travel a
 Do you have other platforms that you use to help attract new group business / planners?
 
 Best,
-Taylor"
+Taylor","Hello Taylor -
+ Kindly send all group reservation inquiries to me at manager@baobrewhouse.com
+ Thank you,
+ {lead_first_name} {lead_last_name}"
 "Taylor, 
  Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
  I popped over to the website and saw the request come through, we can totally put something together for them. We have a couple different cocktail classes we put together that are an absolute blast every time.  
@@ -808,7 +872,15 @@ Remember, you can always reach out to us for any questions or assistance. We are
 Do you currently have any upcoming cocktail classes or events that you are particularly excited about? 
 
 Cheers, 
-Taylor"
+Taylor","Taylor,
+ Hi, I've just returned to town and apologize for the late reply. Did I sign up for Reposite at some point, or do you seek out particular types of vendors in specific areas?
+ I visited the website and noticed the request; we can absolutely arrange something. We host several cocktail classes that are consistently a huge hit.
+ Could you assist me with the next steps?
+ Cheers,
+ 
+
+ {lead_first_name} {lead_last_name}
+ {supplier_name}"
 "Taylor, 
  Thanks for responding, I wonder if anyone has ever answered no to your follow up question!! 
  So to be honest, I don’t 100% understand how I got connected with you guys, example how I got onto your platform initially without setting it up. That said, I did look at it, it seems reputable so I set up a cocktail class portal on there to see if there’s any traction. 
@@ -924,7 +996,13 @@ Remember, you can always reach out to us for any questions or assistance. We are
 Do you currently have any upcoming cocktail classes or events that you are particularly excited about? 
 
 Cheers, 
-Taylor"
+Taylor","Taylor,
+ Thanks for getting back to me; I'm curious if anyone has ever said no to your follow-up question!
+ Frankly, I’m not entirely sure how our connection through your platform came about, considering I didn’t initially set it up. However, having explored it and finding it to seem credible, I went ahead and set up a cocktail class portal to gauge any possible traction.
+ I appreciate the availability of a free tier option from you guys, and I understand you want to move us to a premium tier. I'm cautious due to a prior unpleasant experience with WeddingWire a few years ago. They lured me into signing up by dispatching a sham request immediately post-sign-up. During my 6-month with their premium tier, not a single genuine lead materialized, and the cost was significantly higher. This situation is a little similar, so once I get some traction, I'll be open to exploring pricing for elevated tiers. Excited to see where it goes!
+ Cheers,
+ {lead_first_name} {lead_last_name}
+ {supplier_name}"
 "I have gotten messages from multiple people, I don’t know who my representative would be. The newest person is Tim Cotter. Happy to provide honest feedback, us business owners tend to be that way sometimes! 
  Can you tell me about the commissions you mentioned below?
  {lead_first_name} {lead_last_name}
@@ -1034,7 +1112,10 @@ Remember, you can always reach out to us for any questions or assistance. We are
 Do you currently have any upcoming cocktail classes or events that you are particularly excited about? 
 
 Cheers, 
-Taylor"
+Taylor","I've received messages from several individuals, so I'm unsure who my representative is. The latest person to reach out was Tim Cotter. I'm more than willing to offer candid feedback - we business owners often lean that way!
+ Could you provide more details about the commissions you mentioned below?
+ {lead_first_name} {lead_last_name}
+ {supplier_name}"
 "Ok got it. So a membership would waive a 15% commission among having other benefits. It sounds like premium tiers have a head start as well. I’ll stay in the ecosystem to see what kind of traction if any I can generate by posting on Reposite. The big difference from free to premium here will be the motivation to maximize any connections that are made vs getting no movement in which case there would be no motivation to move up. Hope that makes sense. 
  My goal moving forward especially with your platform would be to sell cocktail classes and be available for any craft cocktail/mixology catering events that are needed. That’s what we do and we do it very well! Hoping i’m able to provide these great services to people looking for exactly that!
  {lead_first_name} {lead_last_name}
@@ -1144,7 +1225,10 @@ Remember, you can always reach out to us for any questions or assistance. We are
 Do you currently have any upcoming cocktail classes or events that you are particularly excited about? 
 
 Cheers, 
-Taylor"
+Taylor","Understood. So, securing a membership would negate a 15% commission, among other perks, and it seems like the premium tiers get an early advantage as well. I'll stay engaged in the ecosystem to gauge any traction I might generate. The crucial distinction between free and premium tiers here appears to be the incentive to maximize any forged connections versus not achieving any progress, in which case there'd be no incentive to upgrade. I hope that's clear.
+ Moving forward, particularly on your platform, my objective is to sell cocktail classes and be available for any requisite craft cocktail/mixology catering events. That’s our specialty, and we are super good at it! I'm hopeful to offer these to future customers.
+ {lead_first_name} {lead_last_name}
+ {supplier_name}"
 "That all sounds good, tomorrow we’re working a show with Dan Levy and Adam Pally, if you watch Schitt’s Creek you might know them.
  
 
@@ -1253,7 +1337,11 @@ Remember, you can always reach out to us for any questions or assistance. We are
 Do you currently have any upcoming cocktail classes or events that you are particularly excited about? 
 
 Cheers, 
-Taylor"
+Taylor","That all sounds promising. Tomorrow, we're doing a show with Dan Levy and Adam Pally; if you’re a fan of Schitt’s Creek, you might recognize them.
+ 
+
+ {lead_first_name} {lead_last_name}
+ {supplier_name}"
 "Hi Taylor, 
  
 
@@ -1330,7 +1418,24 @@ Just let me know which you pick so I can alert Dan.
 Would you like me to share the quote request with you once again? 
  
  Cheers, 
- Taylor"
+ Taylor","Hello Taylor,
+ 
+
+ Thank you; yes, I am the appropriate contact for group reservations.
+ I had reservations about your quote email from 9/20/23... fearing it was spam, I just didn't click on it.
+ 
+
+ I attempted to call Anand at 234 664-0784 and left messages.
+ 
+
+ Kindly text me at 356 987-1443, and I will return your call right away.
+ 
+
+ I'm hopeful we can make some music together!
+ 
+
+ Thanks,
+ {lead_first_name} {lead_last_name}"""
 "Hi Taylor,
  Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. I met with Brenden and Anand from your team the other day and they got me all caught up on your platform!
  {lead_first_name} {lead_last_name}
@@ -1389,7 +1494,10 @@ Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
 Taylor
-"
+","Hello Taylor,
+ Thank you for connecting, and yes, this is the optimal email to contact us! I've relayed information to the client and am presently awaiting their response. I had a meeting with Brenden and Anand from your team recently, and they've thoroughly updated me on your platform!
+ {lead_first_name} {lead_last_name}
+ {supplier_name} {email}"
 "Hi Taylor,
  I spoke with our team and they approved me to sign up for the Membership once it looks like we will get a booking. For now, we will wait it out and see what comes our way. We primarily market with OpenTable for standard dining and directly to other local DMCs and concierges right now, but we are not using any formal platforms to do so.
  {lead_first_name} {lead_last_name}
@@ -1449,7 +1557,10 @@ Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
 Taylor
-"
+","Hello Taylor,
+ After conversing with our team, I've received approval to register for the Membership once a booking happens. For the time being, we will adopt a wait-and-see approach. Our main marketing channels currently are OpenTable for regular dining and direct communication with other local DMCs and concierges, but we aren't utilizing any formal platforms for this purpose.
+ {lead_first_name} {lead_last_name}
+ {supplier_name} {email}"
 "Hello, 
  Yes, I am. However, we have never signed up for Reposite nor are we affiliated with said company. 
  I am not aware of any new reservations through Reposite? 
@@ -1509,7 +1620,10 @@ That's fantastic! To get started, first, you can respond to {reseller_org_name}'
 Are there specific types of planners or events that you're particularly wanting to connect with? 
 
 Cheers, 
-Taylor"
+Taylor","Hello,
+ Indeed, I am. However, we have not registered with Reposite and have no affiliations with the mentioned company.
+ I'm unaware of any new reservations coming through Reposite?
+ {lead_first_name} {lead_last_name}"
 "Hello,
  Thank you for your response. 
  We are definitely interested and will look into it.
@@ -1569,7 +1683,12 @@ That's fantastic! To get started, first, you can respond to {reseller_org_name}'
 Are there specific types of planners or events that you're particularly wanting to connect with? 
 
 Cheers, 
-Taylor"
+Taylor","Hello,
+ Thank you for getting back to us.
+ We are certainly interested and will explore further.
+ 
+
+ {lead_first_name} {lead_last_name}"
 "I'm not. The person you want to contact for group reservations is Jason Yelton (jason@dbrparkcity.com).
  
 
@@ -1611,7 +1730,14 @@ Thanks {lead_first_name}!
  I’ll contact Jason directly, appreciate you pointing me in the right direction.
  
  Cheers,
- Taylor."
+ Taylor.","I'm not the correct contact. For group reservations, please reach out to John Simmons (john@elevateevents.com).
+ 
+
+ He has all the requisite information about available sections, group sizes, F&B minimums, menu options, etc.
+ 
+
+ Excited to work with you in the future!
+ {lead_first_name} {lead_last_name}"
 "Good Morning, Taylor, 
  
 
@@ -1663,7 +1789,16 @@ On our basic free plan, we charge a commission on all successful bookings. Throu
  
  Do you have other tools/platforms that you use to drive group business to {supplier_name}?
  
- Taylor"
+ Taylor","Good Morning Taylor,
+ 
+
+ Johnny Redbull (copied) handles the coordination for space rentals for events, meetings, and the like. Please be informed that we do not wish to sign up with Reposite, but we are pleased to facilitate event rentals for interested folks.
+ 
+
+ Thanks,
+ 
+
+ {lead_first_name} {lead_last_name}"
 "Greetings,
   
  My colleague forwards this information to my attention. We don’t see to have an account at Reposi.
@@ -1766,7 +1901,18 @@ Let me know if you have trouble seeing the details from the link above.
  
 Cheers,
 Taylor
-"
+","Hello,
+ 
+
+ This information has been forwarded to me by my colleague. It seems we don’t have an account with Reposi.
+ 
+
+ Could you please confirm if this can be addressed via email instead?
+ 
+
+ Warmly,
+ {lead_first_name} {lead_last_name}
+ {email}"
 "Hi Taylor, Thanks for your email. How can I enter the free basic account?
   
  Yes, I work with group reservations; if the membership has annual fees, the right person is our Director of Sales, Ada Mabel Rivera. 
@@ -1865,7 +2011,17 @@ Let me know if you have trouble seeing the details from the link above.
  
 Cheers,
 Taylor
-"
+","Hello Taylor,
+ 
+
+ Thank you for your email. How can I create a free basic account?
+ 
+
+ Indeed, I handle group reservations. If the membership involves annual fees, the appropriate person to discuss this with would be our Director of Sales, Susan Whitaker.
+ 
+
+ {lead_first_name} {lead_last_name} 
+ {email}"
 "Greetings Taylor, 
   
 I checked with our reservations department if they have the RFP and they don’t have it.
@@ -1968,7 +2124,20 @@ Let me know if you have trouble seeing the details from the link above.
  
 Cheers,
 Taylor
-"
+","Dear Taylor,
+ 
+
+ I checked with the resy department about the RFP, and they don't have it.
+ 
+
+ You can email Susan at: susan.whitaker@elevateevents.com
+ 
+
+ Thank you,
+ 
+
+ {lead_first_name} {lead_last_name}
+ {email}"
 "Dear All
  we are able to arrange transfer for {reseller_org_name}
  Please send us your request.
@@ -2052,7 +2221,19 @@ Completely understand. However, given your initial eagerness to respond to the r
 With our annual membership program, you're given access to unlimited outbound prospecting for new travel and event planner partnerships, all commission on successful bookings is waived, and you have unlimited opportunities to submit proposals for matching itineraries. You actually qualify for the $500 annual rate (lowest available) since you were invited by a planner on the platform. My colleague Dan runs office hours / Q&A sessions twice a week to answer any questions. Here are the links for Tuesdays: https://us02web.zoom.us/meeting/register/tZIoce2upjsuHNwRrZ06ZQ-n0R3QmpL585nc#/registration and for Thursdays: https://us02web.zoom.us/meeting/register/tZUrcu2qqz0jE9EswvqkJHpkEm_C6SvFd2dx#/registration  
 
 Just let me know once you pick a date/time so I can give him a heads up.
-Taylor"
+Taylor","Team,
+ 
+
+ We can organize transfers for both {reseller_org_name}. Please send us your details and requests.
+ 
+
+ Best Regards,
+ {lead_first_name}
+ 
+
+ {lead_first_name}
+ {supplier_name}
+ {email}"
 "Dear All
  could you please be so kind to keep in touch in December in order to give you more details and rates.
  Regards
@@ -2134,7 +2315,19 @@ Completely understand. However, given your initial eagerness to respond to the r
 With our annual membership program, you're given access to unlimited outbound prospecting for new travel and event planner partnerships, all commission on successful bookings is waived, and you have unlimited opportunities to submit proposals for matching itineraries. You actually qualify for the $500 annual rate (lowest available) since you were invited by a planner on the platform. My colleague Dan runs office hours / Q&A sessions twice a week to answer any questions. Here are the links for Tuesdays: https://us02web.zoom.us/meeting/register/tZIoce2upjsuHNwRrZ06ZQ-n0R3QmpL585nc#/registration and for Thursdays: https://us02web.zoom.us/meeting/register/tZUrcu2qqz0jE9EswvqkJHpkEm_C6SvFd2dx#/registration  
 
 Just let me know once you pick a date/time so I can give him a heads up.
-Taylor"
+Taylor","Hi,
+ 
+
+ Would you please kindly reconnect in December so that we can provide you with more details and rates?
+ 
+
+ Regards,
+ {lead_first_name}
+ 
+
+ {lead_first_name}
+ {supplier_name}
+ {email}"
 "Hi Taylor,
   
  Can you please provide more information on this below group reservation you said came through to us?
@@ -2208,7 +2401,16 @@ My colleague Dan runs office hours / Q&A sessions twice a week if you have any q
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Cheers, 
-Taylor"
+Taylor","Hello Taylor,
+ 
+
+ Could you provide additional details regarding the group reservation you mentioned came through to us?
+ 
+
+ Thank you,
+ 
+
+ {lead_first_name} {lead_last_name}"
 "Hi Taylor,
   
  Thank you for the information but at this time we are not interested.
@@ -2287,7 +2489,15 @@ My colleague Dan runs office hours / Q&A sessions twice a week if you have any q
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Cheers, 
-Taylor"
+Taylor","Hello Taylor,
+ 
+
+ Thank you for the information, however, we are not interested at this time.
+ 
+
+ Wishing you a great day,
+ {lead_first_name} {lead_last_name}
+ {email}"
 "Not interested, but thank you anyways.
   
  {lead_first_name} {lead_last_name}","Hey {lead_first_name} -
@@ -2327,7 +2537,10 @@ Separately, our average group size for trips/events through Reposite is 72, and 
 Full membership gives unlimited outbound prospecting for new travel and event planner partnerships, waives commission on all earned bookings for a year. You will also have unlimited opportunities to submit proposals for matching itineraries that are trying to source new venues.
  
 Cheers, 
-Taylor"
+Taylor","Thank you, but I'm not interested.
+ 
+
+ {lead_first_name} {lead_last_name}"
 "Good morning Dawn, 
  Do you want to reach out and see what he would like. 
  Thank you!  
@@ -2376,7 +2589,12 @@ It's free to sign up for our basic plan. However, {category}s that are on our fu
 Are you currently leveraging any platforms or tools to drive more consistent group business your way?
 
 Best, 
-Taylor"
+Taylor","Good morning Dawn,
+ 
+
+ Could you reach out and see what they would like?
+ Thank you!
+ {lead_first_name}"
 "Hi Taylor, 
  All leads should flow to me not Edita. I handle all group business. 
  Also, when I log on your platform, I only see an old 2022 lead. Nothing current. 
@@ -2432,7 +2650,15 @@ It's free to sign up for our basic plan. However, {category}s that are on our fu
 Are you currently leveraging any platforms or tools to drive more consistent group business your way?
 
 Best, 
-Taylor"
+Taylor","Hello Taylor,
+ 
+
+ Please direct all leads to me, not Jeremy, as I manage all group business.
+ Additionally, when I access your platform, I only see an old lead from 2022 and nothing up to date.
+ 
+
+ Warm regards,
+ {lead_first_name} {lead_last_name}"
 "Hi Taylor,
   
  Thank you for emailing to our {supplier_name} in Bal Harbour, Florida.
@@ -2496,7 +2722,27 @@ Just let me know once you pick a date/time so I can give him a heads up.
  
 Cheers, 
 Taylor
- --"
+ --","Hello Taylor,
+ 
+
+ Thank you for reaching out to our {supplier_name} in Phoenix, Arizona.
+ 
+
+ I am {lead_first_name} {lead_last_name}, the Sales Director. Your message was forwarded to me by Mary.
+ 
+
+ At this time, we are utilizing several other channels for groups, such as Hotel Planner and Cvent, and are not looking to explore additional channels for groups.
+ 
+
+ Please do not hesitate to contact me with any questions.
+ 
+
+ Have a blessed day!
+ 
+
+ Warmly,
+ {lead_first_name} {lead_last_name}
+ {supplier_name}"""
 "Hi
  Thank you for your email.
  Please can you update the email address to @Enquiries 1Wimpolestreet , this is to the sales team who will respond within 2 working hours.
@@ -2557,7 +2803,17 @@ The requirement to log in is simply so that you can view the full details of the
 If there are any challenge hindering you from creating your login, do let me know and I can arrange a walkthrough with our team. Meanwhile, to check out the details of the quote you received, please use this link: {nmqrurl}
 
 Best, 
-Taylor"
+Taylor","Hello,
+ 
+
+ Thank you for your message.
+ 
+
+ I understand that moving forward, all correspondence should be directed to sales@janestreet.com. The sales team, available at this email, will provide responses within 120 minutes.
+ 
+
+ Kindly,
+ {lead_first_name} {lead_last_name}"
 "Hi
  I’ll let the team respond with further details.
   
@@ -2619,7 +2875,17 @@ The requirement to log in is simply so that you can view the full details of the
 If there are any challenge hindering you from creating your login, do let me know and I can arrange a walkthrough with our team. Meanwhile, to check out the details of the quote you received, please use this link: {nmqrurl}
 
 Best, 
-Taylor"
+Taylor","Hello,
+ 
+
+ The team will provide additional insights shortly.
+ 
+
+ Regarding the inquiry we've received, we're unable to log in to reply. Could you kindly forward us the pertinent details? If this entails a paid subscription, please proceed to unsubscribe us, as our budget for this academic year has already been finalized and cannot accommodate further directory expenses. If it's a complimentary listing, we're more than happy to collaborate with you.
+ 
+
+ Warm regards,
+ {lead_first_name} {lead_last_name}"
 "Most certainly. 
  We love group reservations 
  
@@ -2697,7 +2963,11 @@ In addition, our full membership program could be a great opportunity for {suppl
 Is expanding your groups business something you are focusing on this year?
  
 Best, 
-Taylor"
+Taylor","Absolutely.
+ We LOVE accommodating group reservations.
+ 
+
+ {lead_first_name} {lead_last_name}"
 "I do not see a request for a quote 
  {lead_first_name} {lead_last_name}","Hi {lead_first_name}, 
  
@@ -2772,7 +3042,8 @@ In addition, our full membership program could be a great opportunity for {suppl
 Is expanding your groups business something you are focusing on this year?
  
 Best, 
-Taylor"
+Taylor","I cannot locate a request for a quote.
+ {lead_first_name} {lead_last_name}"
 "Hi Taylor when I log into reposite website in my account I do not see any jobs listed or any requests for quote 
  
 
@@ -2849,7 +3120,13 @@ In addition, our full membership program could be a great opportunity for {suppl
 Is expanding your groups business something you are focusing on this year?
  
 Best, 
-Taylor"
+Taylor","Hello Taylor,
+ 
+
+ Upon logging into the Reposite website and checking my account, I see no listed jobs or quote requests.
+ 
+
+ {lead_first_name} {lead_last_name}"
 "Good afternoon, Mr. Bowdin,
   
  Greetings from Group Sales Department from {supplier_name}.
@@ -2951,7 +3228,18 @@ My colleague Dan runs office hours / Q&A sessions twice a week to answer any que
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
-Taylor"
+Taylor","Good day, Mr. Bowdin,
+ 
+
+ Warm regards from the Group Sales Department at {supplier_name}.
+ 
+
+ I shall be your point of contact for booking 35 rooms or more. Could you please provide the date and number of rooms so I can confirm our availability?
+ 
+
+ Eagerly awaiting your response.
+ Sincerely / Saludos cordiales,
+ {lead_first_name} {lead_last_name}"
 "Dear Tylor,
   
  I hope this email finds you well.
@@ -3051,7 +3339,15 @@ My colleague Dan runs office hours / Q&A sessions twice a week to answer any que
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
-Taylor"
+Taylor","Dear Tylor,
+ 
+
+ We do not utilize this platform for responding to RFPs. Would you be able to convert the request to a PDF and forward it to me? If that's not feasible, kindly inform me about the number of rooms you need and whether you require meeting spaces for a private event, so we can check our availability.
+ 
+
+ Looking forward to hearing back,
+ Warm regards / Saludos cordiales,
+ {lead_first_name} {lead_last_name}"
 "Dear Taylor,
   
  I hope this email finds you well.
@@ -3151,7 +3447,18 @@ My colleague Dan runs office hours / Q&A sessions twice a week to answer any que
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
-Taylor"
+Taylor","Dear Taylor,
+ 
+
+ I trust you are well.
+ 
+
+ Regrettably, I do not have the authorization to access this portal or obtain a membership, so I am unable to furnish a proposal for you.
+ 
+
+ However, I will stay alert to any other inquiries and am happy to assist you directly through email.
+ Warm regards / Saludos cordiales,
+ {lead_first_name} {lead_last_name}"
 "hello.
  I tried to input the quote in your website.
  28 pax MiniBus 4hrs(4hrs Minimum)*$169= $676 All Inclusive
@@ -3257,7 +3564,18 @@ If you have any interest in growing your business through these types of planner
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
-Taylor"
+Taylor","Hello,
+ 
+
+ I've attempted to enter the quote on your website.
+ 28 pax MiniBus 4hrs (4hrs Minimum)*$200= $800 All Inclusive.
+ Please let us know if this is of interest to you.
+ —
+ With appreciation,
+ {lead_first_name}
+ Thank you for selecting {supplier_name}.
+ {supplier_name}
+ {destination}"
 "Hello, we are not interested in any memberships which require some payments.
  Have a good one.
  —
@@ -3357,7 +3675,14 @@ If you have any interest in growing your business through these types of planner
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
-Taylor"
+Taylor","Hello, we do not wish to engage in memberships that necessitate payments.
+ Wishing you a great day.
+ —
+ Kind Regards,
+ {lead_first_name}
+ Thank you for opting for {supplier_name}.
+ {supplier_name}
+ {destination}"
 "Hello, 
  We basically work with other companies like below:
  1- You can email us the trip details and we can let you know our availability. 
@@ -3465,7 +3790,24 @@ If you have any interest in growing your business through these types of planner
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
-Taylor"
+Taylor","Hello,
+ 
+
+ Our collaboration with other entities typically follows the process below:
+ 1- Please email us the trip details, and we’ll inform you of our availability.
+ 2- Should you wish to move forward, we'll enter the reservations, then send you confirmation emails and a CC form.
+ 3- Upon receiving the CC, all booking aspects will be finalized.
+ 4- Without necessitating additional communication, our driver and vehicle will be at the PU address at the PU time to conduct the run.
+ 
+
+ Kindly confirm if this works for you. However, please be assured that we will not subscribe and pay for your services. You are, of course, welcome to add a commission to our rates to generate profit.
+ Wishing you a pleasant day.
+ —
+ Warm Regards,
+ {lead_first_name}
+ We appreciate your selection of {supplier_name}.
+ {supplier_name}
+ {destination}"
 "No. Thank you for calling our client services team
  
 
@@ -3495,7 +3837,7 @@ Assistant:
 No problem - can you help direct me to the right person? This would be for a group of 70, so definitely don't want it to fall through the cracks!
  
 Best,
-Taylor"
+Taylor","No, thank you for reaching out."
 "Yes but we don’t open links. Can you send us info in a general email and we will answer it.
  
 
@@ -3553,7 +3895,8 @@ My colleague Dan runs office hours / Q&A sessions twice a week to answer any que
 Just let me know once you pick a date/time so I can give him a heads up.
  
 
- Taylor"
+ Taylor","Yes but we don’t click on links. Just sent us info in a generic email and we will respond.
+ {lead_first_name} {lead_last_name}"
 "Thank you but I have no interest in paying for a membership to receive work.
  {lead_first_name} {lead_last_name}","Totally understand your rationale on this. It's worth noting that our average group size for trips/events through Reposite is 72, and we've seen a lot of activity pick up in the {destination} area in the past few months. So membership is really only designed for providers who are wanting to learn how to build a more consistent pipeline of group business via B2B planners. Most professional travel and event planners won't engage directly (imagine having to submit forms and leave voicemails for every aspect of an itinerary - restaurants, activities, transportation, hotel, etc. on individual business websites!). 
  
@@ -3609,7 +3952,8 @@ My colleague Dan runs office hours / Q&A sessions twice a week to answer any que
 Just let me know once you pick a date/time so I can give him a heads up.
  
 
- Taylor"
+ Taylor","Thank you. I just have no interest in paying for a membership to get work.
+ {lead_first_name} {lead_last_name}"
 "We don’t do reservations 
  
 
@@ -3653,7 +3997,8 @@ Are you looking to grow your groups business this year?
 
 Cheers,
 Taylor
- --"
+ --","We don't accept any reservations.
+ {lead_first_name} {lead_last_name}"
 "Hi Taylor,
  
 
@@ -3726,7 +4071,26 @@ Your first lead through Reposite is complimentary, and you only owe Reposite a c
 Have you been wanting to grow your groups business?
  
 Cheers,
-Taylor"
+Taylor","Hi Taylor,
+ 
+
+ How did we get on this platform? I'm not interested in paying and have no time for a phone call.
+ 
+
+ Thanks,
+ {lead_first_name} 
+ 
+
+ 
+
+ 
+
+ -- 
+ 
+
+ {lead_first_name} {lead_last_name}
+ {supplier_name}
+ {email}"
 "Hey guys,
 Yes, I handle all inquiries and bookings. We don’t do corporate events. Thanks anyway! xo","Hey {lead_first_name} -
 
@@ -3759,7 +4123,7 @@ Completely understand. I can make a note of that going forward so that you only 
 Do you use any other tools or platforms to help drive larger group bookings your way?
 
 Cheers,
-Taylor"
+Taylor","Greetings all, 10-4, I'm the point of contact for inquiries and reservations. Corporate events are outside our scope. Thanks for considering us!"
 "Hi there,
  
 Thanks for your email. Yes, we already answer the request.
@@ -3835,7 +4199,12 @@ My colleague Dan runs office hours / Q&A sessions twice a week to answer any que
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
-Taylor"
+Taylor","Hello,
+
+Appreciate your note. The request has been addressed.
+Many thanks.
+Warm regards,
+"
 "Hi there,
  
 Thanks for your email. We haven't closed any deal through your platform in case we see it's actually working we'll be more than happy to upgrade of course.
@@ -3907,4 +4276,8 @@ My colleague Dan runs office hours / Q&A sessions twice a week to answer any que
 Just let me know once you pick a date/time so I can give him a heads up.
 
 Best,
-Taylor"
+Taylor","Hello,
+
+Thank you for reaching out via email. We haven't secured any deals via your platform yet, but should we observe tangible results, we’ll gladly consider upgrading.
+Warm wishes,
+"
