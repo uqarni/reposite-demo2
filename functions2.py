@@ -55,7 +55,7 @@ def find_examples(query, k=8):
             print('found error for input ' + input_text + ' with error ' + str(e))
 
         try:
-           examples += f'Example {i}:\n\nLead Email:\n{input_text}\n\nTaylor Response:\n{output} \n\n'
+           examples += f'{output} \n\n'
         except:
            continue
         i += 1
