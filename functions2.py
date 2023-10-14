@@ -33,7 +33,7 @@ def find_txt_examples(query, k=8):
 
 
 def find_examples(query, k=8):
-    loader = CSVLoader(file_path="oct13col1.csv")
+    loader = CSVLoader(file_path="oct14col1.csv")
     data = loader.load()
 
     embeddings = OpenAIEmbeddings()
@@ -43,7 +43,7 @@ def find_examples(query, k=8):
     examples = ''
     
     docs = db.similarity_search(query, k)
-    df = pd.read_csv('oct13.csv')
+    df = pd.read_csv('oct14.csv')
     i = 1
     for doc in docs:
         input_text = doc.page_content[14:] 
