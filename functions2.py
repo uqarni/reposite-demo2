@@ -126,7 +126,7 @@ def ideator(messages, lead_dict_info):
         result = openai.ChatCompletion.create(
           model="gpt-4",
           messages= messages,
-          max_tokens = 300,
+          max_tokens = 500,
           temperature = 0
         )
         response = result["choices"][0]["message"]["content"]

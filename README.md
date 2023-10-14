@@ -1,3 +1,3 @@
 # reposite-demo2
-python -m streamlit run main2.py
+python -m streamlit run main.py
 
