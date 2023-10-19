@@ -1,0 +1,4 @@
+.env
+.database.jsonl
+settings.json
+lead_dict_info
