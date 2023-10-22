@@ -1,6 +1,6 @@
 
 import streamlit as st
-from functions import ideator, initial_text_info
+from functions import ideator, initial_text_info, upload_embedded_message
 import json
 import os
 import sys
@@ -99,6 +99,8 @@ def main():
         system_prompt = bot_info['system_prompt']
         system_prompt = system_prompt.format(**lead_dict_info)
 
+        st.session_state['org_id'] = bot_info['org_id']
+
         # st.write(initial_text)
         restart_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         with open('database.jsonl', 'r') as db, open('archive.jsonl', 'a') as arch:
@@ -132,6 +134,8 @@ def main():
         st.session_state['last_bot_message'] = ""
     if 'messages' not in st.session_state:
         st.session_state['messages'] = []
+    if 'org_id' not in st.session_state:
+        st.session_state['org_id'] = ""
 
     # Create an edit button
     editButtonText = "Edit Bot Response"
@@ -141,21 +145,24 @@ def main():
     def toggle_editing_state():
         # Toggle editing state
         print("Edit button clicked")
-        st.session_state['editing'] = not st.session_state['editing']
+
         if st.session_state['editing']:
-            editButtonText = "Submit"
+            userQuery = st.session_state["messages"][-2]["content"]
+            botResponse = st.session_state["messages"][-1]["content"]
+            conversation = st.session_state["messages"]
+            # Need to null check this
+            org_id = st.session_state['org_id']
+            upload_embedded_message(
+                query=userQuery, correct_response=botResponse, conversation=conversation, org_id=org_id
+            )
+            editButtonText = "Edit Bot Response"
         else:
-            editButtonText = "Edit"
-            # st
-            # Toggle editing state
-            # st.session_state['editing'] = not st.session_state['editing']
-            # TODO: Send message to Supabase
-            # supabase.table("")
-            # TODO: Write to local db
+            editButtonText = "Submit As Correction"
 
-    # Display text or textbox based on editing state
+        st.session_state['editing'] = not st.session_state['editing']
 
-    # def writeMessages():
+        # TODO: Write to local db
+
     if st.session_state['editing'] and len(st.session_state["messages"]) > 0:
         # st.write("Editing")
         messages_to_display = ""
@@ -178,9 +185,6 @@ def main():
             messages_to_display = messages_to_display + \
                 message["role"] + ": " + message["content"] + "\n\n"
         st.write(messages_to_display)
-        # st.write(st.session_state["messages"][1:])
-
-    # writeMessages()
 
     userresponse = st.text_area("Enter your message")
     # Create a button to submit the user's message

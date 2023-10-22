@@ -1,4 +1,5 @@
 .env
-.database.jsonl
+database.jsonl
 settings.json
-lead_dict_info
+__pycache__
+lead_dict_info.json

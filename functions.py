@@ -14,6 +14,8 @@ import pandas as pd
 
 from langchain.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
+from langchain.vectorstores import SupabaseVectorStore
+from supabase import create_client, Client
 
 
 def find_txt_examples(query, k=8):
@@ -33,8 +35,33 @@ def find_txt_examples(query, k=8):
     return examples
 
 
-def upload_embedded_message(message):
-    pass
+def upload_embedded_message(query, correct_response, org_id, conversation):
+    urL: str = os.environ.get("SUPABASE_URL")
+    key: str = os.environ.get("SUPABASE_KEY")
+    supabase: Client = create_client(urL, key)
+
+    embeddings = OpenAIEmbeddings()
+    query = query.replace("\n", ' ')
+
+    document = embeddings.embed_documents([query])
+# Note: These field are not being set currently
+#     tag1 text null,
+#     tag2 text null,
+#     tag3 text null,
+#     tag4 text null,
+#     inbound_metadata jsonb null,
+
+    res = supabase.table("rag_messages_dev").insert(
+        {
+            "org_id": org_id,
+            "outbound": correct_response,
+            "inbound_embedding": document[0],
+            "conversation": conversation,
+            "inbound": query,
+        }
+    ).execute()
+
+    return res
 
 
 # TODO: function to replace with Supabase query
