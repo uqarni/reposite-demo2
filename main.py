@@ -1,12 +1,13 @@
 
 import streamlit as st
-from functions import ideator, initial_text_info, upload_embedded_message
+from functions import ideator, initial_text_info, upload_embedded_message, find_examples_supabase
 import json
 import os
 import sys
 from datetime import datetime
 from supabase import create_client, Client
 from reminderwrapper import run_conversation
+from copy import deepcopy
 
 # connect to supabase database
 urL: str = os.environ.get("SUPABASE_URL")
@@ -92,9 +93,11 @@ def main():
             "trip_dates": trip_dates,
             "nmqrurl": nmqrurl
         }
+
         file_path = 'lead_dict_info.json'
         with open(file_path, 'w') as f:
             json.dump(lead_dict_info, f)
+        st.session_state['lead_dict_info'] = lead_dict_info
 
         system_prompt = bot_info['system_prompt']
         system_prompt = system_prompt.format(**lead_dict_info)
@@ -136,6 +139,8 @@ def main():
         st.session_state['messages'] = []
     if 'org_id' not in st.session_state:
         st.session_state['org_id'] = ""
+    if 'lead_dict_info' not in st.session_state:
+        st.session_state['lead_dict_info'] = {}
 
     # Create an edit button
     editButtonText = "Edit Bot Response"
@@ -147,14 +152,21 @@ def main():
         print("Edit button clicked")
 
         if st.session_state['editing']:
-            userQuery = st.session_state["messages"][-2]["content"]
-            botResponse = st.session_state["messages"][-1]["content"]
-            conversation = st.session_state["messages"]
+
+            anon_messages = deepcopy(st.session_state["messages"])
+            for key, value in st.session_state['lead_dict_info'].items():
+                for message in anon_messages:
+                    message['content'] = message['content'].replace(
+                        value, "{" + key + "}")
+
+            userQuery = anon_messages[-2]["content"]
+            botResponse = anon_messages[-1]["content"]
+            conversation = anon_messages
             # Need to null check this
             org_id = st.session_state['org_id']
             upload_embedded_message(
-                query=userQuery, correct_response=botResponse, conversation=conversation, org_id=org_id
-            )
+                query=userQuery, correct_response=botResponse, conversation=conversation, org_id=org_id, lead_dict_info=st.session_state['lead_dict_info'])
+
             editButtonText = "Edit Bot Response"
         else:
             editButtonText = "Submit As Correction"
@@ -164,7 +176,6 @@ def main():
         # TODO: Write to local db
 
     if st.session_state['editing'] and len(st.session_state["messages"]) > 0:
-        # st.write("Editing")
         messages_to_display = ""
         for message in st.session_state["messages"][1:-1]:
             messages_to_display = messages_to_display + \
@@ -177,9 +188,6 @@ def main():
         )
         st.session_state["messages"][-1]["content"] = temp
     elif len(st.session_state["messages"]) > 0:
-        # st.write("Not Editing")
-
-        # TODO: Clean this input up
         messages_to_display = ""
         for message in st.session_state["messages"][1:]:
             messages_to_display = messages_to_display + \
@@ -223,23 +231,8 @@ def main():
         # Display the response in the chat interface
 
         st.session_state["messages"].append(messages[-1])
-        print("Messages: ", st.session_state["messages"], "\n\n")
-        st.experimental_rerun()
-        # writeMessages()
-        # oldMessage = ""
-        # for i, message in enumerate(messages[1:-1]):
-        #     if "[secret internal thought" not in str(message):
-        #         oldMessage = oldMessage + message["role"] + \
-        #             ": " + message["content"] + "\n\n"
-        # newMessage = messages[-1]["role"] + \
-        #     ": " + messages[-1]["content"] + "\n\n"
-        # st.session_state['pre_last_message'] = oldMessage
-        # st.session_state['last_bot_message'] = newMessage
-        # print("Pre last message: \n", st.session_state['pre_last_message'])
-        # print("Last bot message: \n", st.session_state['last_bot_message'])
-
-        # print("Pre last message: \n" + string)
-        # print("Last bot message: \n" + newMessage)
+        st.rerun()
+        # TODO: Need to write to local db
 
     st.button(editButtonText,
               on_click=(lambda: toggle_editing_state()))

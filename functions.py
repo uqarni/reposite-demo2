@@ -35,13 +35,16 @@ def find_txt_examples(query, k=8):
     return examples
 
 
-def upload_embedded_message(query, correct_response, org_id, conversation):
+def upload_embedded_message(query, correct_response, org_id, conversation, lead_dict_info):
     urL: str = os.environ.get("SUPABASE_URL")
     key: str = os.environ.get("SUPABASE_KEY")
     supabase: Client = create_client(urL, key)
 
     embeddings = OpenAIEmbeddings()
     query = query.replace("\n", ' ')
+
+    for key, value in lead_dict_info.items():
+        query = query.replace(value, "{" + key + "}")
 
     document = embeddings.embed_documents([query])
 # Note: These field are not being set currently
@@ -62,6 +65,37 @@ def upload_embedded_message(query, correct_response, org_id, conversation):
     ).execute()
 
     return res
+
+
+def find_examples_supabase(query, lead_info_dict, k=8):
+    urL: str = os.environ.get("SUPABASE_URL")
+    key: str = os.environ.get("SUPABASE_KEY")
+    supabase: Client = create_client(urL, key)
+
+    embeddings = OpenAIEmbeddings()
+    query = query.replace("\n", ' ')
+
+    for key, value in lead_info_dict.items():
+        query = query.replace(value, "{" + key + "}")
+
+    q = embeddings.embed_documents([query])[0]
+
+    response = supabase.rpc("match_documents5", {
+        "query_embedding": q}).execute()
+    examples = ''
+
+    i = 1
+    docs = response.dict()['data']
+    for doc in docs:
+        input_text = doc['inbound']
+        output = doc['outbound']
+        try:
+            examples += f'Example {i}:\n\nLead Email:\n{input_text}\n\nTaylor Response:\n{output} \n\n'
+        except:
+            print('found error for input ' +
+                  input_text + ' with error ' + str(e))
+
+    return examples
 
 
 # TODO: function to replace with Supabase query
@@ -134,22 +168,21 @@ def find_in_examples_script():
 
 
 def ideator(messages, lead_dict_info):
-    print('message length: ' + str(len(messages)))
     prompt = messages[0]['content']
     messages = messages[1:]
     new_message = messages[-1]['content']
 
+    for key, value in lead_dict_info.items():
+        # TODO: Need to handle upper and lower case
+        new_message = new_message.replace(value, "{" + key + "}")
     # perform similarity search
-    examples = find_examples(new_message, k=10)
-    print(new_message)
+    examples = find_examples_supabase(
+        new_message, k=10, lead_info_dict=lead_dict_info)
     examples = examples.format(**lead_dict_info)
     prompt = prompt + examples
-    # print('inbound message: ' + str(messages[-1]))
-    # print('prompt' + prompt)
-    # print('\n\n')
+
     prompt = {'role': 'system', 'content': prompt}
     messages.insert(0, prompt)
-
     for i in range(5):
         try:
             key = os.environ.get("OPENAI_API_KEY")
@@ -162,9 +195,7 @@ def ideator(messages, lead_dict_info):
                 temperature=0
             )
             response = result["choices"][0]["message"]["content"]
-            # print('response:')
-            # print(response)
-            # print('\n\n')
+
             break
         except Exception as e:
             error_message = f"Attempt {i + 1} failed: {e}"
