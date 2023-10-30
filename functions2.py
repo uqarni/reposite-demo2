@@ -32,32 +32,37 @@ def find_txt_examples(query, k=8):
     return examples
 
 
-def find_examples(query, k=8):
-    loader = CSVLoader(file_path="oct14col1.csv")
-    data = loader.load()
+def find_examples(query, type, k=8):
+    if type == 'taylor_RAG':
+        full_file = 'RAG_examples/taylor.csv'
+        col1 = 'RAG_examples/taylorcol1.csv'
 
+    elif type == 'taylorNMQR_RAG':
+        full_file = 'RAG_examples/taylorNMQR.csv'
+        col1 = 'RAG_examples/taylorNMQRcol1.csv'
+        
+    loader = CSVLoader(file_path=col1)
+
+    data = loader.load()
     embeddings = OpenAIEmbeddings()
 
-    db = FAISS.from_documents(data, embeddings)
 
+    db = FAISS.from_documents(data, embeddings)
     examples = ''
-    
     docs = db.similarity_search(query, k)
-    df = pd.read_csv('oct14.csv')
+    df = pd.read_csv(full_file)
     i = 1
     for doc in docs:
-        input_text = doc.page_content[14:] 
-        row = doc.metadata['row']
+        input_text = doc.page_content[14:]
         try:
-            output = df.iloc[row]['Full Convo']
-
-        except Exception as e:
-            print('found error for input ' + input_text + ' with error ' + str(e))
-
-        try:
-           examples += f'{output} \n\n'
+            output = df.loc[df['User Message'] == input_text, 'Assistant Message'].iloc[0]
         except:
-           continue
+            print('found error for input')
+
+        try:
+            examples += f'Example {i}: \n\nLead Email: {input_text} \n\nTaylor Response: {output} \n\n'
+        except:
+            continue
         i += 1
     return examples
 
@@ -102,14 +107,14 @@ def find_in_examples_script():
 
 
 #generate openai response; returns messages with openai response
-def ideator(messages, lead_dict_info):
+def ideator(messages, lead_dict_info, bot_used):
     print('message length: ' + str(len(messages)))
     prompt = messages[0]['content']
     messages = messages[1:]
     new_message = messages[-1]['content']
 
     #perform similarity search
-    examples = find_examples(new_message, k=4)
+    examples = find_examples(new_message, bot_used, k=4)
     examples = examples.format(**lead_dict_info)
     prompt = prompt + examples
     print('inbound message: ' + str(messages[-1]))
@@ -130,6 +135,7 @@ def ideator(messages, lead_dict_info):
           temperature = 0
         )
         response = result["choices"][0]["message"]["content"]
+
         print('response:')
         print(response)
         print('\n\n')
@@ -202,18 +208,18 @@ Taylor
 ''',
 
         'NTM $500 Membership - New QR':'''
-        Hey {FirstName} -
+        Hey {lead_first_name} -
 
-I saw that your Reposite profile just sparked some new interest! A planner {Quote_Lead_Company_Name}, just sent you a new quote request - they're looking for {Category} suppliers in {Quote_Lead_Destination}.
+I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name}, just sent you a new quote request - they're looking for {category} suppliers in {destination}.
 
-Based on the details, do you feel like this lead is relevant for {Supplier_Organization_Name}?
+Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
 Taylor
 ''',
 
         'NTM $500 Membership - Token Change':'''
-Hey {FirstName} -
+Hey {lead_first_name} -
 
 I saw that you just used tokens to discover new group planners. It's great to see you taking active steps to expand your connections!
 
@@ -223,9 +229,9 @@ Cheers,
 Taylor
 ''',
         'NTM $500 Membership - Quote Hotlist':'''
-Hey {FirstName} -
+Hey {lead_first_name} -
 
-I noticed that your conversation with {Quote_Lead_Company_Name} is off to a good start - congrats (though I don't want to jinx it)!
+I noticed that your conversation with {reseller_org_name} is off to a good start - congrats (though I don't want to jinx it)!
 
 Are you open to receiving more quotes and group leads from other planners?
 
@@ -233,9 +239,9 @@ Cheers,
 Taylor
 ''',
         'NTM $500 Membership - Booking Received': '''
-Hey {FirstName} -
+Hey {lead_first_name} -
 
-Congrats on your recent booking with {Quote_Lead_Company_Name}! Was everything up to your expectations?
+Congrats on your recent booking with {reseller_org_name}! Was everything up to your expectations?
 
 Best,
 Taylor

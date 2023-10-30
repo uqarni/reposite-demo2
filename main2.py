@@ -61,14 +61,27 @@ def main():
     
     #need to push this then make sure it works
     if st.button('Click to Start or Restart'):
-        with open('day.txt', 'w') as f:
+        with open('bot.txt', 'w') as f:
             f.truncate(0)
         initial_text = initial_text_info(initial_text_choice)
         # if initial_text_choice == options[0] or initial_text_choice == options[1]:
         #     data, count = supabase.table("bots_dev").select("*").eq("id", "TaylorNMQR").execute()
         # else:
         #     data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()
-        data, count = supabase.table("bots_dev").select("*").eq("id", "taylorRAG").execute()      
+        if initial_text == initial_text_info('NMQR'):
+            data, count = supabase.table("bots_dev").select("*").eq("id", "taylorRAG").execute() 
+            bot_used = 'taylorNMQR_RAG'
+            
+            print('taylorNMQR used!!!')
+        else:
+            #usingTAYLOR for non-NMQR RAG
+            bot_used = 'taylor_RAG'
+            data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute() 
+            print("taylor used!!!")
+
+        with open('bot.txt', 'w') as file:
+            file.write(bot_used)
+
         bot_info = data[1][0]
         initial_text = initial_text.format(lead_first_name = lead_first_name, reseller_org_name = reseller_org_name, supplier_name = supplier_name, category = category, destination = destination)
         
@@ -149,7 +162,11 @@ def main():
                 messages.append(json_obj)
 
         #generate OpenAI response
-        messages, count = ideator(messages, lead_dict_info)
+        #pull bot used
+        with open('bot.txt', 'r') as file:
+            bot_to_use = file.read()
+            print('bot to use is ', bot_to_use)
+        messages, count = ideator(messages, lead_dict_info, bot_to_use)
 
         #append to database
         with open('database.jsonl', 'a') as f:

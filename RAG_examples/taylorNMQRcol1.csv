@@ -96,9 +96,6 @@ Thanks, {lead_first_name}"
  {lead_first_name} {lead_last_name}
  {supplier_name}"
 "That all sounds good, tomorrow we’re working a show with Dan Levy and Adam Pally, if you watch Schitt’s Creek you might know them.
- 
-
- 
 
  {lead_first_name} {lead_last_name}
  {supplier_name}"
@@ -227,9 +224,6 @@ I checked with our reservations department if they have the RFP and they don’t
   
  Have a great day,
   
-  
-  
- _____________________________
  {lead_first_name} {lead_last_name}
  {email}"
 "Not interested, but thank you anyways.
@@ -394,3 +388,96 @@ Best regards,
 "Hi Taylor,
   
 We already use CVENT for group bookings. "
+"I think you may have us confused with another company or group. We are a graphic design and printing company. You can remove our information from your database.
+{lead_first_name}"
+"OK. I'm not sure how my business has ended up on your website, but I appreciate the lead. I've replied to it online.
+
+If you'd like to keep up on your database, please change the email to {email}
+
+{lead_first_name}"
+"Taylor, 
+
+Private parties aren’t really our thing. Sorry! 
+
+ {lead_first_name}"
+"Taylor, 
+
+Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
+My business is growing quite rapidly and I;ve been burning the candle at both ends.  i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
+
+Best Regards,
+{lead_first_name}"
+"Taylor, 
+
+Any chance that you have five to ten minutes to speak with me over the phone? 
+I'm very much an old school oriented gentleman and I abhor getting bogged down 
+with so much technology! Text, chat, email are all the same in that it's far too easy 
+to misconstrue the intended message! Rather, I prefer to be able to hear the inflection in a person's voice! 
+
+Respectfully 
+
+{lead_first_name}"
+"Hi taylor, 
+
+We are a Greek / Mediterranean full service dine-in restaurant & bar with 110 people capacity located on 331A bath rd, Kingston, ON K7M2X6. We have successfully served more than 100’s of tour buses this season (group reservations) so far from big tour companies like “Jonview Canada” every year. We are located near the famous tourist spot ""Thousand Islands"" and “Kingston Ferry” in between the Toronto to Montreal route. We are known for our quick, highly effective and tasteful service. Kindly get in touch if you are interested in your tour buses, will be happy to share you with more information. 
+
+Thank you, 
+{lead_first_name}
+"
+"Hi Taylor
+
+At this early stage, I will wait to see if any events transpire. 
+
+Cheers
+"
+"Hi Taylor,
+Thank you for reaching out, and I appreciate your warm words regarding our presence on Reposite and the opportunity with {reseller_org_name}.
+
+To provide some insight into our ideal type of group business, we have a strong track record of successfully working with a diverse range of clients, including students, wedding groups, and international groups. We pride ourselves on delivering exceptional experiences tailored to each client's unique needs.
+
+I'd also like to highlight that we have our own fleet of buses, which allows us to ensure top-notch transportation services for our clients. Furthermore, we hold permits for exclusive experiences, such as the bioluminescent bay night kayaking tour, access to El Yunque National Forest, and meet-and-greet services inside the airport terminal. It's important to note that we don't subcontract our services because we are the direct providers, which enables us to maintain strict quality control and a seamless customer experience.
+
+We look forward to exploring potential opportunities on Reposite.
+
+Best regards, 
+{lead_first_name} {lead_last_name}"
+"Hi Taylor,
+Thank you for your prompt response and for your kind words about {supplier_name}. I'm glad to hear that our offerings align well with your planners network.
+I appreciate your recommendation to consider upgrading to a full membership. I'll definitely take a closer look at the membership benefits you've provided in the link. It's essential for us to maximize our visibility and connections within your network, so this option seems promising.
+We're very interested in upgrading to a full membership, but we'd like to work with our first group first to ensure everything aligns as expected. Once we've had a successful experience with our initial engagement, we'll proceed with the membership to leverage the full benefits of your network.
+Currently, we rely on a mix of tools and resources for sourcing group business, including industry-specific forums, social media platforms, and some partnerships with local event planning associations. However, we're always open to exploring new avenues that can help us expand our reach and enhance our business development efforts.
+I'll review the membership details and discuss it further with my team to make an informed decision. Thanks again for your guidance and support.
+Best regards, 
+{lead_first_name}
+"
+"Hello Taylor,  
+I do have a few more questions. 
+How many caterings do you have in my area? In my case, we cover all the city, not just the neighborhood of {destination}, does this changes the price? Is there any kind of security that I will receive at least my investment back in the first year? 
+Thanks 
+{lead_first_name}"
+"Hello
+We only fly 4 to 5 passengers plus the pilot. We specialize in smaller and more personal groups. If you’re looking to fly large groups, call Arizona Balloons.
+Thank you
+{lead_first_name}"
+"Hi Taylor, 
+
+Thanks for sending information about your full membership option.  
+
+Unfortunately, this is not something that we currently have the budget for.  
+
+Thanks,
+{lead_first_name}"
+"Hi Taylor, 
+
+Yes, I can help you with group events! Which date are you looking for, and for how many people? What type of event are you looking for? 
+
+Please keep in mind we are not a regular restaurant that accepts dinner reservations; you must book a private event to have the club open past 7:30pm Tuesday-Friday, or any day outside of that. 
+
+Best, 
+{lead_first_name} {lead_last_name}"
+"Hi Taylor,  
+we really don't work with any group planners as we can only host six guests for overnight and fourteen for the day trips. We get our business mostly directly through our website and only here and there from agents and some last minute requests from local tour operators. 
+So I am really curious how this could work to our advantage. We would like to extend our advertising in the US and are currently researching what are the most efficient ways to do that. 
+
+Best regards 
+{lead_first_name}"
