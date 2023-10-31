@@ -178,8 +178,8 @@ def main():
 
         for message in messages[1:]:
             if "[secret internal thought" not in str(message):
-                string = string + message["role"] + ": " + message["content"] + "\n\n"
-        st.write(string)
+                string = string + message["role"] + ": " + message["content"] + "<br><br>"
+        st.markdown(string, unsafe_allow_html = True)
             
     if st.button("Increment 3 Days"):
         #read day.txt
@@ -234,7 +234,7 @@ def main():
                 if "[secret internal thought" not in str(message):
                     string = string + message["role"] + ": " + message["content"] + "\n\n"
             if day == 3 or day == 6:
-                st.write(string)
+                st.markdown(string, unsafe_allow_html = True)
                 st.write(f'*Day {day}*')
             elif day == 9:
                 st.write('max followups reached. please reset')

@@ -135,7 +135,7 @@ def ideator(messages, lead_dict_info, bot_used):
           temperature = 0
         )
         response = result["choices"][0]["message"]["content"]
-
+        response = response.replace('\n','<br>')
         print('response:')
         print(response)
         print('\n\n')
