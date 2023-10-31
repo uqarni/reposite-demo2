@@ -195,7 +195,7 @@ def ideator(messages, lead_dict_info, bot_used):
 def initial_text_info(selection=None):
     dictionary = {
 
-        'NTM $500 Membership - Newly Onboarded': '''
+        'NMQR': '''
         Hey {lead_first_name} -
 
 I just saw you got a group reservation request through Reposite from {reseller_org_name}!
