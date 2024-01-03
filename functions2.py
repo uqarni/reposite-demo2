@@ -195,7 +195,7 @@ def ideator(messages, lead_dict_info, bot_used):
 def initial_text_info(selection=None):
     dictionary = {
 
-        'NMQR': '''
+        'NMQR Received': '''
         Hey {lead_first_name} -
 
 I just saw you got a group reservation request through Reposite from {reseller_org_name}!
@@ -207,7 +207,7 @@ Cheers,
 Taylor
 ''',
 
-        'NTM $500 Membership - New QR':'''
+        'New QR':'''
         Hey {lead_first_name} -
 
 I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name}, just sent you a new quote request - they're looking for {category} suppliers in {destination}.
