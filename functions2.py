@@ -40,6 +40,10 @@ def find_examples(query, type, k=8):
     elif type == 'taylorNMQR_RAG':
         full_file = 'RAG_examples/taylorNMQR.csv'
         col1 = 'RAG_examples/taylorNMQRcol1.csv'
+
+    else:
+        full_file = 'RAG_examples/taylorNMQR.csv'
+        col1 = 'RAG_examples/taylorNMQRcol1.csv'
         
     loader = CSVLoader(file_path=col1)
 
