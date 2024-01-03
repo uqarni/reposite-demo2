@@ -42,6 +42,7 @@ def main():
     lead_last_name = st.text_input('Lead Last Name', value = 'Doe')
     nmqr_count = st.text_input('# NMQR received', value = '10')
     nmqrurl = 'nmqrurl.com'
+    quote_lead_goal_mode = st.selectbox("Quote Lead Goal Mode", options = ["No Response Needed", "Needs Response"], index = 0)
     #most recent nmqr info
     reseller_org_name = st.text_input('reseller org name', value = 'Smith Co')
     category = st.text_input('category', value = 'travel')
