@@ -70,11 +70,21 @@ def main():
         # else:
         #     data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()
 
-        if initial_text == initial_text_info('NMQR Received'):
+        if initial_text == initial_text_info('NMQR Received') and quote_lead_goal_mode == "Needs Response":
+            data, count = supabase.table("bots_dev").select("*").eq("id", "taylorSupplerUpgrade_RAG").execute() 
+            bot_used = 'taylorSupplerUpgrade_RAG'
+            print('taylorSupplerUpgrade_RAG used!!!')
+
+        elif initial_text == initial_text_info('New QR') and quote_lead_goal_mode == "Needs Response":
+            data, count = supabase.table("bots_dev").select("*").eq("id", "taylorSupplerUpgrade_RAG").execute() 
+            bot_used = 'taylorSupplerUpgrade_RAG'  
+            print('taylorSupplerUpgrade_RAG used!!!')
+            
+        elif initial_text == initial_text_info('NMQR Received'):
             data, count = supabase.table("bots_dev").select("*").eq("id", "taylorRAG").execute() 
             bot_used = 'taylorNMQR_RAG'
-            
             print('taylorNMQR used!!!')
+            
         else:
             #usingTAYLOR for non-NMQR RAG
             bot_used = 'taylor_RAG'
