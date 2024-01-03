@@ -69,6 +69,7 @@ def main():
         #     data, count = supabase.table("bots_dev").select("*").eq("id", "TaylorNMQR").execute()
         # else:
         #     data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()
+
         if initial_text == initial_text_info('NMQR'):
             data, count = supabase.table("bots_dev").select("*").eq("id", "taylorRAG").execute() 
             bot_used = 'taylorNMQR_RAG'
