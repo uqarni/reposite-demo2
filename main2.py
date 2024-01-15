@@ -79,7 +79,12 @@ def main():
             data, count = supabase.table("bots_dev").select("*").eq("id", "taylorSupplerUpgrade_RAG").execute() 
             bot_used = 'taylorSupplerUpgrade_RAG'  
             print('taylorSupplerUpgrade_RAG used!!!')
-            
+
+        elif quote_lead_goal_mode == "Needs Response":
+            data, count = supabase.table("bots_dev").select("*").eq("id", "taylorSupplier_RAG").execute() 
+            bot_used = 'taylorSupplier_RAG'  
+            print('taylorSupplier_RAG used!!!')       
+
         elif initial_text == initial_text_info('NMQR Received'):
             data, count = supabase.table("bots_dev").select("*").eq("id", "taylorRAG").execute() 
             bot_used = 'taylorNMQR_RAG'
@@ -112,7 +117,13 @@ def main():
             "destination": destination,
             "group_size": group_size,
             "trip_dates": trip_dates,
-            "nmqrurl": nmqrurl
+            "nmqrurl": nmqrurl,
+            "ntm_link": "https://www.reposite.io/membership-overview-1",
+            "ntm_demo": "https://guides.reposite.io/membership-gated-supplier-demo-0",
+            "brendan_calendar": "https://meetings.salesloft.com/reposite/brendanhollingsworth",
+            "nmqr_signup_video": "https://www.screencast.com/t/mnVdphydqsq",
+            "login_link": "https://app.reposite.io/suppliers?auth=login",
+            "signup_link": "https://app.reposite.io/suppliers?auth=signUp",
         }
         file_path = 'lead_dict_info.json'
         with open(file_path, 'w') as f:
