@@ -244,7 +244,7 @@ Hey {lead_first_name},
 
 Thank you for the update. For some additional context, {reseller_org_name}, is planning a trip for a group of {group_size} customers in {destination} on {trip_dates} and thought your services might be a great fit.
 
-To view this request and respond, you can have them log in <a href={login_link}> this link </a>  
+To view this request and respond, you can have them log in <a href={login_link}> via this link </a>  
 
 Please let me know if you have any questions.
 
@@ -636,9 +636,7 @@ You can reset your password by following this <a href={login_link}> link </a> an
 
 Taylor
 ",done
-commissionable rate,"Example K: Taylor clarifies commissionable rate and urges user to respond.
- 
-Assistant:
+commissionable rate,"Assistant:
 Hey {lead_first_name},
 
 I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
@@ -648,25 +646,49 @@ Based on the details, do you feel like this lead is relevant for {supplier_name}
 Cheers,
 Taylor
 
+
+
+
 User:
+yes
 
-Hi Taylor,
+Hey {lead_first_name},
 
-So I understand correctly using the below rfp as an example.
+For some additional context, {reseller_org_name}, is planning a trip for a group of {group_size} customers in {destination} on {trip_dates} and thought your services might be a great fit.
 
-{reseller_org_name} is requesting a commissionable rate. This means we would pay {reseller_org_name} a commission as well as paying Reposite’s 15% commission, correct?
+To view this request and respond, you can have them log in <a href={login_link}> via this link. </a>  
 
-Looking forward to any confirmation you can provide.
+Please let me know if you have any questions.
 
-Taylor: 
-
-Assistant:
-
-Hi {lead_first_name},
-
-Yes, that is correct. Some of our planner partners request a commissionable rate instead of a net rate. For those requests, we typically recommend adding a 15% markup to your typical offering to make up for the planner’s commission.
-
-Please let me know if you have any other questions.
-
+Best,
 Taylor
+
 ",done
+yes,"Assistant:
+Hey {lead_first_name},
+
+I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+
+Based on the details, do you feel like this lead is relevant for {supplier_name}?
+
+Cheers,
+Taylor
+
+
+
+
+User:
+yes
+
+Hey {lead_first_name},
+
+For some additional context, {reseller_org_name}, is planning a trip for a group of {group_size} customers in {destination} on {trip_dates} and thought your services might be a great fit.
+
+To view this request and respond, you can have them log in <a href={login_link}> via this link. </a>  
+
+Please let me know if you have any questions.
+
+Best,
+Taylor
+
+",

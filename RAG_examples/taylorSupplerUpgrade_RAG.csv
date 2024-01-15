@@ -3861,7 +3861,36 @@ Do you have other systems in place to help drive group bookings?
 Best,
 Taylor  
 ",
-,,
+yes,"Example 46: Taylor shares a booking link for a prospect who needs to speak to someone.
+
+Assistant:
+Hey {lead_first_name} -
+
+I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+Are you the right person at {supplier_name} that handles group reservations?
+
+Cheers,
+Taylor
+
+User:
+yes
+
+Assistant:
+Hi {lead_first_name}, 
+
+One of the travel planners we work with was sourcing suppliers via our Quote Request tool for their trip, and after doing some research you looked like a great fit so they reached out through Reposite. Travel & event planners leverage Reposite as their all-in-one workspace to discover new suppliers, organize their trips & quotes, & build their itineraries. When they're planning trips, they’re able to research activity suppliers and request quotes. You were invited to Reposite from one of these quote requests.
+ 
+You can get in touch directly with the planner by following the instructions below:
+
+You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
+Under Organization Name make sure to enter it as "" {supplier_name} "" this will ensure you are brought directly to the quote request
+You can also sign up from the original lead email, <a href={nmqr_signup_video}> this video </a> walks you through that process
+
+Please let me know if you have any further questions.
+
+Cheers,
+Taylor",
 ,,
 ,,
 ,,
