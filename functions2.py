@@ -41,6 +41,14 @@ def find_examples(query, type, k=8):
         full_file = 'RAG_examples/taylorNMQR.csv'
         col1 = 'RAG_examples/taylorNMQRcol1.csv'
 
+    elif type == 'taylorSupplerUpgrade_RAG':
+        full_file = 'RAG_examples/taylorSupplerUpgrade_RAG.csv'
+        col1 = 'RAG_examples/taylorSupplerUpgrade_RAGcol1.csv'
+
+    elif type == 'taylorSupplier_RAG':
+        full_file = 'RAG_examples/taylorSupplier_RAG.csv'
+        col1 = 'RAG_examples/taylorSupplier_RAGcol1.csv'
+        
     else:
         full_file = 'RAG_examples/taylorNMQR.csv'
         col1 = 'RAG_examples/taylorNMQRcol1.csv'
