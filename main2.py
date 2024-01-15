@@ -75,11 +75,6 @@ def main():
             bot_used = 'taylorSupplerUpgrade_RAG'
             print('taylorSupplerUpgrade_RAG used!!!')
 
-        elif initial_text == initial_text_info('New QR') and quote_lead_goal_mode == "Needs Response":
-            data, count = supabase.table("bots_dev").select("*").eq("id", "taylorSupplerUpgrade_RAG").execute() 
-            bot_used = 'taylorSupplerUpgrade_RAG'  
-            print('taylorSupplerUpgrade_RAG used!!!')
-
         elif quote_lead_goal_mode == "Needs Response":
             data, count = supabase.table("bots_dev").select("*").eq("id", "taylorSupplier_RAG").execute() 
             bot_used = 'taylorSupplier_RAG'  
