@@ -65,7 +65,10 @@ def find_examples(query, type, k=8):
     df = pd.read_csv(full_file)
     i = 1
     for doc in docs:
-        input_text = doc.page_content[14:]
+        if type == 'taylorSupplerUpgrade_RAG' or type == 'taylorSupplier_RAG':
+            input_text = doc.page_content[14:-3]
+        else: 
+            input_text = doc.page_content[14:]
         try:
             output = df.loc[df['User Message'] == input_text, 'Assistant Message'].iloc[0]
         except:
