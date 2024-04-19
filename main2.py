@@ -51,6 +51,7 @@ def main():
     destination = st.text_input('destination', value = 'Honolulu')
     group_size = st.text_input('group size', value = '50')
     trip_dates = st.text_input('trip dates', value = 'August 10, 2023 to August 20, 2023')
+    market = st.selectbox('Market', options = ['TM', 'NTM']
     
     options = initial_text_info()
     initial_text_choice  = st.selectbox("Select initial email template", options)
@@ -96,7 +97,11 @@ def main():
 
         bot_info = data[1][0]
         initial_text = initial_text.format(lead_first_name = lead_first_name, reseller_org_name = reseller_org_name, supplier_name = supplier_name, category = category, destination = destination)
-        
+        if market == 'NTM':
+            price = '$500'
+        else:
+            price = '$1000'
+            
         lead_dict_info = {
             "bot_name": bot_name,
             "membership_link": membership_link,
@@ -119,6 +124,7 @@ def main():
             "nmqr_signup_video": "https://www.screencast.com/t/mnVdphydqsq",
             "login_link": "https://app.reposite.io/suppliers?auth=login",
             "signup_link": "https://app.reposite.io/suppliers?auth=signUp",
+            "price": price
         }
         file_path = 'lead_dict_info.json'
         with open(file_path, 'w') as f:
