@@ -51,7 +51,7 @@ def main():
     destination = st.text_input('destination', value = 'Honolulu')
     group_size = st.text_input('group size', value = '50')
     trip_dates = st.text_input('trip dates', value = 'August 10, 2023 to August 20, 2023')
-    market = st.selectbox('Market', options = ['TM', 'NTM']
+    market = st.selectbox('Market', options = ['TM', 'NTM'])
     
     options = initial_text_info()
     initial_text_choice  = st.selectbox("Select initial email template", options)
