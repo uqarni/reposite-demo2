@@ -51,7 +51,8 @@ def main():
     destination = st.text_input('destination', value = 'Honolulu')
     group_size = st.text_input('group size', value = '50')
     trip_dates = st.text_input('trip dates', value = 'August 10, 2023 to August 20, 2023')
-    market = st.selectbox('Market', options = ['TM', 'NTM'])
+    market = st.selectbox('Market', options = ['TM', 'NTM'], index = 0)
+    
     
     options = initial_text_info()
     initial_text_choice  = st.selectbox("Select initial email template", options)
@@ -101,7 +102,9 @@ def main():
             price = '$500'
         else:
             price = '$1000'
-            
+        print('market: ' market)   
+        print('price: ' price)   
+        
         lead_dict_info = {
             "bot_name": bot_name,
             "membership_link": membership_link,
