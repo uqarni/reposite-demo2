@@ -102,8 +102,8 @@ def main():
             price = '$500'
         else:
             price = '$1000'
-        print('market: ' market)   
-        print('price: ' price)   
+        print('market: ', market)   
+        print('price: ', price)   
         
         lead_dict_info = {
             "bot_name": bot_name,
