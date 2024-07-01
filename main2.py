@@ -6,7 +6,7 @@ import os
 import sys
 from datetime import datetime
 from supabase import create_client, Client
-from reminderwrapper import run_conversation
+from reminderwrapper import run_conversation,responder_run_conversation
 
 #connect to supabase database
 urL: str = os.environ.get("SUPABASE_URL")
@@ -203,12 +203,13 @@ def main():
 
         #prep the json
         newline = {"role": "user", "content": userresponse.format(**lead_dict_info)}
+
+
         #append to database
         with open('database.jsonl', 'a') as f:
         # Write the new JSON object to the file
             f.write(json.dumps(newline) + '\n')
 
-        #extract messages out to list
         messages = []
 
         with open('database.jsonl', 'r') as f:
@@ -216,28 +217,39 @@ def main():
                 json_obj = json.loads(line)
                 messages.append(json_obj)
 
-        #generate OpenAI response
-        #pull bot used
-        with open('bot.txt', 'r') as file:
-            bot_to_use = file.read()
-            print('bot to use is ', bot_to_use)
-        messages, count = ideator(messages, lead_dict_info, bot_to_use)
+        # add run conversaiton 
+        check = responder_run_conversation(messages,lead_dict_info.get('agent_name') )
+        print("--------------------------------", check)
 
-        #append to database
-        with open('database.jsonl', 'a') as f:
-                for i in range(count):
-                    f.write(json.dumps(messages[-count + i]) + '\n')
+        if check == 'yes':
+            #extract messages out to list
+        
 
-        # Display the response in the chat interface
-        string = ""
+            #generate OpenAI response
+            #pull bot used
+            with open('bot.txt', 'r') as file:
+                bot_to_use = file.read()
+                print('bot to use is ', bot_to_use)
+            messages, count = ideator(messages, lead_dict_info, bot_to_use)
 
-        for message in messages[1:]:
-            print("\n----------", message)
-            if "[secret internal message]" not in str(message):
-                string = string + message["role"] + ": " + message["content"] + "<br><br>"
+            #append to database
+            with open('database.jsonl', 'a') as f:
+                    for i in range(count):
+                        f.write(json.dumps(messages[-count + i]) + '\n')
 
-        st.markdown(string, unsafe_allow_html = True)
-            
+            # Display the response in the chat interface
+            string = ""
+
+            for message in messages[1:]:
+                print("\n----------", message)
+                if "[secret internal message]" not in str(message):
+                    string = string + message["role"] + ": " + message["content"] + "<br><br>"
+
+            st.markdown(string, unsafe_allow_html = True)
+        else:
+            st.markdown("DO NOT NEED TO SEND RESPONSE", unsafe_allow_html = True)
+
+                
     if st.button("Send Followup"):
 
 
@@ -290,8 +302,8 @@ def main():
             
             st.markdown(string, unsafe_allow_html = True)
       
-        elif checkit == 'no':
-            print('followup not warranted')
+        else:
+            st.markdown('followup not warranted', unsafe_allow_html = True)
 
 
 if __name__ == '__main__':
