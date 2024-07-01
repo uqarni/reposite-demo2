@@ -128,7 +128,7 @@ def find_in_examples_script():
 
 
 
-
+import streamlit as st
 
 
 #generate openai response; returns messages with openai response
@@ -141,6 +141,7 @@ def ideator(messages, lead_dict_info, bot_used):
     #perform similarity search
     examples = find_examples(new_message, bot_used, k=4)
     print('examples: ' ,examples)
+    st.sidebar.write(examples)
     examples = examples.format(**lead_dict_info)
     prompt = prompt + examples
     print('inbound message: ' + str(messages[-1]))
