@@ -7,12 +7,12 @@ import random
 import time
 
 #similarity search
-from langchain.document_loaders.csv_loader import CSVLoader
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.document_loaders import CSVLoader
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 import pandas as pd
 
-from langchain.document_loaders import TextLoader
+from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
 
 def find_txt_examples(query, k=8):

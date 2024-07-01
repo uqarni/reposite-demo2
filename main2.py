@@ -73,25 +73,24 @@ def main():
         #     data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()
 
         if initial_text == initial_text_info('NMQR Received') and quote_lead_goal_mode == "Needs Response":
-            data, count = supabase.table("bots_dev").select("*").eq("id", "taylorSupplerUpgrade_RAG").execute() 
-            bot_used = 'taylorSupplerUpgrade_RAG'
-            print('taylorSupplerUpgrade_RAG used!!!')
+            data, count = supabase.table("bots_dev").select("*").eq("id", "nonmember_respond").execute() 
+            bot_used = 'nonmember_respond'
+            print('nonmember_respond used!!!')
 
         elif quote_lead_goal_mode == "Needs Response":
-            data, count = supabase.table("bots_dev").select("*").eq("id", "taylorSupplier_RAG").execute() 
-            bot_used = 'taylorSupplier_RAG'  
-            print('taylorSupplier_RAG used!!!')       
+            data, count = supabase.table("bots_dev").select("*").eq("id", "member_respond").execute() 
+            bot_used = 'member_respond'  
+            print('member_respond used!!!')       
 
         elif initial_text == initial_text_info('NMQR Received'):
-            data, count = supabase.table("bots_dev").select("*").eq("id", "taylorRAG").execute() 
-            bot_used = 'taylorNMQR_RAG'
-            print('taylorNMQR used!!!')
+            data, count = supabase.table("bots_dev").select("*").eq("id", "nonmember_signup").execute() 
+            bot_used = 'nonmember_signup'
+            print('nonmember_signup used!!!')
             
         else:
-            #usingTAYLOR for non-NMQR RAG
-            bot_used = 'taylor_RAG'
-            data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute() 
-            print("taylor used!!!")
+            bot_used = 'member_upgrade'
+            data, count = supabase.table("bots_dev").select("*").eq("id", "member_upgrade").execute() 
+            print("member_upgrade used!!!")
 
         with open('bot.txt', 'w') as file:
             file.write(bot_used)
@@ -99,14 +98,25 @@ def main():
         bot_info = data[1][0]
         initial_text = initial_text.format(lead_first_name = lead_first_name, reseller_org_name = reseller_org_name, supplier_name = supplier_name, category = category, destination = destination)
         if market == 'NTM':
+            # TAYLOR
             price = '$500'
+            agent_name = 'Taylor'
+            membership_link = 'https://www.reposite.io/membership-overview-1'
+            demo_link = 'https://guides.reposite.io/membership-gated-supplier-demo-0'
+            calendar_link =   'https://meetings.salesloft.com/reposite/brendanhollingsworth'
         else:
+            # LEE
             price = '$1000'
+            agent_name = 'Lee'
+            membership_link = 'https://www.reposite.io/membership-overview-tier1?sbrc=1Bd7h_suhk2WBfAu-UimW4A%3D%3D%24FZq3JqgS-62UZupynn2WTQ%3D%3D'
+            demo_link = 'https://guides.reposite.io/membership-gated-supplier-demo'
+            calendar_link =   'https://calendar.app.google/QgHc7RqZKFoHsWXr5'
+
         print('market: ', market)   
         print('price: ', price)   
-        
+
         lead_dict_info = {
-            "bot_name": bot_name,
+            "agent_name": agent_name,
             "membership_link": membership_link,
             "email": email,
             "supplier_name": supplier_name,
@@ -121,14 +131,39 @@ def main():
             "group_size": group_size,
             "trip_dates": trip_dates,
             "nmqrurl": nmqrurl,
-            "ntm_link": "https://www.reposite.io/membership-overview-1",
-            "ntm_demo": "https://guides.reposite.io/membership-gated-supplier-demo-0",
-            "brendan_calendar": "https://meetings.salesloft.com/reposite/brendanhollingsworth",
-            "nmqr_signup_video": "https://www.screencast.com/t/mnVdphydqsq",
-            "login_link": "https://app.reposite.io/suppliers?auth=login",
-            "signup_link": "https://app.reposite.io/suppliers?auth=signUp",
-            "price": price
+            "demo_link": demo_link,
+            "price":price,
+            "calendar_link": calendar_link,
+            "nmqr_signup_video": "https://www.screencast.com/t/mnVdphydqsq", # confirmed
+            "login_link": "https://app.reposite.io/suppliers?auth=login", # confirmed
+            "signup_link": "https://app.reposite.io/suppliers?auth=signUp", # confirmed
         }
+    
+        
+        # lead_dict_info = {
+        #     "bot_name": bot_name,
+        #     "membership_link": membership_link,
+        #     "email": email,
+        #     "supplier_name": supplier_name,
+        #     "lead_first_name": lead_first_name,
+        #     "lead_last_name": lead_last_name,
+        #     "nmqr_count": nmqr_count,
+        #     "reseller_org_name": reseller_org_name,
+        #     "category": category,
+        #     "date": date,
+        #     "current_date": current_date,
+        #     "destination": destination,
+        #     "group_size": group_size,
+        #     "trip_dates": trip_dates,
+        #     "nmqrurl": nmqrurl,
+        #     "ntm_link": "https://www.reposite.io/membership-overview-1",
+        #     "ntm_demo": "https://guides.reposite.io/membership-gated-supplier-demo-0",
+        #     "brendan_calendar": "https://meetings.salesloft.com/reposite/brendanhollingsworth",
+        #     "nmqr_signup_video": "https://www.screencast.com/t/mnVdphydqsq",
+        #     "login_link": "https://app.reposite.io/suppliers?auth=login",
+        #     "signup_link": "https://app.reposite.io/suppliers?auth=signUp",
+        #     "price": price
+        # }
         file_path = 'lead_dict_info.json'
         with open(file_path, 'w') as f:
             json.dump(lead_dict_info, f)
