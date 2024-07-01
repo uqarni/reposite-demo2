@@ -161,7 +161,7 @@ def ideator(messages, lead_dict_info, bot_used):
           temperature = 0
         )
         response = result["choices"][0]["message"]["content"]
-        response = response.replace('\n','<br>')
+        # response = response.replace('\n','<br>')
         print('response:')
         print(response)
         print('\n\n')
@@ -342,32 +342,32 @@ def get_initial_message(campaign, prior_nmqrs, quote_lead_goal_mode):
 
     if campaign == 'Received NMQR' and prior_nmqrs in [None, '0', 0] and quote_lead_goal_mode != 'Needs Response' :
         print(f"1 : {campaign} == Received NMQR' and prior_nmqrs == 0 and quote_lead_goal_mode == No need response")
-        initial_message = '''Hey {lead_first_name}<br><br>I noticed that you recently received your very first quote request from a planner {reseller_org_name} on Reposite - congrats!<br>Are you the right person at your company that handles group reservations?<br><br>Cheers,<br>{agent_name}'''
+        initial_message = '''Hey {lead_first_name}\n\nI noticed that you recently received your very first quote request from a planner {reseller_org_name} on Reposite - congrats!\nAre you the right person at your company that handles group reservations?\n\nCheers,\n\n{agent_name}'''
     elif campaign == 'Received NMQR' and prior_nmqrs in [None, '0', 0] and quote_lead_goal_mode == 'Needs Response' : 
         print(f"2 :  {campaign} == Received NMQR' and prior_nmqrs == 0 and quote_lead_goal_mode == need response") 
-        initial_message = '''Hey {lead_first_name}<br><br>I noticed that you recently received your very first quote request from a planner {reseller_org_name} on Reposite - congrats! It appears that they have a tight deadline for response though.<br>If you have availability on {trip_start_date} could you sign up and reply to them today? Here's the link if you lost the initial request {nmqrurl}<br><br>Cheers,<br>{agent_name}'''
+        initial_message = '''Hey {lead_first_name}\n\nI noticed that you recently received your very first quote request from a planner {reseller_org_name} on Reposite - congrats! It appears that they have a tight deadline for response though.\nIf you have availability on {trip_start_date} could you sign up and reply to them today? Here's the link if you lost the initial request {nmqrurl}\n\nCheers,\n\n{agent_name}'''
     elif campaign == 'Received NMQR' and prior_nmqrs not in [None, '0', 0] and quote_lead_goal_mode != 'Needs Response' :
         print(f"3 :  {campaign} == Received NMQR' and prior_nmqrs > 0 and quote_lead_goal_mode == no need response") 
-        initial_message = ''' Hey {lead_first_name}<br><br>I saw you got another group reservation request through Reposite from a new planner!<br>Are you the right person at your company that handles group reservations?<br><br>Cheers,<br>{agent_name}'''
+        initial_message = ''' Hey {lead_first_name}\n\nI saw you got another group reservation request through Reposite from a new planner!\nAre you the right person at your company that handles group reservations?\n\n Cheers,\n\n{agent_name}'''
     elif campaign == 'Received NMQR' and prior_nmqrs not in [None, '0', 0] and quote_lead_goal_mode == 'Needs Response' :  
         print(f"4 :  {campaign} == Received NMQR' and prior_nmqrs > 0 and quote_lead_goal_mode ==  need response") 
-        initial_message = '''Hey {lead_first_name}<br><br>I noticed that you recently received a quote request from a travel planner on Reposite.<br>It appears our travel planner is working on a tight schedule and need a reply today. Here's the link {nmqrurl} to view and reply.<br> Are you the right person at your company that handles group reservations? <br><br> Cheers,<br> {agent_name}''' 
+        initial_message = '''Hey {lead_first_name}\n\nI noticed that you recently received a quote request from a travel planner on Reposite.\nIt appears our travel planner is working on a tight schedule and need a reply today. Here's the link {nmqrurl} to view and reply.\n Are you the right person at your company that handles group reservations? \n\n Cheers,\n\n {agent_name}''' 
     elif campaign == 'New QR' and quote_lead_goal_mode != 'Needs Response' :
         print(f"5 :  {campaign} == New QR' and quote_lead_goal_mode == no need response") 
-        initial_message = '''Hey {lead_first_name}<br><br>I saw you got another group reservation request through Reposite from a new planner!<br> Are you the right person at your company that handles group reservations?<br><br> Cheers,<br>{agent_name}'''
+        initial_message = '''Hey {lead_first_name}\n\nI saw you got another group reservation request through Reposite from a new planner!\n Are you the right person at your company that handles group reservations?\n\n Cheers,\n\n{agent_name}'''
     elif campaign == 'New QR' and quote_lead_goal_mode == 'Needs Response' :  
         print(f"6 :  {campaign} == New QR' and quote_lead_goal_mode == need response") 
-        initial_message = '''Hey {lead_first_name}<br><br>I noticed that you recently received a quote request from a travel planner on Reposite.<br>It appears our travel planner is working on a tight schedule and need a reply today. Here's the link {nmqrurl} to view and reply.<br>Are you the right person at your company that handles group reservations?<br><br> Cheers,<br>{agent_name}'''
+        initial_message = '''Hey {lead_first_name}\n\nI noticed that you recently received a quote request from a travel planner on Reposite.\nIt appears our travel planner is working on a tight schedule and need a reply today. Here's the link {nmqrurl} to view and reply.\nAre you the right person at your company that handles group reservations?\n\n Cheers,\n\n{agent_name}'''
     elif campaign == 'Token Change' :  
         print(f"7 :  {campaign} == Token Change") 
-        initial_message = '''Hey {lead_first_name}<br><br> I saw that you just used tokens to discover new group planners. It's great to see you taking active steps to expand your connections!<br>Are there certain types of planners that you're targeting (corporate, student groups, international groups, luxury, etc.)?<br><br> Cheers,<br>{agent_name}''' 
+        initial_message = '''Hey {lead_first_name}\n\nI saw that you just used tokens to discover new group planners. It's great to see you taking active steps to expand your connections!\nAre there certain types of planners that you're targeting (corporate, student groups, international groups, luxury, etc.)?\n\n Cheers,\n\n{agent_name}''' 
     elif campaign == 'Quote Hotlist' :  
         print(f"8 :  {campaign} == Quote Hotlist") 
-        initial_message = '''Hey {lead_first_name}<br><br>I noticed that your conversation (with a planner on Reposite) is off to a good start - congrats (though I don't want to jinx it)!<br>Are you open to receiving more quotes and group leads from other planners?<br><br>Cheers,<br>{agent_name}'''     
+        initial_message = '''Hey {lead_first_name}\n\nI noticed that your conversation (with a planner on Reposite) is off to a good start - congrats (though I don't want to jinx it)!\nAre you open to receiving more quotes and group leads from other planners?\n\n Cheers,\n\n{agent_name}'''     
     elif campaign == 'Booking Received' :  
         print(f"9 :  {campaign} == Booking Received") 
-        initial_message = ''' Hey {lead_first_name}<br><br>I noticed that your conversation (with a planner on Reposite) is off to a good start - congrats (though I don't want to jinx it)!<br>Are you open to receiving more quotes and group leads from other planners?<br><br>Cheers,<br>{agent_name}'''    
+        initial_message = ''' Hey {lead_first_name}\n\nI noticed that your conversation (with a planner on Reposite) is off to a good start - congrats (though I don't want to jinx it)!\nAre you open to receiving more quotes and group leads from other planners? \n\n Cheers,\n\n{agent_name}'''    
     elif campaign == 'Newly Onboarded': 
         print(f"10:  {campaign} == Newly Onboarded'") 
-        initial_message = '''Hey {lead_first_name}<br><br>I saw you just set up an account for {supplier_name} on Reposite! Congrats on being invited by {reseller_org_name}.<br> So we can help tailor future leads for you: what's your ideal type of group business (corporate, student groups, international groups, luxury, etc.)?<br><br> Cheers,<br>{agent_name}'''       
+        initial_message = '''Hey {lead_first_name}\n\nI saw you just set up an account for {supplier_name} on Reposite! Congrats on being invited by {reseller_org_name}.\n So we can help tailor future leads for you: what's your ideal type of group business (corporate, student groups, international groups, luxury, etc.)?\n\n Cheers,\n\n{agent_name}'''       
     return initial_message

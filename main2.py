@@ -163,7 +163,7 @@ def main():
         system_prompt = bot_info['system_prompt']
         system_prompt = system_prompt.format(**lead_dict_info)
 
-        st.write(initial_text, unsafe_allow_html = True)
+        st.write(initial_text)
         # st.markdown(string,)
         restart_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         with open('database.jsonl', 'r') as db, open('archive.jsonl','a') as arch:
@@ -243,11 +243,13 @@ def main():
             for message in messages[1:]:
                 print("\n----------", message)
                 if "[secret internal message]" not in str(message):
-                    string = string + message["role"] + ": " + message["content"] + "<br><br>"
+                    string = string + message["role"] + ": " + message["content"] + "\n\n"
 
-            st.markdown(string, unsafe_allow_html = True)
+            # st.markdown(string, unsafe_allow_html = True)
+            st.write(string)
         else:
-            st.markdown("DO NOT NEED TO SEND RESPONSE", unsafe_allow_html = True)
+            # st.write(string, unsafe_allow_html = True)
+            st.write("DO NOT NEED TO SEND RESPONSE", unsafe_allow_html = True)
 
                 
     if st.button("Send Followup"):
@@ -300,10 +302,10 @@ def main():
                 if "[secret internal message]" not in message.get('content'):
                     string = string + message["role"] + ": " + message["content"] + "<br><br>"
             
-            st.markdown(string, unsafe_allow_html = True)
+            st.write(string, unsafe_allow_html = True)
       
         else:
-            st.markdown('followup not warranted', unsafe_allow_html = True)
+            st.write('followup not warranted', unsafe_allow_html = True)
 
 
 if __name__ == '__main__':
