@@ -55,7 +55,7 @@ def run_conversation(bot_messages):
     all_messages.append({"role": "user", "content": str(bot_messages)})
     
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo-16k",
+        model="gpt-4o",
         messages=all_messages,
         functions=functions,
         function_call= {"name": "followup"}

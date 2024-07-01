@@ -1,5 +1,5 @@
-User Message,Assistant Message,BH Note
-"Hi Taylor, this is {lead_first_name}. What can I help you with?","Example 1: Taylor clarifies the specifics of the quote request and urges prospect to respond.
+User Message,Assistant Message
+"Hi {agent_name}, this is {lead_first_name}. What can I help you with?","Example 1: {agent_name} clarifies the specifics of the quote request and urges prospect to respond.
 
 Assistant:
 Hey {lead_first_name} -
@@ -9,10 +9,10 @@ I just saw you got another group reservation request through Reposite from {rese
 Have you had a chance to review?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
-Hi Taylor, this is {lead_first_name}. What are the details of this request?
+Hi {agent_name}, this is {lead_first_name}. What are the details of this request?
 
 Assistant:
 Hi {lead_first_name},
@@ -22,11 +22,11 @@ Great to connect with you! Can definitely help provide some clarity here. One of
 Please let me know if you have any questions!
 
 Best, 
-Taylor
-",done
+{agent_name}
+"
 "I don’t know what this means. I have not received any quote about anything.
  {lead_first_name} {lead_last_name}
- {email}","Example 2: Taylor clarifies when the user doesn’t know why Reposite emailed them.
+ {email}","Example 2: {agent_name} clarifies when the user doesn’t know why Reposite emailed them.
 
 Assistant:
 Hey {lead_first_name} -
@@ -36,7 +36,7 @@ I just saw you got a group reservation request through Reposite from {reseller_o
 Have you had a chance to review?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
 I don’t know what this means. I have not received any quote about anything.
@@ -53,15 +53,15 @@ One of the travel planners we work with {reseller_org_name} was sourcing supplie
 Do you leverage any other tools or platforms to help generate consistent group leads/business?
  
 Best, 
-Taylor
-",done
-"Dear Taylor,
+{agent_name}
+"
+"Dear {agent_name},
  
 Hope this email finds you very well.
  View emails from our groups and sales team for proper follow-up to your requests.
  groupspuj@royaltonresorts.com groups2puj@royaltonresorts.com
  
-Best regards,","Example 3: When the prospect shares the correct person’s contact details, Taylor thanks them for their time and communicates that they will reach out to them directly.
+Best regards,","Example 3: When the prospect shares the correct person’s contact details, {agent_name} thanks them for their time and communicates that they will reach out to them directly.
 
 Assistant:
 Hey {lead_first_name} -
@@ -71,10 +71,10 @@ I just saw you got a group reservation request through Reposite from {reseller_o
 Are you the right person at {supplier_name} that handles group reservations?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
-Dear Taylor,
+Dear {agent_name},
  
  Hope this email finds you very well.
  View emails from our groups and sales team for proper follow-up to your requests.
@@ -88,14 +88,14 @@ Hello {lead_first_name},
 Thank you for your quick response and for providing the additional contact information. I am going to reach out to them directly.
  
 Cheers,
-Taylor
-",done
+{agent_name}
+"
 "Hello, 
 
 Please see the attached proposal. If you are interested in booking for those dates, we will need to move forward with a deposit to confirm your reservation.
 
 Thank you,
-","Example 7: Taylor clarifies the request if the supplier misunderstands this email as a quote request.
+","Example 7: {agent_name} clarifies the request if the supplier misunderstands this email as a quote request.
 Assistant:
 Hey {lead_first_name} -
 
@@ -104,7 +104,7 @@ I just saw you got a group reservation request through Reposite from {reseller_o
 Are you the right person at {supplier_name} that handles the Reposite account?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
 Hello, 
@@ -122,8 +122,8 @@ In order to be considered by the planner for this request, you will need to subm
 
 Please let me know if you have any questions!
 
-Taylor
-",done
+{agent_name}
+"
 "Good day,
  
 
@@ -132,7 +132,7 @@ Taylor
  Best regards,
  {lead_first_name} {lead_last_name}
  {supplier_name}
- {email}","Example 9: Taylor responds to a request for more information.
+ {email}","Example 9: {agent_name} responds to a request for more information.
 
 Assistant:
 Hey {lead_first_name} -
@@ -142,7 +142,7 @@ I just saw you got a group reservation request through Reposite from {reseller_o
 Are you the right person at {supplier_name} that handles the Reposite account?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
 Good day,
@@ -164,9 +164,9 @@ To view this request, you can sign into your account  <a href={login_link}> here
 Please let me know if you have any questions.
 
 Best,
-Taylor
-",done
-"Dear Taylor,
+{agent_name}
+"
+"Dear {agent_name},
  Thank you for contacting {supplier_name}.
  We are delighted to be of service to you.
  We would love to be of assistance to you. We would like to ask for more details of the service needed. Please note that as per policy, we cannot open any link.
@@ -179,7 +179,7 @@ Taylor
  Total number of luggages
  Best Regards,
  {lead_first_name} {lead_last_name}
- {email}","Example 9: Taylor responds to a request for more information
+ {email}","Example 9: {agent_name} responds to a request for more information
 
 Assistant:
 Hey {lead_first_name} -
@@ -189,7 +189,7 @@ I just saw you got a group reservation request through Reposite from {reseller_o
 Are you the right person at {supplier_name} that handles the Reposite account?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
 Good day,
@@ -211,15 +211,15 @@ To view this request, you can sign into your account  <a href={login_link}> here
 Please let me know if you have any questions.
 
 Best,
-Taylor
-",done
-"Dear Taylor,
+{agent_name}
+"
+"Dear {agent_name},
  Thank you for your email and we appreciate you reaching out to us.
  Please be informed that the information was forwarded to our management team. 
  Best regards,
  {lead_first_name} {lead_last_name}
  {supplier_name}
- {email}","Example 9: Taylor responds to a forwarded email.
+ {email}","Example 9: {agent_name} responds to a forwarded email.
 
 Assistant:
 Hey {lead_first_name} -
@@ -229,9 +229,9 @@ I just saw you got a group reservation request through Reposite from {reseller_o
 Are you the right person at {supplier_name} that handles the Reposite account?
 
 Cheers,
-Taylor
+{agent_name}
 
-Dear Taylor,
+Dear {agent_name},
  Thank you for your email and we appreciate you reaching out to us.
  Please be informed that the information was forwarded to our management team. 
  Best regards,
@@ -249,12 +249,12 @@ To view this request and respond, you can have them log in <a href={login_link}>
 Please let me know if you have any questions.
 
 Best,
-Taylor
-",done
-"Hi Taylor -
+{agent_name}
+"
+"Hi {agent_name} -
  Please direct all group reservations to myself at manager@baobrewhouse.com 
  Thank you,
- {lead_first_name} {lead_last_name}","Example 10: Taylor explains importance of responding via the platform for new contact.
+ {lead_first_name} {lead_last_name}","Example 10: {agent_name} explains importance of responding via the platform for new contact.
 
 Assistant:
 Hey {lead_first_name} -
@@ -264,10 +264,10 @@ I just saw you got a group reservation request through Reposite from {reseller_o
 Are you the right person at {supplier_name} that handles the Reposite account?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
-Hi Taylor -
+Hi {agent_name} -
  Please direct all group reservations to myself at manager@baobrewhouse.com 
  Thank you,
  {lead_first_name} {lead_last_name}
@@ -281,9 +281,9 @@ You can sign up your email to be connected to your account with Reposite by sign
 For a little more context as to why this is so important - for our planner partners: corporate meeting planners, destination management companies, incentive groups, etc, use Reposite as their all in one workspace. The platform offers planners a full suite of tools from creating trips, sourcing new vendors, requesting quotes, and building proposals. They essentially spend their entire day within the system running their business. The point being that having quotes/proposals live outside the system is actually counterintuitive to their workflow!
 
 Best,
-Taylor
-",done
-"Taylor, 
+{agent_name}
+"
+"{agent_name}, 
  Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
  I popped over to the website and saw the request come through, we can totally put something together for them. We have a couple different cocktail classes we put together that are an absolute blast every time.  
  Can you help me with next steps? 
@@ -291,7 +291,7 @@ Taylor
  
 
  {lead_first_name} {lead_last_name}
- {supplier_name}","Example 11: Taylor clarifies onboarded users questions.
+ {supplier_name}","Example 11: {agent_name} clarifies onboarded users questions.
 
 Assistant:
 Hey {lead_first_name} -
@@ -301,10 +301,10 @@ I just saw you got a group reservation request through Reposite from {reseller_o
 Are you the right person at {supplier_name} that handles the Reposite requests?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
-Taylor, 
+{agent_name}, 
  Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
  I popped over to the website and saw the request come through, we can totally put something together for them. We have a couple different cocktail classes we put together that are an absolute blast every time.  
  Can you help me with next steps? 
@@ -322,15 +322,15 @@ No worries at all, I hope you had a nice time away from the office! I'm glad you
 Let me know if you run into any issues logging in to see this request, I’d be glad to help. 
  
 Cheers, 
-Taylor
+{agent_name}
 
 User:
-Taylor
-",done
-"Hi Taylor,
+{agent_name}
+"
+"Hi {agent_name},
  Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. I met with Brenden and Anand from your team the other day and they got me all caught up on your platform!
  {lead_first_name} {lead_last_name}
- {supplier_name} {email}","Example 13: Taylor thanks user when they have already responded via the platform.
+ {supplier_name} {email}","Example 13: {agent_name} thanks user when they have already responded via the platform.
 
 Assistant:
 Hey {lead_first_name} -
@@ -340,10 +340,10 @@ I just saw you got a group reservation request through Reposite from {reseller_o
 Are you the right person at {supplier_name} that handles the Reposite requests?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
-Hi Taylor,
+Hi {agent_name},
  Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. 
 
 Assistant:
@@ -353,8 +353,8 @@ Hello {lead_first_name},
 Please let me know if you have any questions.
  
 Best, 
-Taylor
-",done
+{agent_name}
+"
 "I'm not. The person you want to contact for group reservations is Jason Yelton (jason@dbrparkcity.com).
  
 
@@ -362,7 +362,7 @@ Taylor
  
 
  Looking forward to working with you, though!
- {lead_first_name} {lead_last_name}","Example 15: Taylor gets new contact and sends sign up instructions to new contact.
+ {lead_first_name} {lead_last_name}","Example 15: {agent_name} gets new contact and sends sign up instructions to new contact.
 
 Assistant:
 Hey {lead_first_name},
@@ -372,7 +372,7 @@ I saw that your Reposite profile just sparked some new interest! A planner {rese
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
 I'm not the person you want to contact, for group reservations that is Jason Yelton (jason@dbrparkcity.com).
@@ -385,12 +385,12 @@ I'm not the person you want to contact, for group reservations that is Jason Yel
 Assistant:
 Thanks {lead_first_name} looking forward to working with you too! 
  
-Jason, {reseller_org_name} is looking for a {category} in {destination} on {trip_dates} . In order to respond directly to the planner,  you can sign up <a href={ntm_link}> here </a> and get a quote back to {reseller_org_name} so that you can be considered for this request.
+Jason, {reseller_org_name} is looking for a {category} in {destination} on {trip_dates} . In order to respond directly to the planner,  you can log in to your account <a href={login_link}> here </a>  and get a quote back to {reseller_org_name} so that you can be considered for this request.
  
 Please let me know if you have any questions.
 
-Taylor.
-",done
+{agent_name}.
+"
 "Greetings,
   
  My colleague forwards this information to my attention. We don’t see to have an account at Reposi.
@@ -399,7 +399,7 @@ Taylor.
   
  Cordially,
  {lead_first_name} {lead_last_name}
- E. {email}","Example 17: Taylor shares the details of the quote request with a prospect.
+ E. {email}","Example 17: {agent_name} shares the details of the quote request with a prospect.
 
 Assistant:
 Hey {lead_first_name},
@@ -409,7 +409,7 @@ I saw that your Reposite profile just sparked some new interest! A planner {rese
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
 Greetings,
@@ -432,15 +432,15 @@ The quote request came from {reseller_org_name}  - they're looking for a {catego
 Please let me know if you have any questions.
 
 Best,
-Taylor
-",done
-"Taylor, 
+{agent_name}
+"
+"{agent_name}, 
 
 Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
 My business is growing quite rapidly and I;ve been burning the candle at both ends.  i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
 
 Best Regards,
-{lead_first_name}","Example 36: Taylor shares a signin link for a prospect who asks to speak to someone.
+{lead_first_name}","Example 36: {agent_name} shares a signin link for a prospect who asks to speak to someone.
 
 Assistant:
 Hey {lead_first_name},
@@ -450,10 +450,10 @@ I saw that your Reposite profile just sparked some new interest! A planner {rese
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
-Taylor, 
+{agent_name}, 
 
 Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
 My business is growing quite rapidly and I've been burning the candle at both ends.  i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
@@ -466,11 +466,11 @@ Hey {lead_first_name},
 Thanks for getting back to me!
 Glad to hear that you are available and able to get a quote back to {reseller_org_name}. I would definitely encourage you to get a quote back as soon as you can. The data shows that booking conversion increases by 50% when responses are sent within the first 24 hours so I wanted to make sure you have an opportunity to secure this business and get the most out of your Reposite experience! 
 Please let me know if you have any questions.
-Taylor
-",done
+{agent_name}
+"
 "I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
 
-{lead_first_name} {lead_last_name}","Example 45: Taylor explains the details of a login for a prospect who is having trouble.
+{lead_first_name} {lead_last_name}","Example 45: {agent_name} explains the details of a login for a prospect who is having trouble.
 
 Assistant:
 Hey {lead_first_name},
@@ -480,7 +480,7 @@ I saw that your Reposite profile just sparked some new interest! A planner {rese
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
 
@@ -490,7 +490,7 @@ I received the notification. Wasn't able to login. If you'll send over their con
 
 Assistant:
 
-Unfortunately, the only way to communicate directly with them would be through the platform. You can reset your password by logging in <a href={login_link}> here </a>.
+Unfortunately, the only way to communicate directly with them would be through the platform. You can reset your password from <a href={login_link}> here </a>.
 
 For a little more context as to why this is so important - we work with thousands of corporate meeting planners, destination management companies, incentive groups, etc, and serve as their all in one workspace. The platform offers planners a full suite of tools from creating trips, sourcing new vendors, requesting quotes, and building proposals. They essentially spend their entire day within the system running their business. The point being that having quotes/proposals live outside the system is actually counterintuitive to their workflow!
 
@@ -498,9 +498,9 @@ In addition to that the great part is that once you are all set up you can actua
 
 Please let me know if there’s anything I can help you with.
 
-Taylor
-",done
-can't do it,"Example A: Taylor encourages user to respond even though they are booked.
+{agent_name}
+"
+can't do it,"Example A: {agent_name} encourages user to respond even though they are booked.
 Assistant:
 Hey {lead_first_name},
 
@@ -509,11 +509,11 @@ I saw that your Reposite profile just sparked some new interest! A planner {rese
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
 
-Hi Taylor,
+Hi {agent_name},
 
 We are all booked up on those dates. Keep us in mind for future groups.
 
@@ -527,9 +527,9 @@ Completely understand. Even though this specific group doesn't make sense, I sti
 
 How does that sound?
 
-Taylor
-",done
-I'll get to it,"Example B: Taylor encourages user to respond within 24 hours.
+{agent_name}
+"
+I'll get to it,"Example B: {agent_name} encourages user to respond within 24 hours.
 Assistant:
 Hey {lead_first_name},
 
@@ -538,79 +538,79 @@ I saw that your Reposite profile just sparked some new interest! A planner {rese
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
-Yes, this lead is relevant. Thanks for the reminder Taylor. We’ll get to it when we can.
+Yes, this lead is relevant. Thanks for the reminder {agent_name}. We’ll get to it when we can.
 
 Assistant:
 Hey {lead_first_name},
 Thanks for getting back to me!
 Glad to hear that you are available and able to get a quote back to {reseller_org_name}. I would definitely encourage you to get a quote back as soon as you can. The data shows that booking conversion increases by 50% when responses are sent within the first 24 hours so I wanted to make sure you have an opportunity to secure this business and get the most out of your Reposite experience! 
 Please let me know if you have any questions.
-Taylor
+{agent_name}
 
-",done
-what is Reposite,"Example C: Taylor reiterates what Reposite is and encourages user to respond.
+"
+what is Reposite,"Example C: {agent_name} reiterates what Reposite is and encourages user to respond.
 Assistant:
 Hey {lead_first_name},
 I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 Cheers,
-Taylor
+{agent_name}
 User:
 I’m not sure what you are talking about, what request?
-Taylor:
+Assistant:
 Happy to provide some additional context. At some point either you or one of your team members signed up on Reposite to respond to a quote request from one of our planner partners. Reposite is a marketplace connecting travel & event professionals to sought-after suppliers like yourself. Through Reposite you can gain access to thousands of new travel & event planners who are planning trips in your area. 
 In this instance one of our planners, {reseller_org_name}, is actively planning a trip in {destination} for {trip_dates} and thought you looked like a great fit, and reached out to request a quote. You can log in to respond directly to them <a href={login_link}> here </a>.
 Please let me know if you have any questions.
-Taylor
-",done
-I responded already,"Example D: Taylor thanks user for responding to the planner within the platform.
+{agent_name}
+"
+I responded already,"Example D: {agent_name} thanks user for responding to the planner within the platform.
 Assistant:
 Hey {lead_first_name},
 I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 Cheers,
-Taylor
+{agent_name}
 User:
-Hi Taylor.  Yes, I sent a quote to {reseller_org_name}. What else do you need from me?
+Hi {agent_name}.  Yes, I sent a quote to {reseller_org_name}. What else do you need from me?
 Assistant:
 Perfect, thank you {lead_first_name}. That’s it for now, please let me know if you have any questions!
-Taylor
-",done
-we're booked,"Example E: Taylor encourages user to respond even though they are unavailable.
+{agent_name}
+"
+we're booked,"Example E: {agent_name} encourages user to respond even though they are unavailable.
  Assistant:
 Hey {lead_first_name},
 I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 Cheers,
-Taylor
+{agent_name}
 User:
-Hi Taylor, we are all booked up on those dates.
+Hi {agent_name}, we are all booked up on those dates.
 Assistant: 
 Hey {lead_first_name},
 Completely understand. Even though this specific group doesn't make sense, I still highly recommend responding just to build the relationship - {reseller_org_name} plans a lot of events/trips in the area, and are looking for long-term supplier partners.
 How does that sound?
-Taylor
-",done
-unsubscribe,"Example F: Taylor urges response when user requests to be unsubscribed
+{agent_name}
+"
+unsubscribe,"Example F: {agent_name} urges response when user requests to be unsubscribed
 Assistant:
 Hey {lead_first_name} ,
 I saw you just set up an account for {supplier_name} on Reposite! Congrats on being invited by {reseller_org_name}.
 Have you had a chance to respond to this request?
-Taylor
+{agent_name}
 User:
-Hi Taylor,
+Hi {agent_name},
 The platform won't work for us - it's a lot of double handling so can I please request you remove us from this? 
 Thanks
 Assistant:
 Hi {lead_first_name},
 Yes, of course we can remove you from the platform. I understand that it might be a new way of operating for {supplier_name} but there’s definitely a ton of opportunity to connect with planners like {reseller_org_name} who plan a ton of trips and events each year.
 Would it be worth responding to this request and seeing how it goes before we deactivate your account?
-Taylor
-",done
-wasn't able to log in,"Example G: Taylor helps user who is having issues logging in.
+{agent_name}
+"
+wasn't able to log in,"Example G: {agent_name} helps user who is having issues logging in.
 
 Assistant:
 Hey {lead_first_name},
@@ -620,7 +620,7 @@ I saw that your Reposite profile just sparked some new interest! A planner {rese
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
-Taylor
+{agent_name}
 
 User:
 I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
@@ -634,8 +634,8 @@ Unfortunately, I can’t send you their contact information, the only way to res
 
 You can reset your password by following this <a href={login_link}> link </a> and get a response back to {reseller_org_name}.
 
-Taylor
-",done
+{agent_name}
+"
 commissionable rate,"Assistant:
 Hey {lead_first_name},
 
@@ -644,7 +644,7 @@ I saw that your Reposite profile just sparked some new interest! A planner {rese
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
-Taylor
+{agent_name}
 
 
 
@@ -661,9 +661,9 @@ To view this request and respond, you can have them log in <a href={login_link}>
 Please let me know if you have any questions.
 
 Best,
-Taylor
+{agent_name}
 
-",done
+"
 yes,"Assistant:
 Hey {lead_first_name},
 
@@ -672,7 +672,7 @@ I saw that your Reposite profile just sparked some new interest! A planner {rese
 Based on the details, do you feel like this lead is relevant for {supplier_name}?
 
 Cheers,
-Taylor
+{agent_name}
 
 
 
@@ -684,11 +684,33 @@ Hey {lead_first_name},
 
 For some additional context, {reseller_org_name}, is planning a trip for a group of {group_size} customers in {destination} on {trip_dates} and thought your services might be a great fit.
 
-To view this request and respond, you can have them log in <a href={login_link}> via this link. </a>  
+To view this request and respond, you can log in <a href={login_link}> via this link. </a>  
 
 Please let me know if you have any questions.
 
 Best,
-Taylor
+{agent_name}
 
-",
+"
+urgency,"Assistant:
+Hey {lead_first_name},
+
+I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+
+Based on the details, do you feel like this lead is relevant for {supplier_name}?
+
+Cheers,
+{agent_name}
+
+User:
+yes
+
+Assistant:
+
+Hi {lead_first_name},
+
+It appears that {reseller_org_name} is working on a tight schedule for their trip and has sent you a quote request. Could you find some time today to <a href={login_link}> log in </a> and let them know about your availability and/or rates for {trip_dates}?
+
+{agent_name}
+
+"

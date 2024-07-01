@@ -1,21 +1,21 @@
-User Message,,BH Note
-"Hi Taylor, this is {lead_first_name}. What can I help you with?",,done
+User Message
+"Hi {agent_name}, this is {lead_first_name}. What can I help you with?"
 "I don’t know what this means. I have not received any quote about anything.
  {lead_first_name} {lead_last_name}
- {email}",,done
-"Dear Taylor,
+ {email}"
+"Dear {agent_name},
  
 Hope this email finds you very well.
  View emails from our groups and sales team for proper follow-up to your requests.
  groupspuj@royaltonresorts.com groups2puj@royaltonresorts.com
  
-Best regards,",,done
+Best regards,"
 "Hello, 
 
 Please see the attached proposal. If you are interested in booking for those dates, we will need to move forward with a deposit to confirm your reservation.
 
 Thank you,
-",,done
+"
 "Good day,
  
 
@@ -24,8 +24,8 @@ Thank you,
  Best regards,
  {lead_first_name} {lead_last_name}
  {supplier_name}
- {email}",,done
-"Dear Taylor,
+ {email}"
+"Dear {agent_name},
  Thank you for contacting {supplier_name}.
  We are delighted to be of service to you.
  We would love to be of assistance to you. We would like to ask for more details of the service needed. Please note that as per policy, we cannot open any link.
@@ -38,19 +38,19 @@ Thank you,
  Total number of luggages
  Best Regards,
  {lead_first_name} {lead_last_name}
- {email}",,done
-"Dear Taylor,
+ {email}"
+"Dear {agent_name},
  Thank you for your email and we appreciate you reaching out to us.
  Please be informed that the information was forwarded to our management team. 
  Best regards,
  {lead_first_name} {lead_last_name}
  {supplier_name}
- {email}",,done
-"Hi Taylor -
+ {email}"
+"Hi {agent_name} -
  Please direct all group reservations to myself at manager@baobrewhouse.com 
  Thank you,
- {lead_first_name} {lead_last_name}",,done
-"Taylor, 
+ {lead_first_name} {lead_last_name}"
+"{agent_name}, 
  Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
  I popped over to the website and saw the request come through, we can totally put something together for them. We have a couple different cocktail classes we put together that are an absolute blast every time.  
  Can you help me with next steps? 
@@ -58,11 +58,11 @@ Thank you,
  
 
  {lead_first_name} {lead_last_name}
- {supplier_name}",,done
-"Hi Taylor,
+ {supplier_name}"
+"Hi {agent_name},
  Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. I met with Brenden and Anand from your team the other day and they got me all caught up on your platform!
  {lead_first_name} {lead_last_name}
- {supplier_name} {email}",,done
+ {supplier_name} {email}"
 "I'm not. The person you want to contact for group reservations is Jason Yelton (jason@dbrparkcity.com).
  
 
@@ -70,7 +70,7 @@ Thank you,
  
 
  Looking forward to working with you, though!
- {lead_first_name} {lead_last_name}",,done
+ {lead_first_name} {lead_last_name}"
 "Greetings,
   
  My colleague forwards this information to my attention. We don’t see to have an account at Reposi.
@@ -79,23 +79,27 @@ Thank you,
   
  Cordially,
  {lead_first_name} {lead_last_name}
- E. {email}",,done
-"Taylor, 
+ E. {email}"
+"{agent_name}, 
 
 Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
 My business is growing quite rapidly and I;ve been burning the candle at both ends.  i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
 
 Best Regards,
-{lead_first_name}",,done
+{lead_first_name}"
 "I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
 
-{lead_first_name} {lead_last_name}",,done
-can't do it,,done
-I'll get to it,,done
-what is Reposite,,done
-I responded already,,done
-we're booked,,done
-unsubscribe,,done
-wasn't able to log in,,done
-commissionable rate,,done
-yes,,
+{lead_first_name} {lead_last_name}"
+we're booked
+I'll get to it
+what is Reposite
+I responded already
+too much work
+wasn't able to log in
+commissionable rate
+yea that sounds great
+urgency
+"Good morning Dawn, 
+ Do you want to reach out and see what he would like. 
+ Thank you!  
+ {lead_first_name}"

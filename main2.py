@@ -1,6 +1,6 @@
 
 import streamlit as st
-from functions2 import ideator, initial_text_info
+from functions2 import ideator, initial_text_info,get_initial_message
 import json
 import os
 import sys
@@ -26,23 +26,25 @@ now = now.strftime("%Y-%m-%d %H:%M:%S")
 
 
 def main():
+    all_new_messages = []
 
     # Create a title for the chat interface
-    st.title("Taylor RAG 4 Full Convos")
+    st.title("Taylor / Lee")
     st.write("To test, first select some fields then click the button below.")
   
-    #variables for system prompt
-    bot_name = 'Taylor'
-    membership_link = 'https://www.reposite.io/membership-overview-1'
+    campiagnOptions = ['Received NMQR', 'New QR', 'Token Change', 'Quote Hotlist', 'Booking Received', 'Newly Onboarded']
 
     #variables about the lead
     email = st.text_input('email', value = 'john@doe.com')
-    supplier_name = st.text_input('supplier name', value = 'Acme Trading Co')
+    supplier_name = st.text_input('Supplier name', value = 'Acme Trading Co')
     lead_first_name = st.text_input('Lead First Name', value = 'John')
     lead_last_name = st.text_input('Lead Last Name', value = 'Doe')
-    nmqr_count = st.text_input('# NMQR received', value = '10')
-    nmqrurl = 'nmqrurl.com'
+    nmqr_count = st.text_input('NMQR received', value = '0')
+    campaign = st.selectbox("Select Campaign", campiagnOptions)
     quote_lead_goal_mode = st.selectbox("Quote Lead Goal Mode", options = ["No Response Needed", "Needs Response"], index = 0)
+    # campaign = st.text_input('Campaign', value = '0')
+    nmqrurl = 'nmqrurl.com'
+    
     #most recent nmqr info
     reseller_org_name = st.text_input('reseller org name', value = 'Smith Co')
     category = st.text_input('category', value = 'travel')
@@ -52,10 +54,11 @@ def main():
     group_size = st.text_input('group size', value = '50')
     trip_dates = st.text_input('trip dates', value = 'August 10, 2023 to August 20, 2023')
     market = st.selectbox('Market', options = ['TM', 'NTM'], index = 0)
+
     
-    
-    options = initial_text_info()
-    initial_text_choice  = st.selectbox("Select initial email template", options)
+
+    # options = initial_text_info()
+    # initial_text_choice  = st.selectbox("Select initial email template", options)
     
 
     
@@ -64,30 +67,30 @@ def main():
     
     #need to push this then make sure it works
     if st.button('Click to Start or Restart'):
-        with open('bot.txt', 'w') as f:
-            f.truncate(0)
-        initial_text = initial_text_info(initial_text_choice)
-        # if initial_text_choice == options[0] or initial_text_choice == options[1]:
-        #     data, count = supabase.table("bots_dev").select("*").eq("id", "TaylorNMQR").execute()
-        # else:
-        #     data, count = supabase.table("bots_dev").select("*").eq("id", "taylor").execute()
 
-        if initial_text == initial_text_info('NMQR Received') and quote_lead_goal_mode == "Needs Response":
+        with open('database.jsonl', 'w') as f:
+            pass 
+
+        with open('bot.txt', 'w') as f:
+            pass
+
+
+        if campaign == 'Received NMQR' and quote_lead_goal_mode == "Needs Response":
             data, count = supabase.table("bots_dev").select("*").eq("id", "nonmember_respond").execute() 
             bot_used = 'nonmember_respond'
             print('nonmember_respond used!!!')
 
-        elif quote_lead_goal_mode == "Needs Response":
+        elif campaign != 'Received NMQR' and quote_lead_goal_mode == "Needs Response":
             data, count = supabase.table("bots_dev").select("*").eq("id", "member_respond").execute() 
             bot_used = 'member_respond'  
             print('member_respond used!!!')       
 
-        elif initial_text == initial_text_info('NMQR Received'):
+        elif campaign == 'Received NMQR' and quote_lead_goal_mode != "Needs Response":
             data, count = supabase.table("bots_dev").select("*").eq("id", "nonmember_signup").execute() 
             bot_used = 'nonmember_signup'
             print('nonmember_signup used!!!')
             
-        else:
+        elif campaign not in ['', None]:
             bot_used = 'member_upgrade'
             data, count = supabase.table("bots_dev").select("*").eq("id", "member_upgrade").execute() 
             print("member_upgrade used!!!")
@@ -95,8 +98,11 @@ def main():
         with open('bot.txt', 'w') as file:
             file.write(bot_used)
 
+
+
         bot_info = data[1][0]
-        initial_text = initial_text.format(lead_first_name = lead_first_name, reseller_org_name = reseller_org_name, supplier_name = supplier_name, category = category, destination = destination)
+        initial_text = get_initial_message(campaign,nmqr_count,quote_lead_goal_mode)
+
         if market == 'NTM':
             # TAYLOR
             price = '$500'
@@ -111,9 +117,20 @@ def main():
             membership_link = 'https://www.reposite.io/membership-overview-tier1?sbrc=1Bd7h_suhk2WBfAu-UimW4A%3D%3D%24FZq3JqgS-62UZupynn2WTQ%3D%3D'
             demo_link = 'https://guides.reposite.io/membership-gated-supplier-demo'
             calendar_link =   'https://calendar.app.google/QgHc7RqZKFoHsWXr5'
+ 
+        print("-------->> initial ", initial_text)
 
-        print('market: ', market)   
-        print('price: ', price)   
+        def get_date_before_to(date_range):
+
+            if "to" in date_range:
+                return date_range.split("to")[0].strip()
+            return 'date'
+        
+        trip_start_date = get_date_before_to(trip_dates)
+
+        initial_text = initial_text.format(lead_first_name = lead_first_name, reseller_org_name = reseller_org_name, supplier_name = supplier_name, category = category, destination = destination, agent_name= agent_name, nmqrurl=nmqrurl, trip_start_date =trip_start_date)
+
+        print('agent_name: ', agent_name)   
 
         lead_dict_info = {
             "agent_name": agent_name,
@@ -138,32 +155,7 @@ def main():
             "login_link": "https://app.reposite.io/suppliers?auth=login", # confirmed
             "signup_link": "https://app.reposite.io/suppliers?auth=signUp", # confirmed
         }
-    
-        
-        # lead_dict_info = {
-        #     "bot_name": bot_name,
-        #     "membership_link": membership_link,
-        #     "email": email,
-        #     "supplier_name": supplier_name,
-        #     "lead_first_name": lead_first_name,
-        #     "lead_last_name": lead_last_name,
-        #     "nmqr_count": nmqr_count,
-        #     "reseller_org_name": reseller_org_name,
-        #     "category": category,
-        #     "date": date,
-        #     "current_date": current_date,
-        #     "destination": destination,
-        #     "group_size": group_size,
-        #     "trip_dates": trip_dates,
-        #     "nmqrurl": nmqrurl,
-        #     "ntm_link": "https://www.reposite.io/membership-overview-1",
-        #     "ntm_demo": "https://guides.reposite.io/membership-gated-supplier-demo-0",
-        #     "brendan_calendar": "https://meetings.salesloft.com/reposite/brendanhollingsworth",
-        #     "nmqr_signup_video": "https://www.screencast.com/t/mnVdphydqsq",
-        #     "login_link": "https://app.reposite.io/suppliers?auth=login",
-        #     "signup_link": "https://app.reposite.io/suppliers?auth=signUp",
-        #     "price": price
-        # }
+  
         file_path = 'lead_dict_info.json'
         with open(file_path, 'w') as f:
             json.dump(lead_dict_info, f)
@@ -171,7 +163,8 @@ def main():
         system_prompt = bot_info['system_prompt']
         system_prompt = system_prompt.format(**lead_dict_info)
 
-        st.write(initial_text)
+        st.write(initial_text, unsafe_allow_html = True)
+        # st.markdown(string,)
         restart_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         with open('database.jsonl', 'r') as db, open('archive.jsonl','a') as arch:
         # add reset 
@@ -239,28 +232,22 @@ def main():
         string = ""
 
         for message in messages[1:]:
-            if "[secret internal thought" not in str(message):
+            print("\n----------", message)
+            if "[secret internal message]" not in str(message):
                 string = string + message["role"] + ": " + message["content"] + "<br><br>"
+
         st.markdown(string, unsafe_allow_html = True)
             
-    if st.button("Increment 3 Days"):
-        #read day.txt
-        with open('day.txt', 'r+') as f:
-            content = f.read().strip()
-            
-            if not content:
-                f.seek(0)
-                f.write('3')
-                day = 3
-            elif content == '3':
-                f.seek(0)
-                f.truncate()
-                f.write('6')
-                day = 6
-            elif content == '6':
-                day = 9
+    if st.button("Send Followup"):
 
-        newline = {"role": "assistant", "content": "[secret internal thought; the User cannot see this message] 3 days have gone by since the lead responded to me. I should followup with a super short email pitching the benefits of the premium Reposite membership, ending with a question."}
+
+        secret_message = "[secret internal message] Hi {agent_name}, this is Heather, the CEO of Reposite. The lead you've been emailing hasn't responded in 3 days. Reply to this message with a followup email to the  lead. Remember, the lead doesn't see this message. Do not acknowledge it in your response. Make the followups shorter, max 3 sentences."
+       
+        file_path = 'lead_dict_info.json'
+        with open(file_path, 'r') as f:
+            lead_dict_info = json.load(f)
+
+        newline = {"role": "assistant", "content": secret_message.format(**lead_dict_info)}
         
         #append to database
         with open('database.jsonl', 'a') as f:
@@ -282,26 +269,31 @@ def main():
             file_path = 'lead_dict_info.json'
             with open(file_path, 'r') as f:
                 lead_dict_info = json.load(f)
-            messages, count = ideator(messages, lead_dict_info)
+ 
+         
+            with open('bot.txt', 'r') as file:
+                bot_to_use = file.read()
+                print('bot to use is ', bot_to_use)
+
+            messages, count = ideator(messages, lead_dict_info,bot_to_use)
 
             #append to database
             with open('database.jsonl', 'a') as f:
-                    for i in range(count):
-                        f.write(json.dumps(messages[-count + i]) + '\n')
+                for i in range(count):
+                    f.write(json.dumps(messages[-count + i]) + '\n')
 
             # Display the response in the chat interface
             string = ""
-
             for message in messages[1:]:
-                if "[secret internal thought" not in str(message):
-                    string = string + message["role"] + ": " + message["content"] + "\n\n"
-            if day == 3 or day == 6:
-                st.markdown(string, unsafe_allow_html = True)
-                st.write(f'*Day {day}*')
-            elif day == 9:
-                st.write('max followups reached. please reset')
+                if "[secret internal message]" not in message.get('content'):
+                    string = string + message["role"] + ": " + message["content"] + "<br><br>"
+            
+            st.markdown(string, unsafe_allow_html = True)
+      
         elif checkit == 'no':
             print('followup not warranted')
+
+
 if __name__ == '__main__':
     main()
 
