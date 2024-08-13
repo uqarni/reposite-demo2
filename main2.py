@@ -134,10 +134,13 @@ def main():
             "price":price,
             "calendar_link": calendar_link,
             "representative":agent_name,
-            "nmqr_signup_video": "https://www.screencast.com/t/mnVdphydqsq", # confirmed
             "login_link": "https://app.reposite.io/suppliers?auth=login", # confirmed
             "signup_link": "https://app.reposite.io/suppliers?auth=signUp", # confirmed
+            "buy_link":"https://buy.stripe.com/dR6bKVgvoaEr4Gk7tb"
+
         }
+        if lead_dict_info.get('agent_name') == 'Lee':
+            lead_dict_info['buy_link'] = "https://buy.stripe.com/5kAdT34MGh2P7SwdRE"
         
 
         if bot_used in ['member_respond', 'member_upgrade']:

@@ -18,19 +18,16 @@ from langchain_community.vectorstores import FAISS
 
 
 
-def find_similarity(representative, query, type, k=8):
+def find_similarity(representative, query, type, k=4):
     examples = ''
     try:
         if type == 'nonmember_respond':
             print("------ Non Member Respond Rag 1 --------\n")
-            k=4
             full_file = 'Rag_new_examples/nonmember_respond.csv'
             col1 = 'Rag_new_examples/nonmember_respond_col1.csv'
 
         elif type == 'member_respond':
             print("------ Member Respond Rag 2 --------\n")
-           
-            k=4
             full_file = 'Rag_new_examples/member_respond.csv'
             col1 = 'Rag_new_examples/member_respond_col1.csv'
             
@@ -58,7 +55,7 @@ def find_similarity(representative, query, type, k=8):
             if len(input_text) > 0:    
                 try:
                     mask = df['User Message'] == input_text 
-                    output = df.loc[mask, 'Assistant Message'].iloc[0]
+                    output = df.loc[mask, 'Full Convo'].iloc[0]
                 except IndexError:
                     print('no similarity found')
 
