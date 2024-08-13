@@ -241,8 +241,10 @@ def main():
 
             #append to database
             with open('database.jsonl', 'a') as f:
-                for message in reversed(messages):
-                    f.write(json.dumps(messages) + '\n')
+                for index , message in enumerate(reversed(messages)):
+                    if index == 0 :
+                        f.write(json.dumps(message) + '\n')
+                    break
 
             # Display the response in the chat interface
             string = ""
