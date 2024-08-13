@@ -1,0 +1,123 @@
+User Message
+"Hi {agent_name}, this is {lead_first_name}. What can I help you with?"
+"I don’t know what this means. I have not received any quote about anything.
+  {lead_first_name} {lead_last_name}
+  {email}"
+"Dear {agent_name},
+  
+ Hope this email finds you very well.
+  View emails from our groups and sales team for proper follow-up to your requests.
+  groupspuj@royaltonresorts.com groups2puj@royaltonresorts.com
+  
+ Best regards,"
+"Hello, 
+ 
+
+ Please see the attached proposal. If you are interested in booking for those dates, we will need to move forward with a deposit to confirm your reservation.
+ 
+
+ Thank you,"
+"Good day,
+  
+ 
+
+  Thank you for contacting {supplier_name}.
+  In order to provide you with correct information please kindly share the number of passengers, amount of luggage and airport where service is needed.
+  Best regards,
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}"
+"Dear {agent_name},
+  Thank you for contacting {supplier_name}.
+  We are delighted to be of service to you.
+  We would love to be of assistance to you. We would like to ask for more details of the service needed. Please note that as per policy, we cannot open any link.
+  You may help us with the details sent through as an attachment.
+  To help you with the actual price quote and to check service availability, may we please have the following information to start with:
+  Service Type (Arrival, Departure, or Connection)
+  Service airport
+  Flight details (flight number, date and time; better if flight itinerary is available)
+  Total number of passengers
+  Total number of luggages
+  Best Regards,
+  {lead_first_name} {lead_last_name}
+  {email}"
+"Dear {agent_name},
+  Thank you for your email and we appreciate you reaching out to us.
+  Please be informed that the information was forwarded to our management team. 
+  Best regards,
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}"
+"Hi {agent_name} -
+  Please direct all group reservations to myself at manager@baobrewhouse.com 
+  Thank you,
+  {lead_first_name} {lead_last_name}"
+"{agent_name}, 
+  Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
+  I popped over to the website and saw the request come through, we can totally put something together for them. We have a couple different cocktail classes we put together that are an absolute blast every time.  
+  Can you help me with next steps? 
+  Cheers,
+  
+ 
+
+  {lead_first_name} {lead_last_name}
+  {supplier_name}"
+"Hi {agent_name},
+  Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. I met with Brenden and Anand from your team the other day and they got me all caught up on your platform!
+  {lead_first_name} {lead_last_name}
+  {supplier_name} {email}"
+"I'm not. The person you want to contact for group reservations is Jason Yelton (jason@dbrparkcity.com).
+  
+ 
+
+  He has all the information you'll need for available sections, group sizes, F&B minimums, menu options, etc.
+  
+ 
+
+  Looking forward to working with you, though!
+  {lead_first_name} {lead_last_name}"
+"Greetings,
+  
+  My colleague forwards this information to my attention. We don’t see to have an account at Reposi.
+  
+  Please let us know if this can be answer by email instead.
+  
+  Cordially,
+  {lead_first_name} {lead_last_name}
+  E. {email}"
+"{agent_name}, 
+ 
+
+ Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
+ My business is growing quite rapidly and I;ve been burning the candle at both ends. i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
+ 
+
+ Best Regards,
+ {lead_first_name}"
+"I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
+ 
+
+ {lead_first_name} {lead_last_name}"
+can't do it
+I'll get to it
+what is Reposite
+I responded already
+we're booked
+unsubscribe
+wasn't able to log in
+commissionable rate
+yes
+urgency
+"User:
+Hi {agent_name},
+
+{supplier_name) does currently have availability for {reseller_org_name} request.  We do not however have a relationship with Reposite.
+ 
+Best regards,
+{lead_first_name}"
+"User:
+{agent_name}
+
+I have never heard of you and I am not sure why am getting a request for services through your platform as we are not registered on it. 
+
+We will ignore it"

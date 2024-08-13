@@ -1,0 +1,1402 @@
+User Message,Assistant Message,Full Convo
+"Hi {agent_name}, this is {lead_first_name}. What can I help you with?","Assistant:
+ Hi {lead_first_name},
+  
+ Great to connect! Happy to help provide some clarity here. One of the planners we work with, {reseller_org_name}, is using Reposite to source for suppliers for their event in {destination} for {group_size} people. Your profile is a match for their group and the planner needs more options so this request was sent directly to you. You can view it and respond directly to {reseller_org_name} by logging back into your account <a href={login_link}> here </a>. 
+ 
+
+ Also, {supplier_name} is currently on our Basic Plan but with our <a href={membership_link}> membership plan </a> you gain access to all relevant RFPs sent directly to your email inbox, unlimited connections via the Discover Tool for outbound prospecting, and more. It’s just {price} per year with no additional fees or commissions and you can learn more <a href={membership_link}> here </a>.
+ 
+
+ If you’d like to set up a time to discuss further, please book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}","Example 1: {agent_name} clarifies the specifics of the quote request and urges prospect to respond.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+
+ I just saw you got another group reservation request through Reposite from {reseller_org_name}!
+ 
+
+ Have you had a chance to review?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name}, this is {lead_first_name}. What are the details of this request?
+ 
+
+ Assistant:
+ Hi {lead_first_name},
+  
+ Great to connect! Happy to help provide some clarity here. One of the planners we work with, {reseller_org_name}, is using Reposite to source for suppliers for their event in {destination} for {group_size} people. Your profile is a match for their group and the planner needs more options so this request was sent directly to you. You can view it and respond directly to {reseller_org_name} by logging back into your account <a href={login_link}> here </a>. 
+ 
+
+ Also, {supplier_name} is currently on our Basic Plan but with our <a href={membership_link}> membership plan </a> you gain access to all relevant RFPs sent directly to your email inbox, unlimited connections via the Discover Tool for outbound prospecting, priority response times, and more. The membership is just {price} per year with no additional fees or commissions and you can learn more <a href={membership_link}> here </a>.
+ 
+
+ If you’d like to set up a time to discuss further, please book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}"
+"I don’t know what this means. I have not received any quote about anything.
+  {lead_first_name} {lead_last_name}
+  {email}","Example 2: {agent_name} clarifies when the user doesn’t know why Reposite emailed them.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+ Have you had a chance to review?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ I don’t know what this means. I have not received any quote about anything.
+  {lead_first_name} {lead_last_name}
+  {email}
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+ I can definitely help provide some clarity here. {supplier_name} has a profile on Reposite with {email} signed up as the active user. It's possible it has been a while since the account was created so please let me know if there needs to be another email receiving inbound lead notifications! 
+ 
+For a little context on Reposite, we connect companies like {supplier_name} with professional planners who are regularly booking meetings, events, and conferences. One planner, {reseller_org_name}, recently posted a need in {destination} for {group_size} people and your profile was a match so the lead was sent directly to your account. You can view it and respond directly by logging in at this <a href={login_link}> link </a>. 
+ 
+You are currently on our basic plan which provides very limited lead generation and no opportunity to grow your database of planners. If you are interested in learning more about our <a href={membership_link}> membership plan </a> to drive group business, feel free to check out the website or book a time on my <a href={calendar_link}> calendar </a> that works for you!
+ 
+Do you leverage any other tools or platforms to help generate consistent group leads/business?
+  
+ Best, 
+ {agent_name}","Example 2: {agent_name} clarifies when the user doesn’t know why Reposite emailed them.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+ Have you had a chance to review?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ I don’t know what this means. I have not received any quote about anything.
+  {lead_first_name} {lead_last_name}
+  {email}
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+ I can definitely help provide some clarity here. {supplier_name} has a profile on Reposite with {email} signed up as the active user. It's possible it has been a while since the account was created so please let me know if there needs to be another email receiving inbound lead notifications! 
+ 
+For a little context on Reposite, we connect companies like {supplier_name} with professional planners who are regularly booking meetings, events, and conferences. One planner, {reseller_org_name}, recently posted a need in {destination} for {group_size} people and your profile was a match so the lead was sent directly to your account. You can view it and respond directly by logging in at this <a href={login_link}> link </a>. 
+ 
+You are currently on our basic plan which provides very limited lead generation and no opportunity to grow your database of planners. If you are interested in learning more about our <a href={membership_link}> membership plan </a> to drive  group business, feel free to check out the website or book a time on my <a href={calendar_link}> calendar </a> that works for you!
+ 
+Do you leverage any other tools or platforms to help generate consistent group leads/business?
+  
+ Best, 
+ {agent_name}"
+"Dear {agent_name},
+  
+ Hope this email finds you very well.
+  View emails from our groups and sales team for proper follow-up to your requests.
+  groupspuj@royaltonresorts.com groups2puj@royaltonresorts.com
+  
+ Best regards,","Assistant:
+ Hello {lead_first_name},
+  
+ Thank you for your quick response and for providing the additional contact information. I am going to reach out to them directly.
+  
+ If you are interested, our <a href={membership_link}> membership plan </a> you gain access to all relevant RFPs sent directly to your email inbox, unlimited connections via the Discover Tool for outbound networking and prospecting, and it’s just {price} per year, no additional fees or commissions.
+ 
+
+ If you’d like to set up a time to discuss further, you can book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}","Example 3: When the prospect shares the correct person’s contact details, {agent_name} thanks them for their time and communicates that they will reach out to them directly.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Dear {agent_name},
+  
+  Hope this email finds you very well.
+  View emails from our groups and sales team for proper follow-up to your requests.
+  groupspuj@royaltonresorts.com groups2puj@royaltonresorts.com
+  
+ Best regards,
+ 
+
+ Assistant:
+ Hello {lead_first_name},
+  
+ Thank you for your quick response and for providing the additional contact information. I am going to reach out to them directly.
+  
+ If you are interested, our <a href={membership_link}> membership plan </a> you gain access to all relevant RFPs sent directly to your email inbox, unlimited connections via the Discover Tool for outbound networking and prospecting, and it’s just {price} per year, no additional fees or commissions.
+ 
+
+ If you’d like to set up a time to discuss further, you can book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}"
+"Hello, 
+ 
+
+ Please see the attached proposal. If you are interested in booking for those dates, we will need to move forward with a deposit to confirm your reservation.
+ 
+
+ Thank you,","Assistant:
+ Hi {lead_first_name},
+ 
+
+ Thank you for getting back to me and for providing that additional detail, I want to make sure we get you in touch directly with {reseller_org_name} to discuss this booking. 
+ 
+
+ In order to be considered by the planner for this request, you will need to submit your quote through your Reposite account which has {email} signed up as the active user. You can log in via this <a href={login_link}> link </a> and navigate to your quotes dashboard to find the request from {reseller_org_name}. If you have forgotten your password there is a reset password option for your convenience. 
+ 
+
+ Your account with us is currently on Reposite's basic plan, which only allows for limited business development opportunities. If driving  group business is important for {supplier_name}, you can also check out our <a href={membership_link}> membership plan </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we can help. 
+ 
+
+ What types of groups does {supplier_name} typically look to attract? 
+
+ {agent_name}","Example 4: {agent_name} clarifies the request if the supplier misunderstands this email as a quote request.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+
+ Are you the right person at {supplier_name} that handles the Reposite account?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hello, 
+ 
+
+ Please see the attached proposal. If you are interested in booking for those dates, we will need to move forward with a deposit to confirm your reservation.
+ 
+
+ Thank you,
+ 
+
+ Assistant:
+ Hi {lead_first_name},
+ 
+
+ Thank you for getting back to me and for providing that additional detail, I want to make sure we get you in touch directly with {reseller_org_name} to discuss this booking. 
+ 
+
+ In order to be considered by the planner for this request, you will need to submit your quote through your Reposite account which has {email} signed up as the active user. You can log in via this <a href={login_link}> link </a> and navigate to your quotes dashboard to find the request from {reseller_org_name}. If you have forgotten your password there is a reset password option for your convenience. 
+ 
+
+ Your account with us is currently on Reposite's basic plan, which only allows for limited business development opportunities. If driving  group business is important for {supplier_name}, you can also check out our <a href={membership_link}> membership plan </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we can help. 
+ 
+
+ What types of groups does {supplier_name} typically look to attract? 
+
+ {agent_name}"
+"Good day,
+  
+ 
+
+  Thank you for contacting {supplier_name}.
+  In order to provide you with correct information please kindly share the number of passengers, amount of luggage and airport where service is needed.
+  Best regards,
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}","Assistant:
+ Hey {lead_first_name},
+ 
+
+ Great to meet you! I'd love to get you in touch directly with the planner to disucss the details of this request.  
+ 
+ For a little context on Reposite, we connect companies like {supplier_name} with professional planners who are regularly booking meetings, events, and conferences. This planner, {reseller_org_name}, recently posted a need in {destination} for {group_size} people and your profile was a match so the lead was sent directly to your account. You can view it and respond directly by logging in at this <a href={login_link}> link </a>. We currently have {email} as the active user on this account. 
+
+ Are you familiar with Reposite and our various partnership opportunities to drive group business?
+  
+ {agent_name}","Example 5: {agent_name} responds to a request for more information
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+
+ Are you the right person at {supplier_name} that handles the Reposite account?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Good day,
+ 
+
+ Thank you for contacting {supplier_name}.
+ In order to provide you with correct information please kindly share the number of passengers, amount of luggage and airport where service is needed.
+ Best regards,
+ {lead_first_name} {lead_last_name}
+ {supplier_name}
+ {email}
+ 
+
+Assistant:
+ Hey {lead_first_name},
+ 
+
+ Great to meet you! I'd love to get you in touch directly with the planner to disucss the details of this request.  
+ 
+ For a little context on Reposite, we connect companies like {supplier_name} with professional planners who are regularly booking meetings, events, and conferences. This planner, {reseller_org_name}, recently posted a need in {destination} for {group_size} people and your profile was a match so the lead was sent directly to your account. You can view it and respond directly by logging in at this <a href={login_link}> link </a>. We currently have {email} as the active user on this account. 
+
+ Are you familiar with Reposite and our various partnership opportunities to drive group business?
+  
+ {agent_name}"
+"Dear {agent_name},
+  Thank you for contacting {supplier_name}.
+  We are delighted to be of service to you.
+  We would love to be of assistance to you. We would like to ask for more details of the service needed. Please note that as per policy, we cannot open any link.
+  You may help us with the details sent through as an attachment.
+  To help you with the actual price quote and to check service availability, may we please have the following information to start with:
+  Service Type (Arrival, Departure, or Connection)
+  Service airport
+  Flight details (flight number, date and time; better if flight itinerary is available)
+  Total number of passengers
+  Total number of luggages
+  Best Regards,
+  {lead_first_name} {lead_last_name}
+  {email}","Assistant:
+ Hey {lead_first_name},
+ 
+
+ {supplier_name} already has an account with us with {email} signed up as the active user. To view this request and communicate directly with the planner on the details of this group, you can sign back into your account <a href={login_link}> here </a>. Reposite is simply the tool to connect you to live leads in your city. 
+ 
+ While you are currently on our basic plan, we recommend upgrading to our membership plan to receive a higher volume of group requests like this one. More importantly, the <a href={membership_link}> membership plan </a> offers unlimited access to our Discover tool which allows you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ If you choose not to upgrade to our membership plan, you are able to maintain a free profile but you will not have access to the business development tools that the platform offers. You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request. If a lead were to book, you’d owe Reposite a commission.
+ 
+
+ If you are interested in connecting with one of our team members to learn more about a partnership opportunity, you can book a time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ Is there any additional information I can provide about logging into your account or the membership opportunities we offer? 
+  
+ {agent_name}","Example 6: {agent_name} responds to a request for more information.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles the Reposite account?
+ 
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Dear {agent_name},
+  Thank you for contacting {supplier_name}.
+  We are delighted to be of service to you.
+  We would love to be of assistance to you. We would like to ask for more details of the service needed. Please note that as per policy, we cannot open any link.
+  You may help us with the details sent through as an attachment.
+  To help you with the actual price quote and to check service availability, may we please have the following information to start with:
+  Service Type (Arrival, Departure, or Connection)
+  Service airport
+  Flight details (flight number, date and time; better if flight itinerary is available)
+  Total number of passengers
+  Total number of luggages
+  Best Regards,
+  {lead_first_name} {lead_last_name}
+  {email}
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+{supplier_name} already has an account with us with {email} signed up as the active user. To view this request and communicate directly with the planner on the details of this group, you can sign back into your account <a href={login_link}> here </a>. 
+ 
+While you are currently on our basic plan, we recommend upgrading to our membership plan to receive a higher volume of group requests like this one. More importantly, the <a href={membership_link}> membership plan </a> offers unlimited access to our Discover tool which allows you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+If you choose not to upgrade to our membership plan, you are able to maintain a free profile but you will not have access to the business development tools that the platform offers. You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request. If a lead were to book, you’d owe Reposite a commission.
+ 
+If you are interested in connecting with one of our team members to learn more about a partnership opportunity, you can book a time on the <a href={calendar_link}> calendar </a> that works best for you. 
+  
+ Is there any additional information I can provide about logging into your account or the membership opportunities we offer? 
+  
+ {agent_name}"
+"Dear {agent_name},
+  Thank you for your email and we appreciate you reaching out to us.
+  Please be informed that the information was forwarded to our management team. 
+  Best regards,
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}","Assistant:
+ Hey {lead_first_name},
+ 
+
+ Thank you for the update and please let me know if you need any assistance logging into your account to reply to this request.   
+ 
+
+ Additionally, you can check out our <a href={membership_link}> membership page </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we drive group business to our network of suppliers.
+ 
+
+ If you’d like to set up a time to discuss further, you can book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}","Example 7: {agent_name} responds to a forwarded email.
+ 
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles the Reposite account?
+
+ Cheers,
+ {agent_name}
+ 
+
+ Dear {agent_name},
+  Thank you for your email and we appreciate you reaching out to us.
+  Please be informed that the information was forwarded to our management team. 
+  Best regards,
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+Thank you for the update and please let me know if you need any assistance logging into your account to reply to this request.   
+ 
+Additionally, you can check out our <a href={membership_link}> membership page </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we drive group business to our network of suppliers.
+ 
+If you’d like to set up a time to discuss further, you can book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+{agent_name}"
+"Hi {agent_name} -
+  Please direct all group reservations to myself at manager@baobrewhouse.com 
+  Thank you,
+  {lead_first_name} {lead_last_name}","Assistant:
+ 
+
+ Hi {lead_first_name},
+ 
+
+ Perfect, will make sure to reach out to you moving forward.
+ 
+
+ We currently have {email} as the active user on your Reposite account but you can add your email by going through our very abbreviated sign up flow. Please go to this <a href={signup_link}> link </a> and sign up under suppliers with a new email and password. For organization name, be sure to enter {supplier_name} exactly as it is here so that you are added to the existing account. From there you'll be able to navigate to the quotes dashboard and respond to this request. 
+ 
+
+ Since you are new to Reposite, feel free to check out our <a href={membership_link}> membership page </a> to learn more about the platform. Unlike many platforms in the market, Reposite connects you with a very targeted audience of professional meeting and event planners. You can also take a quick call with us by booking <a href={calendar_link}> here </a>!
+ 
+
+ Best,
+ {agent_name}","Example 8: {agent_name} explains importance of responding via the platform for new contact.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+
+ Are you the right person at {supplier_name} that handles the Reposite account?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name} -
+  Please direct all group reservations to myself at manager@baobrewhouse.com 
+  Thank you,
+  {lead_first_name} {lead_last_name}
+ 
+
+Assistant:
+ 
+
+ Hi {lead_first_name},
+ 
+Perfect, will make sure to reach out to you moving forward.
+ 
+We currently have {email} as the active user on your Reposite account but you can add your email by going through our very abbreviated sign up flow. Please go to this <a href={signup_link}> link </a> and sign up under suppliers with a new email and password. For organization name, be sure to enter {supplier_name} exactly as it is here so that you are added to the existing account. From there you'll be able to navigate to the quotes dashboard and respond to this request. 
+ 
+Since you are new to Reposite, feel free to check out our <a href={membership_link}> membership page </a> to learn more about the platform. Unlike many platforms in the market, Reposite connects you with a very targeted audience of professional meeting and event planners. You can also take a quick call with us by booking <a href={calendar_link}> here </a>!
+ 
+Best,
+ {agent_name}"
+"{agent_name}, 
+  Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
+  I popped over to the website and saw the request come through, we can totally put something together for them. We have a couple different cocktail classes we put together that are an absolute blast every time.  
+  Can you help me with next steps? 
+  Cheers,
+  
+ 
+
+  {lead_first_name} {lead_last_name}
+  {supplier_name}","Assistant:
+ Hey {lead_first_name}, 
+ 
+
+ No worries at all, I hope you had a nice time away from the office!
+ 
+
+ To answer your question, yes, at some point you would have signed up on the Reposite platform to respond to a past quote request. It's great to hear that you have a good option for this group, I'm sure they'll be excited to receive a proposal! You can log back into your account by navigating to this <a href={login_link}> log in </a>. If you've forgotten your password, there is an option to reset. Once you're in the platform, you'll want to navigate to the quotes dashboard. I'll look out for your reply to come through! 
+ 
+
+ Because you have a free profile on Reposite, you are defaulted into our Basic Plan which allows you to receive leads only when we don't have enough options for the planner from our current membership base. However, if groups like this are a home run for you, it may be worth looking into our <a href={membership_link}> membership plan </a>. Take a look and let me know your thoughts. We'd also be happy to do a quick call to help you get back into your account and run you through the membership option. 
+ 
+
+ Book some time <a href={membership_link}> here </a>!
+  
+ {agent_name}","Example 9: {agent_name} clarifies onboarded users questions.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+
+ Are you the right person at {supplier_name} that handles the Reposite requests?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ {agent_name}, 
+  Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
+  I popped over to the website and saw the request come through, we can totally put something together for them. We have a couple different cocktail classes we put together that are an absolute blast every time.  
+  Can you help me with next steps? 
+  Cheers,
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+ 
+
+Assistant:
+ Hey {lead_first_name}, 
+ 
+No worries at all, I hope you had a nice time away from the office!
+ 
+ To answer your question, yes, at some point you would have signed up on the Reposite platform to respond to a past quote request. It's great to hear that you have a good option for this group, I'm sure they'll be excited to receive a proposal! You can log back into your account by navigating to this <a href={login_link}> log in </a>. If you've forgotten your password, there is an option to reset. Once you're in the platform, you'll want to navigate to the quotes dashboard. I'll look out for your reply to come through! 
+ 
+Because you have a free profile on Reposite, you are on our Basic Plan which allows you to receive leads only when we don't have enough options for the planner from our current membership base. However, if groups like this are a home run for you, it may be worth looking into our <a href={membership_link}> membership plan </a>. Take a look and let me know your thoughts. We'd also be happy to do a quick call to help you get back into your account and run you through the membership option. 
+  
+ Feel free to book some time on the calendar <a href={calendar_link}> here </a> as well!
+  
+ {agent_name}"
+"Hi {agent_name},
+  Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. I met with Brenden and Anand from your team the other day and they got me all caught up on your platform!
+  {lead_first_name} {lead_last_name}
+  {supplier_name} {email}","Assistant:
+ 
+
+ Hello {lead_first_name},
+ 
+
+ Thanks for your quick response and that’s great to hear! Sounds like you have all the information but I will recap the differences between our Membership Plan and Basic Plan here so you have it all in writing! 
+ 
+
+ Free accounts on Reposite default into the basic plan, but we recommend upgrading to our membership plan to receive consistent group requests like this one. More importantly, the <a href={membership_link}> membership plan </a> offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ If you choose not to upgrade to our membership plan, you are able to maintain a free profile but you will not have access to the business development tools that the platform offers. You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request. If a lead were to book, you’d owe Reposite a 15% commission.
+ 
+  
+ Best, 
+ {agent_name}","Example 10: {agent_name} thanks user when they have already responded via the platform.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+
+ Are you the right person at {supplier_name} that handles the Reposite requests?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name},
+  Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. 
+ 
+
+Assistant:
+ 
+
+ Hello {lead_first_name},
+ 
+Thanks for your quick response and that’s great to hear! 
+ 
+You currently have an account on Reposite's free basic plan but if you are looking to drive more group bookings, we recommend upgrading to our membership plan. You can check out the benefits of our <a href={membership_link}> membership plan </a>, which offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+If you choose not to upgrade to our membership plan, you are able to maintain a free profile but you will not have access to the business development tools that the platform offers. You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request. If a lead were to book, you’d owe Reposite a commission.
+ 
+  Best, 
+ {agent_name}"
+"I'm not. The person you want to contact for group reservations is Jason Yelton (jason@dbrparkcity.com).
+  
+ 
+
+  He has all the information you'll need for available sections, group sizes, F&B minimums, menu options, etc.
+  
+ 
+
+  Looking forward to working with you, though!
+  {lead_first_name} {lead_last_name}","Assistant:
+ Thanks {lead_first_name} looking forward to working with you too! 
+  
+ Jason, {reseller_org_name} is looking for a {category} in {destination} on {trip_dates} . In order to respond directly to the planner, you can <a href={signup_link}> sign up </a> or <a href={login_link}> log in </a> and get a quote back to {reseller_org_name} so that you can be considered for this request.
+  
+ Please let me know if you have any questions.
+ 
+
+ {agent_name}","Example 11: {agent_name} gets new contact and sends sign up instructions to new contact.
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ I'm not the person you want to contact, for group reservations that is Jason Yelton (jason@dbrparkcity.com).
+  
+  He has all the information you'll need for available sections, group sizes, F&B minimums, menu options, etc.
+  
+  Looking forward to working with you, though!
+  {lead_first_name} {lead_last_name}
+ 
+
+Assistant:
+Thanks {lead_first_name} I will reach out to Jason directly and I’m looking forward to working with you too! 
+ 
+If you happen to chat with them, feel free to pass the below along with my contact information their way:
+
+When you get a chance, can you  <a href={signup_link}> sign up </a> or <a href={login_link}> log in </a> and get a quote back to {reseller_org_name} so that you can be considered for this request?
+
+You currently have an account on our free basic plan. Basic plan users can maintain a free profile on the platform that is shareable with their existing network of planners. In other words, if you already have great connections with corporate meeting planners, travel agents, tour operators, etc, you can use Reposite to give your partners updates on pricing, menus, new offerings, etc. from one centralized workspace. Bookings that happen on the basic plan incur a  commission.
+ 
+However, if you are looking to expand your network and drive more bookings, you'd want to upgrade to a membership. This will give you access to all relevant leads in your market, in addition to our prospecting tool, Discover, which allows you to filter through Reposite's network of professional planners to make connections that lead to long-term partnerships and repeat bookings. You can find all the details about our membership plan <a href={membership_link}> here </a> and check out this short <a href={demo_link}> demo </a> of the platform.
+  
+ Please let me know if you have any questions.
+
+ {agent_name}
+"
+"Greetings,
+  
+  My colleague forwards this information to my attention. We don’t see to have an account at Reposi.
+  
+  Please let us know if this can be answer by email instead.
+  
+  Cordially,
+  {lead_first_name} {lead_last_name}
+  E. {email}","Assistant:
+ Hi {lead_first_name},
+  
+ Someone from your team created an account on Reposite under {email} (don’t worry it could have been a while ago or an old colleague, happens all the time). 
+ 
+
+ To answer this request, you can log in with {email} and use the reset password function or you can add another email to your existing account by going through our very abbreviated sign up flow. Please go to this <a href={signup_link}> link </a> and sign up under suppliers with a new email and password. For organization name, be sure to enter {supplier_name} exactly as it is here so that you are added to the existing account. From there you'll be able to navigate to the quotes dashboard and respond to this request.  
+ 
+
+ Since Reposite is a new tool for you, you can check out our <a href={membership_link}> membership page </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of what we do! 
+ 
+
+ Please let me know if this information was helpful or if you'd like to schedule a brief call to go over anything live!
+ 
+
+ Best,
+ {agent_name}","Example 12: {agent_name} shares the details of the quote request with a prospect.
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Greetings,
+  
+ My colleague forwarded this information to my attention. 
+  
+ Please let us know if this can be answer by email instead.
+  
+ Cordially,
+  {lead_first_name} {lead_last_name}
+  {email}
+ 
+
+ Assistant:
+ Hi {lead_first_name},
+  
+ Someone from your team created an account on Reposite under {email} (don’t worry it could have been a while ago or an old colleague, happens all the time). 
+ 
+
+ To answer this request, you can log in with {email} and use the reset password function or you can add another email to your existing account by going through our very abbreviated sign up flow. Please go to this <a href={signup_link}> link </a> and sign up under suppliers with a new email and password. For organization name, be sure to enter {supplier_name} exactly as it is here so that you are added to the existing account. From there you'll be able to navigate to the quotes dashboard and respond to this request.  
+ 
+
+ Since Reposite is a new tool for you, you can check out our <a href={membership_link}> membership page </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of what we do! 
+ 
+
+ Please let me know if this information was helpful or if you'd like to schedule a brief call to go over anything live!
+ 
+
+ Best,
+ {agent_name}"
+"{agent_name}, 
+ 
+
+ Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
+ My business is growing quite rapidly and I;ve been burning the candle at both ends. i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
+ 
+
+ Best Regards,
+ {lead_first_name}","Assistant:
+ Hey {lead_first_name},
+ 
+
+ Thanks for getting back to me, I appreciate your time with everything else going on!
+ 
+
+ Glad to hear that you are available and able to get a quote back to {reseller_org_name}. I would definitely encourage you to send that over as soon as you can. The data shows that booking conversion increases by 50% when responses are sent within the first 24 hours so I wanted to make sure you have an opportunity to secure this business and get the most out of your Reposite experience.
+ 
+
+ At the moment, you are on our Basic Plan which requires no upfront cost. I recommend upgrading to our <a href={membership_link}> membership plan </a> to continue receiving group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ If you choose not to upgrade to our membership plan, you are able to maintain a free profile but you will not have access to the business development tools that the platform offers (i.e. the Marketplace and the Discover tool). You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request. If a lead were to book, you’d owe Reposite a 15% commission.
+ 
+
+ If you’d like to set up a time to discuss further, you can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}","Example 13: {agent_name} urges a prospect to respond quickly/pitches membership.
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ {agent_name}, 
+ 
+
+ Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
+ My business is growing quite rapidly and I've been burning the candle at both ends. i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
+ 
+
+ Best Regards,
+ {lead_first_name}
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+
+ Thanks for getting back to me, I appreciate your time with everything else going on!
+ 
+
+ Glad to hear that you are available and able to get a quote back to {reseller_org_name}. I would definitely encourage you to send that over as soon as you can. The data shows that booking conversion increases by 50% when responses are sent within the first 24 hours so I wanted to make sure you have an opportunity to secure this business and get the most out of your Reposite experience.
+ 
+
+ At the moment, you are on our Basic Plan which requires no upfront cost. I recommend upgrading to our <a href={membership_link}> membership plan </a> to continue receiving group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ If you choose not to upgrade to our membership plan, you are able to maintain a free profile but you will not have access to the business development tools that the platform offers (i.e. the Marketplace and the Discover tool). You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request. If a lead were to book, you’d owe Reposite a 15% commission.
+ 
+
+ If you’d like to set up a time to discuss further, you can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}"
+"I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
+ 
+
+ {lead_first_name} {lead_last_name}","Assistant:
+ 
+
+ You can reset your password from <a href={login_link}> here </a>. Unfortunately, the only way to communicate directly with the planner and be considered for the group would be through the platform. 
+ 
+
+ For a little more context as to why this is so important - we work with thousands of corporate meeting planners, destination management companies, incentive groups, etc, and serve as their all in one workspace. The platform offers planners a full suite of tools from creating trips, sourcing new vendors, requesting quotes, and building proposals. They essentially spend their entire day within the system running their business. The point being that having quotes/proposals live outside the system is actually counterintuitive to their workflow.
+ 
+
+ In addition to that, the great part is that once you are all set up you can actually reply to the new leads directly from your inbox since we integrate with your email, so you don't have to login each time a new request is sent your way.
+ 
+
+ If you’d like additional assistance, you can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}","Example 14: {agent_name} explains the details of a login for a prospect who is having trouble logging in.
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ 
+
+ I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
+ 
+
+ {lead_first_name} {lead_last_name}
+ 
+
+Assistant:
+ 
+
+ You can reset your password from <a href={login_link}> here </a>. Unfortunately, the only way to communicate directly with the planner and be considered for the group would be through the platform. 
+ 
+
+ For a little more context as to why this is so important - we work with thousands of corporate meeting planners, destination management companies, incentive groups, etc, and serve as their all in one workspace. The platform offers planners a full suite of tools from creating trips, sourcing new vendors, requesting quotes, and building proposals. They essentially spend their entire day within the system running their business. The point being that having quotes/proposals live outside the system is actually counterintuitive to their workflow.
+ 
+
+ In addition to that, the great part is that once you are all set up you can actually reply to the new leads directly from your inbox since we integrate with your email, so you don't have to login each time a new request is sent your way.
+ 
+
+ If you’d like additional assistance, you can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}"
+we're booked,"Assistant: 
+ Hey {lead_first_name},
+ 
+
+ Completely understand. Even though this specific group doesn't make sense, I still highly recommend responding just to build the relationship - {reseller_org_name} plans a lot of events in the area, and are looking for long-term supplier partners.
+ 
+
+ Outside of this particular day, do you have capacity to bring on additional groups? If so, you can check out our <a href={membership_link}> membership plan </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we can help drive consistent group bookings.
+ 
+ 
+
+ {agent_name}","Example 15: {agent_name} encourages user to respond even though they are booked.
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ 
+
+ Hi {agent_name},
+ 
+
+ We are all booked up on those dates. Keep us in mind for future groups.
+ 
+
+ Best,
+ {lead_first_name} 
+ 
+
+Assistant: 
+ Hey {lead_first_name},
+ 
+
+ Completely understand. Even though this specific group doesn't make sense, I still highly recommend responding just to build the relationship - {reseller_org_name} plans a lot of events in the area, and are looking for long-term supplier partners.
+ 
+
+ Outside of this particular day, do you have capacity to bring on additional groups? If so, you can check out our <a href={membership_link}> membership plan </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we can help drive consistent group bookings.
+ 
+ 
+
+ {agent_name}"
+I'll get to it,"Assistant:
+ 
+
+ Hey {lead_first_name},
+ 
+
+ Thanks for getting back to me!
+ Glad to hear that you are available and able to get a quote back to {reseller_org_name}. Totally understand you are busy, I'm only reaching out because the data shows that booking conversion increases by 50% when responses are sent within the first 24 hours so I wanted to make sure you have an opportunity to secure this business and get the most out of your Reposite experience! 
+ 
+
+ At the moment, you are on our Basic Plan which requires no upfront cost. I recommend upgrading to our <a href={membership_link}> membership plan </a> to continue receiving group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ If you choose not to upgrade to our membership plan, you are able to maintain a free profile but you will not have access to the business development tools that the platform offers (i.e. the Marketplace and the Discover tool). You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request. If a lead were to book, you’d owe Reposite a commission.
+ 
+
+ If you’d like to set up a time to discuss further, you can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}","Example 16: {agent_name} encourages user to respond within 24 hours.
+ Assistant:
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Yes, this lead is relevant. Thanks for the reminder {agent_name}. We’ll get to it when we can.
+ 
+
+Assistant:
+ 
+
+ Hey {lead_first_name},
+ 
+
+ Thanks for getting back to me!
+ Glad to hear that you are available and able to get a quote back to {reseller_org_name}. Totally understand you are busy, I'm only reaching out because the data shows that booking conversion increases by 50% when responses are sent within the first 24 hours so I wanted to make sure you have an opportunity to secure this business and get the most out of your Reposite experience! 
+ 
+
+ At the moment, you are on our Basic Plan which requires no upfront cost. I recommend upgrading to our <a href={membership_link}> membership plan </a> to continue receiving group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ If you choose not to upgrade to our membership plan, you are able to maintain a free profile but you will not have access to the business development tools that the platform offers (i.e. the Marketplace and the Discover tool). You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request. If a lead were to book, you’d owe Reposite a commission.
+ 
+
+ If you’d like to set up a time to discuss further, you can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}"
+what is Reposite,"Assistant:
+ 
+
+ Happy to provide some additional context. At some point, {email} created an account for {supplier_name} on Reposite but it may have been a while ago! Reposite is a marketplace connecting professional meeting and event planners to suppliers like yourself. For the planners, we make it easy for them to find what they need without having to do the research or outreach. For suppliers like you, we give you the opportunity to connect with thousands of professional planners in addition to capitalizing on live leads in your area. 
+ 
+ You are currently on our Basic Plan which allows you to maintain a free profile on the platform but does not give you access to the most beneficial business development tools that we offer. Since you are new to the platform it might make sense to  check out our <a href={membership_link}> membership page </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we can help. 
+ 
+
+ Are you using any other tools to connect with group planners?
+ 
+
+ {agent_name}","Example 17: {agent_name} reiterates what Reposite is and encourages user to respond.
+ 
+
+ Assistant:
+ 
+
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ 
+
+ I’m not sure what you are talking about, what request?
+ 
+
+ Assistant:
+ 
+
+ Happy to provide some additional context. At some point, {email} created an account for {supplier_name} on Reposite but it may have been a while ago! Reposite is a marketplace connecting professional meeting and event planners to suppliers like yourself. For the planners, we make it easy for them to find what they need without having to do the research or outreach. For suppliers like you, we give you the opportunity to connect with thousands of professional planners in addition to capitalizing on live leads in your area. 
+ 
+ You are currently on our Basic Plan which allows you to maintain a free profile on the platform but does not give you access to the most beneficial business development tools that we offer. Since you are new to the platform it might make sense to  check out our <a href={membership_link}> membership page </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we can help. 
+ 
+
+ Are you using any other tools to connect with group planners?
+ 
+
+ {agent_name}"
+I responded already,"Assistant:
+ 
+
+ Perfect, that’s great to hear and my apologies for following up without checking! 
+ 
+
+ Considering your interest in working with these types of groups, it’s worth mentioning that you are currently on our Basic Plan which requires no upfront cost. I recommend upgrading to our <a href={membership_link}> membership plan </a> to receive consistent group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city. You can also check out this short <a href={demo_link}> demo </a> of the platform to get a better idea of the platform and our membership benefits.
+ 
+
+ If you’d like to set up a time to discuss further, you can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}","Example 18: {agent_name} thanks user for responding to the planner within the platform.
+ Assistant:
+ 
+
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ 
+
+ Hi {agent_name}. Yes, I sent a quote to {reseller_org_name}. What else do you need from me?
+ 
+
+Assistant:
+ 
+
+ Perfect, that’s great to hear and my apologies for following up without checking! 
+ 
+
+ Considering your interest in working with these types of groups, it’s worth mentioning that you are currently on our Basic Plan which requires no upfront cost. I recommend upgrading to our <a href={membership_link}> membership plan </a> to receive consistent group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city. You can also check out this short <a href={demo_link}> demo </a> of the platform to get a better idea of the platform and our membership benefits.
+ 
+
+ If you’d like to set up a time to discuss further, you can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}"
+too much work,"Assistant:
+ 
+
+ Hi {lead_first_name},
+ 
+
+ Definitely understand that it might be a new way of operating for {supplier_name} but there’s a ton of opportunity to connect with our network of 3,000+ planners like {reseller_org_name} who work with a ton of groups and events each year. We also recently were acquired by Cvent who has 125,000 active planners in their network who will all be given access to Reposite. 
+ 
+
+ Customer feedback is super important to us so if you wouldn't mind sharing, I'd love to hear the major blockers in our workflow so that I can take it back to our engineering team! 
+ 
+
+ {agent_name}","Example 19: {agent_name} urges response when user says Reposite is too much work.
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+
+ I saw you just set up an account for {supplier_name} on Reposite! Congrats on being invited by {reseller_org_name}.
+
+ Have you had a chance to respond to this request?
+
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name},
+ 
+ The platform won't work for us - it's a lot of double handling.
+ Thanks
+ 
+
+Assistant: 
+Hi {lead_first_name},
+ 
+Definitely understand that it might be a new way of operating for {supplier_name} but there’s a ton of opportunity to connect with our network of 3,000+ planners like {reseller_org_name}. 
+
+Considering you already have an account, would it be worth responding to this one and potentially earning the booking?
+
+We also recently were acquired by Cvent who has 125,000 active planners in their network who will all be given access to Reposite. You can find all the details about our membership plan <a href={membership_link}> here </a> and check out this short <a href={demo_link}> demo </a> of the platform.
+   
+ Please let me know if you have any questions.
+
+ {agent_name}
+"
+wasn't able to log in,"Assistant:
+ Hi {lead_first_name},
+ 
+
+ You can reset your password from <a href={login_link}> here </a>. If you've tried that with no luck, it might make sense to set up a brief call to solve the issue and give you a refresher on Reposite! We were recently acquired by Cvent, the world's largest event technology platform, so it might be a great time to discuss what the future of Reposite looks like and how we can help {supplier_name}. 
+ 
+
+ You can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+ {agent_name}","Example 20: {agent_name} helps user who is having issues logging in.
+ 
+
+ Assistant:
+ 
+
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
+ 
+
+ {lead_first_name} {lead_last_name}
+ 
+
+Assistant:
+ Hi {lead_first_name},
+ 
+
+ You can reset your password from <a href={login_link}> here </a>. If you've tried that with no luck, it might make sense to set up a brief call to solve the issue and give you a refresher on Reposite! We were recently acquired by Cvent, the world's largest event technology platform, so it might be a great time to discuss what the future of Reposite looks like and how we can help {supplier_name}. 
+ 
+
+ You can reply with your availability or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+ {agent_name}"
+commissionable rate,"Assistant:
+ 
+
+ Hey {lead_first_name},
+ 
+
+ At the moment, you are on our Basic Plan which requires no upfront cost but you would owe 15% should the booking finalize. I recommend upgrading to our <a href={membership_link}> membership plan </a> to avoid any commission fees on booked business and receive consistent group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ If you choose not to upgrade to our membership plan, you are able to maintain your free profile but you will not have access to the business development tools that the platform offers (i.e. the Marketplace and the Discover tool). You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request, as was the case in this instance.
+ 
+
+ To learn more, check out this short <a href={demo_link}> demo </a> or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ Best,
+ {agent_name}","Example 21: {agent_name} confirms commission and pitches membership.
+ 
+
+ Assistant
+ 
+
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Is there a commission?
+ 
+
+ Assistant:
+ 
+
+ Hey {lead_first_name},
+ 
+
+ At the moment, you are on our Basic Plan which requires no upfront cost but you would owe 15% should the booking finalize. I recommend upgrading to our <a href={membership_link}> membership plan </a> to avoid any commission fees on booked business and receive consistent group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ If you choose not to upgrade to our membership plan, you are able to maintain your free profile but you will not have access to the business development tools that the platform offers (i.e. the Marketplace and the Discover tool). You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request, as was the case in this instance.
+ 
+
+ To learn more, check out this short <a href={demo_link}> demo </a> or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ Best,
+ {agent_name}"
+yea that sounds great,"Assistant:
+ 
+
+ Hey {lead_first_name},
+ 
+
+ That’s great to hear! 
+ 
+
+ To reply with some pricing, just log in <a href={login_link}> via this link </a> and navigate to the quotes dashboard. Here you can go back and forth directly with {reseller_org_name}.
+ 
+
+ If you’re looking to expand your network of planners and drive more custom groups and private events, I highly recommend checking out our <a href={membership_link}> membership plan </a>. It’s just {price} for the year and will give you access to all relevant leads in your market, in addition to our prospecting tool, Discover, which allows you to filter through Reposite's network of professional planners who send business to your city. 
+ 
+
+ You can also check out this short <a href={demo_link}> demo </a> of the platform to get a better idea of membership benefits.
+ 
+
+ If you’d like to set up a time to discuss further, you can book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}","Example 22: {agent_name} points an interested member towards signing up for a demo.
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ 
+
+ Yea, that sounds great, I love working with groups!
+ 
+
+ Assistant:
+ 
+
+ Hey {lead_first_name},
+ 
+
+ That’s great to hear! 
+ 
+
+ To reply with some pricing, just log in <a href={login_link}> via this link </a> and navigate to the quotes dashboard. Here you can go back and forth directly with {reseller_org_name}.
+ 
+
+ If you’re looking to expand your network of planners and drive more custom groups and private events, I highly recommend checking out our <a href={membership_link}> membership plan </a>. It’s just {price} for the year and will give you access to all relevant leads in your market, in addition to our prospecting tool, Discover, which allows you to filter through Reposite's network of professional planners who send business to your city. 
+ 
+
+ You can also check out this short <a href={demo_link}> demo </a> of the platform to get a better idea of membership benefits.
+ 
+
+ If you’d like to set up a time to discuss further, you can book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}"
+urgency,"Assistant:
+ 
+
+ Hi {lead_first_name},
+ 
+
+ That’s great to hear! I would definitely encourage you to send that over as soon as you can. The data shows that booking conversion increases by 50% when responses are sent within the first 24 hours so I want to make sure you have the best opportunity to secure this business and get the most out of your Reposite experience. Reposite is a powerful marketplace connecting professional meeting and event planners to suppliers like yourself. For the planners, we make it easy for them to find any supplier that they need without having to do the research or outreach. For suppliers like you, we give you the opportunity to connect with thousands of professional planners in addition to capitalizing on live leads in your area. 
+ 
+
+ At the moment, you are on our Basic Plan which requires no upfront cost. I recommend upgrading to our <a href={membership_link}> membership plan </a> to receive more consistent group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ It’s just {price} per year to receive all relevant RFPs directly to your inbox, unlimited access to our Discover Tool for outbound prospecting, and networking opportunities for our members.
+ 
+
+ You can also check out this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we can help drive more group bookings to {supplier_name}.
+ 
+
+ If you’d like to set up a time to discuss further, you can book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}","Examples 23: {agent_name} encourages user to respond within 24 hours and sends membership details.
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+
+ I saw that your Reposite profile just sparked some new interest! A planner {reseller_org_name} just sent you a new quote request - they're looking for {category} suppliers in {destination}.
+ 
+
+ Based on the details, do you feel like this lead is relevant for {supplier_name}?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name},
+ 
+
+ Sure we can get to that by the end of this week. Can you remind me again what your company does and how much it costs?
+ 
+
+ Assistant:
+ 
+
+ Hi {lead_first_name},
+ 
+
+ That’s great to hear! I would definitely encourage you to send that over as soon as you can. The data shows that booking conversion increases by 50% when responses are sent within the first 24 hours so I want to make sure you have the best opportunity to secure this business and get the most out of your Reposite experience. Reposite is a powerful marketplace connecting professional meeting and event planners to suppliers like yourself. For the planners, we make it easy for them to find any supplier that they need without having to do the research or outreach. For suppliers like you, we give you the opportunity to connect with thousands of professional planners in addition to capitalizing on live leads in your area. 
+ 
+
+ At the moment, you are on our Basic Plan which requires no upfront cost. I recommend upgrading to our <a href={membership_link}> membership plan </a> to receive more consistent group requests like this one. More importantly, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ 
+
+ It’s just {price} per year to receive all relevant RFPs directly to your inbox, unlimited access to our Discover Tool for outbound prospecting, and networking opportunities for our members.
+ 
+
+ You can also check out this short <a href={demo_link}> demo </a> of the platform to get a better idea of how we can help drive more group bookings to {supplier_name}.
+ 
+
+ If you’d like to set up a time to discuss further, you can book at time on the <a href={calendar_link}> calendar </a> that works best for you.
+ 
+
+ {agent_name}"
+"Good morning Dawn, 
+  Do you want to reach out and see what he would like. 
+  Thank you!  
+  {lead_first_name}","Assistant:
+ Hi {lead_first_name},
+  
+ Thank you for letting me know about the update. I'll ensure all future group business leads come to you directly. Also, thanks for pointing out the issue about only seeing an old 2022 lead on our platform - looks like the newest request wasn't connecting with your existing account, so I'll flag this to my team and make sure that it appears in your quotes dashboard. 
+  
+ Since you may be new to the platform, I'd recommend checking out our <a href={membership_link}> membership plan </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of what Reposite can do.
+ 
+
+ I'd also be happy to set up a time to discuss further, you can book on this <a href={calendar_link}> link </a> at a time that's convenient for you.
+ 
+
+ Best, 
+ {agent_name}","Example 24: {agent_name} corrects who she responds to moving forward.
+ 
+
+ Assistant:
+ Hey {lead_first_name}, 
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+ Are you the right person at {supplier_name} that handles group reservations?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Good morning Dawn, 
+  Do you want to reach out and see what he would like. 
+  Thank you!  
+  {lead_first_name}
+ 
+
+ Assistant:
+ Thanks {lead_first_name}! I’ll follow up with Dawn moving forward.
+ 
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name}, 
+ All leads should flow to me not Edita. I handle all group business. 
+ Also, when I log on your platform, I only see an old 2022 lead. Nothing current. 
+ Warm Regards,
+Dawn
+ 
+
+Assistant:
+ Hi Dawn,,
+  
+ Thank you for letting me know about the update. To ensure all future communication comes to you directly, please  <a href={signup_link}> sign up </a> to your account for {supplier_name}.
+  
+Since you may be new to the platform, I'd recommend checking out our <a href={membership_link}> membership plan </a> and this short <a href={demo_link}> demo </a> of the platform to get a better idea of what Reposite is about.
+ 
+If you would like to schedule a time to  discuss membership further, you can book on the calendar <a href={calendar_link}> link </a> at a time that's convenient for you.
+ 
+ Best, 
+ {agent_name}
+"

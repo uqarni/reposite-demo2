@@ -1,4 +1,12 @@
-import openai
+
+
+from openai import OpenAI
+
+
+
+import os
+api_key: str = os.environ.get("OPENAI_API_KEY")
+client = OpenAI(api_key=api_key)
 import json
 
 
@@ -32,44 +40,6 @@ functions=[
         ]
 
 
-
-# Step 1, send model the user query and what functions it has access to
-def run_conversation(bot_messages):
-
-    prompt = '''
-    You work in the sales department for Reposite, a travel agency and experience supplier marketplace.
-    Your job is to analyze the conversation between our sales agent (the Assistant) and the potential customer (the User) and determine if a follow-up is warranted. 
-
-    A follow-up is NOT warranted if:
-    (1) the user has indicated that they are not interested or are unhappy in some way. For example, they have said that they are not interested in the product or do not want to be contacted.
-    (2) the user has indicated that they already purchased the Reposite membership.
-    
-
-    Otherwise, a follow-up is warranted. 
-
-    If a follow-up is warranted, execute the followup() function with 'yes' as the input. If a follow-up is not warranted, execute the followup() function with "no" as the input.
-    '''
-    all_messages = [{'role': 'system', 'content': prompt}]
-    
-    #for iterate through redis database of all the conversations thus far:
-    all_messages.append({"role": "user", "content": str(bot_messages)})
-    
-    response = openai.ChatCompletion.create(
-        model="gpt-4o",
-        messages=all_messages,
-        functions=functions,
-        function_call= {"name": "followup"}
-
-    )
-
-    message = response["choices"][0]["message"]
-
-    # Step 2, check if the model wants to call a function
-    if message.get("function_call"):
-        function_name = message["function_call"]["name"]
-        return json.loads(message["function_call"]["arguments"])["yesno"]
-    else:
-        return 'error'
 
 
 # Step 1, send model the user query and what functions it has access to
@@ -168,24 +138,19 @@ def responder_run_conversation(bot_messages, agent_name):
         
         #for iterate through redis database of all the conversations thus far:
         all_messages.append({"role": "user", "content": f"Hey Boss - heres my message history so far. I am the assistant. Should I respond?\n\n{str(bot_messages)}"})
-    
-    
-        response = openai.ChatCompletion.create(
-            model="gpt-4o",
-            messages=all_messages,
-            functions=functions,
-            function_call= {"name": "followup"}
 
-        )
+        response = client.chat.completions.create(model = "gpt-4o", messages = all_messages,  functions=functions, function_call= {"name": "followup"},)
+        if response:
+            message = response.choices[0].message
+            return conversation(json.loads(message.function_call.arguments)["yesno"])
+        
+        print("-----------run conversation response", response)
 
-        message = response["choices"][0]["message"]
-
-        # Step 2, check if the model wants to call a function
-        if message.get("function_call"):
-            function_name = message["function_call"]["name"]
-            return json.loads(message["function_call"]["arguments"])["yesno"]
-        else:
-            return 'error'
     except Exception as e:
-        print("Error in running conversation")
+        print("Error in running conversation", e)
         return None
+    
+def conversation(yesno):
+    if yesno == "yes":
+        return True
+    return False   

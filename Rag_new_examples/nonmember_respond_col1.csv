@@ -1,0 +1,345 @@
+User Message
+"Hi {agent_name}, this is {lead_first_name}. What can I help you with?"
+"I don’t know what this means. I have not received any quote about anything.
+  {lead_first_name} {lead_last_name}
+  {email}"
+"Dear {agent_name},
+  
+ Hope this email finds you very well.
+  View emails from our groups and sales team for proper follow-up to your requests.
+  groupspuj@royaltonresorts.com groups2puj@royaltonresorts.com
+  
+ Best regards,"
+"Hi {agent_name},
+  Yes we did receive a request! Thanks for reaching out.
+  My name is {lead_first_name} and I'll be your point of contact for scheduling group reservations. Currently awaiting a response from Tim Cotter at Reposite before finalizing a quote for you. Let me know if you need anything else from our side regarding setting up future events/group reservations.
+  
+ Thanks, {lead_first_name}"
+"Good Morning {agent_name}, Can this be made within monthly payments? Can you please explain how your platform works?"
+"Good morning {agent_name},
+  
+  In order to quote please provide the following information:
+  What date would be your activity?
+  Time of the activity.
+  Duration of the activity.
+  Do you want three courses and beverages? or cocktail/butler style service? (meaning abundant food will be passed by during the event)
+  I'll be sending you a link with a video of our restaurant for your reference.
+  
+  Best,
+  {lead_first_name}"
+"Hello, 
+ 
+
+ Please see the attached proposal. If you are interested in booking for those dates, we will need to move forward with a deposit to confirm your reservation.
+ 
+
+ Thank you,"
+"Yes give me a call, imnot sure what this is. 512-480-0200"
+"Dear {agent_name},
+  Thank you for your email and we appreciate you reaching out to us.
+  Please be informed that the information was forwarded to our management team. 
+  Best regards,
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}"
+"Hi {agent_name} -
+  Please direct all group reservations to myself at manager@baobrewhouse.com 
+  Thank you,
+  {lead_first_name} {lead_last_name}"
+"{agent_name}, 
+  Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
+  I popped over to the website and saw the request come through, we can totally put something together for them. We have a couple different cocktail classes we put together that are an absolute blast every time.  
+  Can you help me with next steps? 
+  Cheers,
+  
+ 
+
+  {lead_first_name} {lead_last_name}
+  {supplier_name}"
+"User:
+ {agent_name}, 
+  Thanks for responding, I wonder if anyone has ever answered no to your follow up question!! 
+  So to be honest, I don’t 100% understand how I got connected with you guys, example how I got onto your platform initially without setting it up. That said, I did look at it, it seems reputable so I set up a cocktail class portal on there to see if there’s any traction. 
+  I am happy you guys have a free tiered option, and I also totally understand that the main goal is to get people into the premium tier. I am apprehensive because a few years back I got burned pretty bad with WeddingWire. They tricked me into signing up by sending a fake request right after I signed up which gave me a false affirmation that I made a good decision. In the 6 or so months I was on their premium tier I didn’t get a single real lead and it cost a lot of money. This feels a little bit the same, so if/when I get any type of real traction i’ll be comfortable with looking at pricing for higher tiers. I’m excited at the prospect!! 
+  Cheers,
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+"
+"Hi {agent_name}, 
+  
+ 
+
+  Thanks, yes I am the correct contact for group reservations. 
+  I was concerned about your quote email from 9/20/23 .... worried it was spam and did not want to click on links. 
+  
+ 
+
+  I tried calling the phone # of Anand 646 688-0433 and have left messages. 
+  
+ 
+
+  Please text me at 435 649-1674 and will call you right back.  
+  
+ 
+
+  I hope it works to play music for you! 
+  
+ 
+
+  Thanks, 
+  {lead_first_name} {lead_last_name}"
+"Hi {agent_name},
+  Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. I met with Brenden and Anand from your team the other day and they got me all caught up on your platform!
+  {lead_first_name} {lead_last_name}
+  {supplier_name} {email}"
+"Hello, 
+  Yes, I am. However, we have never signed up for Reposite nor are we affiliated with said company. 
+  I am not aware of any new reservations through Reposite? 
+  {lead_first_name} {lead_last_name}"
+"I'm not. The person you want to contact for group reservations is Jason Yelton (jason@dbrparkcity.com).
+  
+ 
+
+  He has all the information you'll need for available sections, group sizes, F&B minimums, menu options, etc.
+  
+ 
+
+  Looking forward to working with you, though!
+  {lead_first_name} {lead_last_name}"
+"Greetings,
+  
+  My colleague forwards this information to my attention. We don’t see to have an account at Reposi.
+  
+  Please let us know if this can be answer by email instead.
+  
+  Cordially,
+  {lead_first_name} {lead_last_name}
+  E. {email}"
+"Dear All
+  we are able to arrange transfer for {reseller_org_name}
+  Please send us your request.
+  
+ 
+
+  Regards
+  {lead_first_name} 
+  
+ 
+
+  
+ 
+
+  {lead_first_name}
+  {supplier_name}
+  {email}"
+"Hi {agent_name},
+  
+  Can you please provide more information on this below group reservation you said came through to us?
+  
+  Thank you,
+  
+  {lead_first_name} {lead_last_name}"
+"Good morning Dawn, 
+  Do you want to reach out and see what he would like. 
+  Thank you!  
+  {lead_first_name}"
+"Hi {agent_name},
+  
+  Thank you for emailing to our {supplier_name} in Bal Harbour, Florida.
+  
+  My name is {lead_first_name} {lead_last_name}, /Revenue Manager. Sandy forwarded your message to me.
+  
+  We currently use several other channels for groups like hotel planner, Cvent, etc and we are not interested in other channels for the group at this moment. 
+  
+  Please feel free to contact me if you have questions.  
+  
+  Have a great day ! 
+  
+  Sincerely,
+  {lead_first_name} {lead_last_name}
+  {supplier_name}"
+"Hi
+  Thank you for your email.
+  Please can you update the email address to @Enquiries 1Wimpolestreet , this is to the sales team who will respond within 2 working hours.
+  
+  Kind regards
+  {lead_first_name} {lead_last_name}"
+"Most certainly. 
+  We love group reservations 
+  
+ 
+
+  {lead_first_name} {lead_last_name}"
+"Good afternoon, Mr. Bowdin,
+  
+  Greetings from Group Sales Department from {supplier_name}.
+  
+  I will be your contact person if you are looking to book 25 rooms and over. Please let me know the date and number of rooms to verify our availability.
+  
+  I remain attentive to your comments.
+  Kind regards / Saludos cordiales,
+  {lead_first_name} {lead_last_name}"
+"hello.
+  I tried to input the quote in your website.
+  28 pax MiniBus 4hrs(4hrs Minimum)*$169= $676 All Inclusive
+  Please let us know if you are interested .
+  —
+  Best Regards,
+  {lead_first_name}
+  Thank you for choosing {supplier_name}.
+  {supplier_name}  
+  {destination}"
+"No. Thank you for calling our client services team
+  
+ 
+
+  {lead_first_name} {lead_last_name}"
+"Yes but we don’t open links. Can you send us info in a general email and we will answer it.
+  
+ 
+
+  {lead_first_name} {lead_last_name}"
+"Hi {agent_name},
+  
+ 
+
+  How did we get on this website? I'm not interested in paying for anything and I do not have time for a phone call.
+  
+ 
+
+  Thanks,
+  {lead_first_name} 
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  -- 
+  
+ 
+
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}"
+"Hey guys,
+ Yes, I handle all inquiries and bookings. We don’t do corporate events. Thanks anyway! xo"
+"Hi {agent_name},
+  
+ We already use CVENT for group bookings."
+"I think you may have us confused with another company or group. We are a graphic design and printing company. You can remove our information from your database.
+ {lead_first_name}"
+"{agent_name}, 
+ 
+
+ Private parties aren’t really our thing. Sorry! 
+ 
+
+  {lead_first_name}"
+"{agent_name}, 
+ 
+
+ Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
+ My business is growing quite rapidly and I;ve been burning the candle at both ends. i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
+ 
+
+ Best Regards,
+ {lead_first_name}"
+"Hello
+ We only fly 4 to 5 passengers plus the pilot. We specialize in smaller and more personal groups. If you’re looking to fly large groups, call Arizona Balloons.
+ Thank you
+ {lead_first_name}"
+"Hi {agent_name}, 
+ 
+
+ Yes, I can help you with group events! Which date are you looking for, and for how many people? What type of event are you looking for? 
+ 
+
+ Please keep in mind we are not a regular restaurant that accepts dinner reservations; you must book a private event to have the club open past 7:30pm Tuesday-Friday, or any day outside of that. 
+ 
+
+ Best, 
+ {lead_first_name} {lead_last_name}"
+"I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
+ 
+
+ {lead_first_name} {lead_last_name}"
+yes
+urgency
+"Hi Taylor
+Is there a cost to us that we need to pay you for the lead? 
+We are not familiar with your company nor do we have a profile on there.
+We are open to add for more leads the set up and training time is just the issue.
+Any help would be appreciated"
+"Hi Katie! I have a very large event today however I’ll move forward with it tomorrow. Thank you for your patience.
+
+Thanks!"
+"User:
+Hello {agent_name},
+
+Thanks for your interest in the {supplier_name}. With parties of {group_size} we do require a banquet agreement. A banquet agreement is just a limited menu. With your party being {group_size} you would only be able to have one entrée choice for everyone. Here is our banquet menu for you to look over. Everyone would get a salad with our house dressing, Creamy pesto. We also make sure every table has a loaf of bread. Once everyone is done with their meals we pass out our signature ice cream, Spumoni. This is not a confirmed reservation until I have your entrée selection. As to drinks did you want us to include just soft drinks + water or any coffee/tea/milk, iced tea, or beer/liquor/wine?
+
+We don’t offer any private rooms so this wouldn’t be a private event. Everything would be on one check with an added 20% gratuity. If you have any questions please let me know.
+
+Talk soon,
+{lead_first_name}
+"
+"Taylor
+
+We have never heard of you. and I am not sure why am getting a request for services through your platform as we are not registed on it. 
+
+We will ignore it"
+"Hi {agent_name},
+  
+  How did we get on your platform?
+
+  Thanks,
+  {lead_first_name} 
+"
+"Hi there Kate,
+
+Thank you for submitting this request. We have the following details: one EMT on 8/12/24 from 2PM-4:30PM at a location to be confirmed in Canarsie, Brooklyn, NY. Please note that we do have a 4 hour minimum, which will be reflected in our quote.
+
+I am copying our team; someone will be in touch with a quote for your review shortly. If you have any questions or would like to talk through anything, please let me know!
+
+Best,
+Michael"
+"User:
+ Hi {agent_name}, 
+
+More than happy to connect with your client directly so we can have everything that's needed from our end in place. Please include the following emails, including myself: accounting@paradocsworldwide.com, anna@paradocsworldwide.com, melissa@paradocsworldwide.com, mturman@paradocsworldwide.com and jen@paradocsworldwide.com. Thank you!
+
+ Thanks,
+ {lead_first_name} 
+"
+"User:
+Hi {agent_name} - great to connect with you. 
+
+I’m a bit confused as I’m not sure what you mean by the “event planner” is that a person or the program Reposite you are talking about. 
+
+Did you reach out to book an event or are you interested in having a sales meeting about this program? 
+If it’s about the program, I think we’d like to learn a bit more before signing up although we appreciate the free admission and all the information you shared!"
+"User:
+{agent_name}, 
+
+We already had an account with Reposite.  It was owned by a prior employee Mel Masi.  I have reclaimed the account and update the notifications (but cannot find where to update the ""owner"" of the account. "
+"User:
+Hello  {agent_name},
+
+I did receive another email from ‘Reposite’ earlier today and I am not interested. I would rather not sign up for a program, I am already using a platform for private dining that is working just fine for us. If your client would like to gather more information on our program and check availability, they are more than welcome to reach me via email, my cell number below, or they can go to MatthewsRestaurant.com and fill out the inquiry form on the private dining section of the website. That form will also come directly to me 😊 Thank you for your call.
+
+Thank You,
+{lead_first_name} "
+"User:
+ Dear {agent_name},
+  
+ I hope this email finds you well.
+  
+ Unfortunately, I am not authorized to access to this portal and get a membership, therefore, I won’t be able to provide a proposal for you.
+  
+  I will remain attentive to any other request, and I will be glad to assist you directly via email.
+  Kind regards / Saludos cordiales,
+  {lead_first_name} {lead_last_name}"
