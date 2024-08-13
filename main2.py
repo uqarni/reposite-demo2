@@ -243,14 +243,13 @@ def main():
             with open('database.jsonl', 'a') as f:
                 for index , message in enumerate(reversed(messages)):
                     if index == 0 :
+                        print("----------------,",index, message)
                         f.write(json.dumps(message) + '\n')
-                    break
 
             # Display the response in the chat interface
             string = ""
 
             for message in messages[1:]:
-                print("\n----------", message)
                 if "[secret internal message]" not in str(message):
                     string = string + message["role"] + ": " + message["content"] + "\n\n"
 
