@@ -36,7 +36,7 @@ def main():
     st.title("Taylor / Lee")
     st.write("To test, first select some fields then click the button below.")
   
-    campiagnOptions = ['Received NMQR', 'New QR', 'Token Change', 'Quote Hotlist', 'Booking Received', 'Newly Onboarded']
+    campiagnOptions = ['Received NMQR', 'New QR']
 
     #variables about the lead
     email = st.text_input('email', value = 'john@doe.com')
