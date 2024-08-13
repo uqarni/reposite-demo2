@@ -108,7 +108,7 @@ If you happen to chat with them, feel free to pass the below along with my conta
 
 You can view all of the quote details and respond, you can sign in to your account <a href={login_link}> here </a>
 
-You are currently on the free basic plan. If you are looking to expand your network and drive more custom groups and private events, you'd want to upgrade to a membership for just {cost} for the year, no additional fees or commissions. This will give you access to all relevant leads in your market, in addition to our prospecting tool, Discover, which allows you to filter through Reposite's network of professional planners who send business to your city.
+You are currently on the free basic plan. If you are looking to expand your network and drive more custom groups and private events, you'd want to upgrade to a membership for just {price} for the year, no additional fees or commissions. This will give you access to all relevant leads in your market, in addition to our prospecting tool, Discover, which allows you to filter through Reposite's network of professional planners who send business to your city.
 
 If you are interested in learning more about how Reposite works for our supplier partners, feel free to check out this short <a href={demo_link}> demo </a>, our member benefits page <a href={membership_link}> here </a>,  or book at time on the <a href={calendar_link}> calendar </a> that works best for you.
   

@@ -8,6 +8,8 @@ from datetime import datetime
 from supabase import create_client, Client
 from reminderwrapper import responder_run_conversation
 
+# from dotenv import load_dotenv
+# load_dotenv()
 #connect to supabase database
 urL: str = os.environ.get("SUPABASE_URL")
 key: str = os.environ.get("SUPABASE_KEY")
@@ -46,7 +48,7 @@ def main():
     nmqr_count = st.text_input('NMQR received', value = '0')
     campaign = st.selectbox("Select Campaign", campiagnOptions)
     quote_lead_goal_mode = st.selectbox("Quote Lead Goal Mode", options = ["No Response Needed", "Needs Response"], index = 0)
-    nmqrurl = 'nmqrurl.com'
+    nmqrurl = 'http://example.com'
     reseller_org_name = st.text_input('Reseller org name', value = 'Smith Co')
     category = st.text_input('Category', value = 'travel')
     date = st.text_input('Date', value = 'June 20, 2023')
