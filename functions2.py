@@ -101,6 +101,7 @@ def ideator(messages, lead_dict_info, bot_used):
         try:
             response = client.chat.completions.create(model = 'gpt-4o', messages = messages,  max_tokens = 500, temperature = 0)
             response =  response.choices[0].message.content
+            response = response.replace('\n','<br>')
             section ={ "role": "assistant", "content": response }
             messages.append(section)
             return messages
