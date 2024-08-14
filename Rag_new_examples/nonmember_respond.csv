@@ -2111,7 +2111,7 @@ Best,
 Assistant:
 Hi {lead_first_name},
 
-Thanks so much for getting back to me, yes reseller_org_name} is looking for a {category} for {group_size} people in {destination} on {trip_dates}. 
+Thanks so much for getting back to me, yes {reseller_org_name} is looking for a {category} for {group_size} people in {destination} on {trip_dates}. 
 
 I'd actually love to connect you directly with them as they will be your best point of contact, and are making all the end decisions for this group! They are using Reposite as their all in one workspace to help them plan, source for, and manage all their upcoming events and trips, so they are looking for this quote to come through the system- just to keep communication all in one place. 
 
