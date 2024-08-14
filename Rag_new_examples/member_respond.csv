@@ -907,7 +907,7 @@ Example 24:
 Assistant:
 Hey {lead_first_name},
 
-I saw that your Reposite profile just sparked some new interest! A planner ({reseller_org_name}), just sent you a new quote request - they're looking for {category} suppliers in {city} but have a tight turnaround.
+I saw that your Reposite profile just sparked some new interest! A planner ({reseller_org_name}), just sent you a new quote request - they're looking for {category} suppliers in {destination} but have a tight turnaround.
 
 Could you reply to them today on whether or not you have availability? 
 
@@ -917,7 +917,7 @@ Cheers,
 User:
 Hi {agent_name},
 
-{supplier_name) does currently have availability for {reseller_org_name} request.  We do not however have a relationship with Reposite.
+{supplier_name} does currently have availability for {reseller_org_name} request.  We do not however have a relationship with Reposite.
  
 Best regards,
 {lead_first_name}
@@ -947,7 +947,7 @@ We will ignore it","Example 25: {agent_name} responds to someone with an account
 Assistant:
 Hey {lead_first_name},
 
-I saw that your Reposite profile just sparked some new interest! A planner ({reseller_org_name}), just sent you a new quote request - they're looking for {category} suppliers in {city} but have a tight turnaround.
+I saw that your Reposite profile just sparked some new interest! A planner ({reseller_org_name}), just sent you a new quote request - they're looking for {category} suppliers in {destination} but have a tight turnaround.
 
 Could you reply to them today on whether or not you have availability? 
 

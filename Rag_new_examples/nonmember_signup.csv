@@ -1122,7 +1122,7 @@ When would be a good time for us to connect?
  Are you looking to expand your groups business?
   
  Best, 
- {agent_name
+ {agent_name}
 ",7/29 - BH updated
 "Hi {agent_name},
   
@@ -2083,7 +2083,7 @@ Great to hear from you.
 
 We offer all 10 Reposite categories everywhere, within those categories there are a bunch of subtypes as well so that our database of suppliers can cover anything that our planner partners might be looking for. {destination} is no different and Reposite membership is based on market/city not neighborhood within a city so you can list your services for {category} throughout {destination}.
 
-Regarding the number of {category} requests in {city}, I don’t currently have access to that information as Reposite is an always evolving and growing marketplace. With the addition of Cvent’s database of 125,000 planner partners, we are also expecting a ton of growth in RFP volume so historical data won’t be that relevant moving forward.
+Regarding the number of {category} requests in {destination}, I don’t currently have access to that information as Reposite is an always evolving and growing marketplace. With the addition of Cvent’s database of 125,000 planner partners, we are also expecting a ton of growth in RFP volume so historical data won’t be that relevant moving forward.
 
 You can check out our member benefits page <a href={membership_link}> here </a> along with this short <a href={demo_link}> demo </a> of the platform to evaluatee if this is a good tool for {supplier_name}. If you would like to set up a call to discuss this further, one of my colleagues is available, you can schedule a call on the <a href={calendar_link}> calendar </a> that works best for you .
 
