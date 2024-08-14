@@ -39,8 +39,8 @@ def find_similarity(representative, query, type, k=4):
 
         elif type == 'member_upgrade':
             print("------Member Upgrade Rag 4--------\n")
-            full_file = 'Rag_new_examples/nonmember_upgrade.csv'
-            col1 = 'Rag_new_examples/nonmember_upgrade_col1.csv'
+            full_file = 'Rag_new_examples/member_upgrade.csv'
+            col1 = 'Rag_new_examples/member_upgrade_col1.csv'
 
             
         loader = CSVLoader(file_path=col1)
