@@ -1,4 +1,4 @@
-User Message,Full Convo,
+User Message,Full Convo
 "Hi {agent_name}, this is {lead_first_name}. What can I help you with?","Example 1: {agent_name} clarifies the specifics of the quote request and encourages prospect to respond.
  
 
@@ -25,13 +25,13 @@ User Message,Full Convo,
   
 Great to connect with you! Can definitely help provide some clarity here. One of the planners we work with {reseller_org_name} was sourcing suppliers via our Quote Request tool for their trip in {destination} for {group_size} people. We didn't have enough {category} options for {reseller_org_name} within our network so we did a little research, noticed {supplier_name} looked like a great fit, and sent you the group lead directly. The request was originally sent to {email}, but if you're unable to find it in your inbox, you can view it and respond directly to {reseller_org_name} on this <a href={nmqrurl}> link </a> . 
  
-There’s no cost to sign up for our basic free plan, create your profile,  and respond to this lead within Reposite. (For our basic plan users, there is a commission on all successful bookings.) You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!
+There’s no cost to sign up for our basic free plan, create your profile,  and respond to this lead within Reposite. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!
 
 Do you leverage any other tools or platforms to help generate consistent group leads/business?
  
 
   Best, 
- {agent_name}",commission percentage
+ {agent_name}"
 "I don’t know what this means. I have not received any quote about anything.
   {lead_first_name} {lead_last_name}
   {email}","Example 2: {agent_name} clarifies the specifics of the quote request and encourages prospect to respond.
@@ -58,13 +58,13 @@ Do you leverage any other tools or platforms to help generate consistent group l
  
 
 Assistant:
-Hey {lead_first_name} - Can definitely help provide some clarity here. One of the travel planners we work with {reseller_org_name} was sourcing suppliers via our Quote Request tool for their trip in {destination} for {group_size} people, and after doing some research you looked like a great fit so they reached out through Reposite. The request was originally sent to {email}, but if you're unable to find it in your inbox, you can view it and respond directly to {reseller_org_name} on this <a href={nmqrurl}> link </a> . 
+Hey {lead_first_name} - Can definitely help provide some clarity here. One of the travel planners we work with {reseller_org_name} was sourcing suppliers via our Quote Request tool for their trip in {destination} for {group_size} people, and after doing some research you looked like a great fit so they reached out through Reposite. The request was originally sent to {email}, but if you're unable to find it in your inbox, you can view it and respond directly to {reseller_org_name} on this <a href={nmqrurl}> link </a> .
  
-There’s no cost to sign up for our basic free plan, create your profile,  and respond to this lead within Reposite. (For our basic plan users, there is a commission on all successful bookings.) 
-
+There’s no cost to sign up for our basic free plan, create your profile,  and respond to this lead within Reposite.
+ 
 Do you leverage any other tools or platforms to help generate consistent group leads/business?
   
-Best,",commission percentage
+Best,"
 "Dear {agent_name},
   
  Hope this email finds you very well.
@@ -102,13 +102,13 @@ Thank you for your quick response and for providing the additional contact infor
 
 If you happen to chat with them, feel free to pass the below along with my contact information their way:
 
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
 
 If you would like to get in contact with the planner on this request, you can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
   
 Cheers,
 {agent_name}
-",new contact verbiage update & membership info included
+"
 "Hi {agent_name},
   Yes we did receive a request! Thanks for reaching out.
   My name is {lead_first_name} and I'll be your point of contact for scheduling group reservations. Currently awaiting a response from Tim Cotter at Reposite before finalizing a quote for you. Let me know if you need anything else from our side regarding setting up future events/group reservations.
@@ -141,10 +141,10 @@ Cheers,
  Assistant:
  Hi {lead_first_name},
  
- Great to hear from you and thanks for providing that update! Good to hear that you’ve been working with the team that works closely with our planner partners on finalizing itineraries. Once you are ready, you can respond directly to {reseller_org_name} by registering for your free account via this <a href={nmqrurl}> link </a>. Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite.  After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
+ Good to hear that you’ve been working with the team that works closely with our planner partners on finalizing itineraries. Once you are ready, you can respond directly to {reseller_org_name} by registering for your free account via this <a href={nmqrurl}> link </a>. Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
  
 
-{agent_name}",free/basic membership link
+{agent_name}"
 "Good Morning {agent_name}, Can this be made within monthly payments? Can you please explain how your platform works?","Example 5: {agent_name} explains payment terms and price.
  
 
@@ -177,7 +177,7 @@ You can review our membership details on our member benefits page <a href={membe
  
  Cheers,
  {agent_name}
-","sign up free, membership link"
+"
 "Good morning {agent_name},
   
   In order to quote please provide the following information:
@@ -226,13 +226,13 @@ You can review our membership details on our member benefits page <a href={membe
  
 {reseller_org_name}, a professional travel planner, is organizing a group trip to {destination} from {trip_dates}. They're looking for {category} for a group of {group_size} pax and are interested in seeing if you were available for this group. You can view all of the quote details and respond by registering using this <a href={nmqrurl}> link </a> .
   
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite.  After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
   
  Please let me know if you need anything else from me.
 
 Cheers, 
 {agent_name}
-","added quote details, free/basic membership link"
+"
 "Hello, 
  
 
@@ -275,12 +275,12 @@ My goal would actually be to get you in touch directly with the planner to discu
  
 For a little bit more context on us, Reposite is a B2B is a marketplace connecting travel & event professionals to sought after suppliers like yourself. Planners use Reposite to discover new suppliers. In this instance one of our planners, {reseller_org_name}, is actively planning a trip and we thought you looked like a great fit for them, and reached out to request a quote.  You can view all of the quote details and respond by registering using this <a href={nmqrurl}> link </a> .    
 
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite.
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them!
   
 Are you currently using any other tools to drive group bookings?.
  
 {agent_name}
-",respond through platform
+"
 "Yes give me a call, imnot sure what this is. 512-480-0200","Example 8: {agent_name} points people who want to hop on a call to sign up and respond.
  
 
@@ -307,7 +307,7 @@ Hi {lead_first_name},
   
 Certainly happy to coordinate a call, however, my goal would actually be to get you in touch directly with the planner to discuss this request. At Reposite, we work with {category} across all major markets to help drive group bookings from our network of professional travel and event planners.
  
- It's free to sign up, create your profile, and respond to this lead within Reposite, (although we do charge a commission on all successful bookings for non-members). You can respond directly to the request by registering via this <a href={nmqrurl}> link </a> .
+ It's free to sign up, create your profile, and respond to this lead within Reposite. You can respond directly to the request by registering via this <a href={nmqrurl}> link </a> .
   
 If you are interested in a call to find out more about Reposite membership, you can book a time on the <a href={calendar_link}> calendar </a> that works best for you.
 
@@ -315,7 +315,7 @@ Please let me know if you have any other questions.
   
  Best, 
  {agent_name}
-",added calendar link when asking for a call
+"
 "Dear {agent_name},
   Thank you for your email and we appreciate you reaching out to us.
   Please be informed that the information was forwarded to our management team. 
@@ -352,13 +352,13 @@ Hey {lead_first_name},
 
 If you happen to chat with them, feel free to pass the below their way:
 
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
 
 If you would like to get in contact with the planner on this request, you can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
   
 Cheers,
 {agent_name}
-",update example verbiage and response verbiage
+"
 "Hi {agent_name} -
   Please direct all group reservations to myself at manager@baobrewhouse.com 
   Thank you,
@@ -389,13 +389,13 @@ Hello {lead_first_name},
 
 If you happen to chat with them, feel free to pass the below along with my contact information their way:
 
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. 
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. 
 
 If you would like to get in contact with the planner on this request, you can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
   
 Cheers,
 {agent_name}
-",updated verbiage and membership information
+"
 "{agent_name}, 
   Hey, just getting back into town. Apologies on the delayed response. Did I at some point sign up for Reposite or do you guys search for specific vendor types in a given area? 
   I popped over to the website and saw the request come through, we can totally put something together for them. We have a couple different cocktail classes we put together that are an absolute blast every time.  
@@ -440,13 +440,13 @@ Hey {lead_first_name},
  
 Nice to hear back from you! I'm glad you're excited about the quote request. To answer your question, you don’t currently have an account with Reposite but we thought you would be a good fit for this group and wanted to invite you to sign up for free.  You can view all the quote details and respond directly to {reseller_org_name} by registering for your free account <a href={nmqrurl}> here </a> . 
  
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
 
 Let me know if you run into any logging in to see this request, I’d be glad to help. 
   
 Cheers, 
 {agent_name}
-",split convo into two examples
+"
 "User:
  {agent_name}, 
   Thanks for responding, I wonder if anyone has ever answered no to your follow up question!! 
@@ -483,7 +483,7 @@ Can I help point you towards any other resources or information to better help y
  
 Cheers, 
 {agent_name}
-","added basic vs. membership language, confirmed newly onboarded"
+"
 "Hi {agent_name}, 
   
  
@@ -550,7 +550,7 @@ You can view the details and respond directly to {reseller_org_name} <a href={nm
 Are you using any other tools to connect with group planners at {supplier_name}?
  
 {agent_name}
-",
+"
 "Hi {agent_name},
   Thank you for reaching out, yes this is the best email to reach us at! I sent information back to the client but I am waiting to hear back from them still. I met with Brenden and Anand from your team the other day and they got me all caught up on your platform!
   {lead_first_name} {lead_last_name}
@@ -605,7 +605,7 @@ Hey {lead_first_name},
 
 Great to hear you are considering upgrading to the membership.
 
-Basic plan users can maintain a free profile on the platform that is shareable with their existing network of planners. In other words, if you already have great connections with corporate meeting planners, travel agents, tour operators, etc and you want a tool for managing those relationships more efficiently, you can use Reposite to give your partners updates on pricing, menus, new offerings, etc. from one centralized workspace. Bookings that happen on the basic plan incur a 15% commission.
+Basic plan users can maintain a free profile on the platform that is shareable with their existing network of planners. In other words, if you already have great connections with corporate meeting planners, travel agents, tour operators, etc and you want a tool for managing those relationships more efficiently, you can use Reposite to give your partners updates on pricing, menus, new offerings, etc. from one centralized workspace.
 
 If you are looking to expand your network and drive more custom groups and private events, you'd want to upgrade to a membership, for just {price} for the year, no additional fees or commissions. This will give you access to all relevant leads in your market, in addition to our prospecting tool, Discover, which allows you to filter through Reposite's network of professional planners who send business to your city.
 
@@ -614,7 +614,7 @@ I also want to make one important distinction between Reposite and booking platf
 Considering your interest in receiving additional inquiries - would you like to upgrade to the <a href={buy_link}> membership plan </a>? 
 
 {agent_name}
-","updated verbiage, added buy link"
+"
 "Hello, 
   Yes, I am. However, we have never signed up for Reposite nor are we affiliated with said company. 
   I am not aware of any new reservations through Reposite? 
@@ -670,7 +670,7 @@ Considering your interest in receiving additional inquiries - would you like to 
  Including the signup link <a href={nmqrurl}> here </a> again in case you need it.
  
 
- {agent_name}",
+ {agent_name}"
 "I'm not. The person you want to contact for group reservations is Jason Yelton (jason@dbrparkcity.com).
   
  
@@ -710,7 +710,7 @@ Thank you for your getting back to me and for providing the right contact inform
 
 If you happen to chat with them, feel free to pass the below along with my contact information their way:
 
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!
 
 If you would like to get in contact with the planner on this request, you can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
 
@@ -718,7 +718,7 @@ Looking forward to working with you too!
   
 Cheers,
 {agent_name}
-",new contact verbiage update & membership info included
+"
 "Greetings,
   
   My colleague forwards this information to my attention. We don’t see to have an account at Reposi.
@@ -727,74 +727,50 @@ Cheers,
   
   Cordially,
   {lead_first_name} {lead_last_name}
-  E. {email}","Example 17: {agent_name} shares the details of the quote request with a prospect.
+  E. {email}","Example 13: {agent_name} reassures a prospect that the quote request is genuine.
  
 
  Assistant:
  Hey {lead_first_name} -
+ 
 
  I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
 
  Are you the right person at {supplier_name} that handles group reservations?
  
- {agent_name}
- 
 
- User:
- Greetings,
-  
- My colleague forwards this information to my attention. We don’t see to have an account at Reposi.
-  
- Please let us know if this can be answer by email instead.
-  
-Cordially,
-{lead_first_name} {lead_last_name}
-{email}
- 
-Assistant:
-Hi {lead_first_name},
-  
-Certainly, I'm happy to correspond over email instead.
-  
-The message you received was to inform you that your property, {supplier_name}, was identified by a planner using Reposite for their group's itinerary. You can review the quote request and respond to {reseller_org_name} using this <a href={nmqrurl}> link </a> .
- 
-Are you currently working with any group planners to drive bookings?
- 
-{agent_name}
- 
-
-User:
-Hi {agent_name}, Thanks for your email. How can I enter the free basic account?
-  
-Yes, I work with group reservations; if the membership has annual fees, the right person is our Director of Sales, Ada Mabel Rivera. 
-{lead_first_name} {lead_last_name}
- 
- Assistant:
- Hi {lead_first_name},
-  
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. Feel free to pass the membership information to the right contact at {supplier_name} along with my contact information.
-  
- {agent_name}
- 
- User:
- Greetings {agent_name}, 
-  
- I checked with our reservations department if they have the RFP and they don’t have it.  The email of Ada is: adrivera@elconvento.com
-  
- Thank you, 
-  {lead_first_name} {lead_last_name}
-  
- 
- Assistant:
-Thanks {lead_first_name}! I will contact Ada directly regarding Reposite membership.
-
-Regarding the quote request, it was originally sent to {email} but you can view it and all the details directly in the platform by registering via this <a href={nmqrurl}> link </a>.
-  
- Let me know if you have trouble responding to the quote request.
-  
  Cheers,
  {agent_name}
-",verbiage
+ 
+
+ User:
+ Hi {agent_name}, 
+  
+  Thanks, yes I am the correct contact for group reservations. 
+  I was concerned about your quote email from 9/20/23 .... worried it was spam and did not want to click on links. 
+  
+  I tried calling the phone # of Anand 646 688-0433 and have left messages. Please text me at 435 649-1674 and will call you right back.  
+ 
+  I hope it works to play music for you! 
+ 
+  Thanks, 
+  {lead_first_name} {lead_last_name}
+ 
+
+Assistant:
+Hey {lead_first_name}, 
+  
+ Great to hear from you and I'm glad you're the right person to discuss group reservations with. No worries, I can understand why you'd be cautious of clicking on links, that’s why I’m here to help!
+ 
+To provide a little more context - Reposite is a marketplace connecting travel & event professionals to sought-after suppliers like yourself. Through Reposite you can gain access to hundreds of new travel & event planners who are planning events in your area. We thought you looked like a great fit for this one and reached out to request a quote.
+ 
+You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
+  
+Are you using any other tools to connect with group planners at {supplier_name}?
+ 
+{agent_name}
+"
 "Dear All
   we are able to arrange transfer for {reseller_org_name}
   Please send us your request.
@@ -879,7 +855,7 @@ Regarding the quote request, it was originally sent to {email} but you can view 
  Completely understand. However, given your initial eagerness to respond to the request, I highly suggest setting up the free basic account and responding to {reseller_org_name} ASAP so that they can consider your proposal. It also seems like you're looking to take on more business in general, and Reposite can help. 
  
 
- {agent_name}",removed signup video
+ {agent_name}"
 "Hi {agent_name},
   
   Can you please provide more information on this below group reservation you said came through to us?
@@ -944,7 +920,7 @@ Regarding the quote request, it was originally sent to {email} but you can view 
  
 
  Cheers, 
- {agent_name}",
+ {agent_name}"
 "Good morning Dawn, 
   Do you want to reach out and see what he would like. 
   Thank you!  
@@ -971,7 +947,7 @@ Regarding the quote request, it was originally sent to {email} but you can view 
  Assistant:
  Thanks {lead_first_name}!
  
-Dawn, for some additional context - Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. 
+For some additional context - Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. 
 
 If you would like to get in contact with the planner on this request, you can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>.
   
@@ -993,7 +969,7 @@ Hi Team,
 Thank you for letting me know about this. For any technical issues with the platform, please reach out to premiumsupport@reposite.io. If you are interested in our current membership offer, you can check out our member benefits page <a href={membership_link}> here </a> and this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!
 
 {agent_name}
-","verbiage, tech support"
+"
 "Hi {agent_name},
   
   Thank you for emailing to our {supplier_name} in Bal Harbour, Florida.
@@ -1050,7 +1026,7 @@ If you would like to get in contact with the planner on this request, you can vi
   
  Cheers, 
  {agent_name}
-",Cvent verbiage
+"
 "Hi
   Thank you for your email.
   Please can you update the email address to @Enquiries 1Wimpolestreet , this is to the sales team who will respond within 2 working hours.
@@ -1115,7 +1091,7 @@ If you would like to get in contact with the planner on this request, you can vi
  Please let me know if you have any questions..
  
 
- {agent_name}",
+ {agent_name}"
 "Most certainly. 
   We love group reservations 
   
@@ -1146,7 +1122,7 @@ Hi {lead_first_name},
   
 Fantastic to hear! You recently received a quote request from {reseller_org_name} for a group of {group_size}. They're planning an activity in {destination} on {trip_dates}. You can view the full details and respond directly to {reseller_org_name} using this <a href={nmqrurl}> link </a> .
   
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
 
 Best, 
 {agent_name}
@@ -1180,7 +1156,7 @@ Hi {lead_first_name},
 
 Best,
 {agent_name}
-","verbiage, premium support email"
+"
 "Good afternoon, Mr. Bowdin,
   
   Greetings from Group Sales Department from {supplier_name}.
@@ -1243,13 +1219,13 @@ I know that you don’t currently use Reposite to connect with planners and resp
 
 To provide some additional context,  Reposite helps planners like DMCs, Corporate Planners, Tour Operators, and Third Party Planners discover new suppliers, organize all their quotes, and build itineraries. When they plan meetings and events, they’re able to research suppliers and request quotes directly through the platform, allowing them to work with more clients and generate more business for our supplier partners.
   
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>! 
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>! 
 
 Let me know if you run into any logging in to see this request, I’d be glad to help. 
   
 Cheers, 
 {agent_name}
-","removed ""not authorized"" language, added verbiage"
+"
 "hello.
   I tried to input the quote in your website.
   28 pax MiniBus 4hrs(4hrs Minimum)*$169= $676 All Inclusive
@@ -1317,7 +1293,7 @@ Cheers,
  Hey {lead_first_name}
  
 
- The first lead from Reposite is 100% complimentary, if you receive a booking, there’s just a 15% commission owed to Reposite. Definitely think it’s worth signing up to respond as it could be a great longterm partnership made by connecting with{reseller_org_name}.
+ The first lead from Reposite is 100% complimentary, after that you have the option to either stay on our basic plan or if you'd like to connect with more professional planners feel free to explore our membership plan. Definitely think it’s worth signing up to respond as it could be a great longterm partnership made by connecting with{reseller_org_name}.
  
 
  User:
@@ -1344,7 +1320,7 @@ For some additional context, to provide some additional context,  Reposite helps
  
 Do you think it's worth responding to this first request just to try it out and potentially land this booking?
  
-{agent_name}",updated verbiage
+{agent_name}"
 "No. Thank you for calling our client services team
   
  
@@ -1375,11 +1351,11 @@ Thank you for letting me know.
 
 Would you be able to direct me to the right contact? {reseller_org_name} is organizing a group in {destination} from {trip_dates}. They're looking for {category} for a group of {group_size} pax and are interested in seeing if you were available for this group. 
 
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. Feel free to pass the membership information to the right contact at {supplier_name} along with my contact information.
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. Feel free to pass the membership information to the right contact at {supplier_name} along with my contact information.
 
  Best,
  {agent_name}
-",added more details and membership info
+"
 "Yes but we don’t open links. Can you send us info in a general email and we will answer it.
   
  
@@ -1419,13 +1395,13 @@ Thank you but I have no interest in paying for a membership to receive work.
 Assistant:
 Definitely understand, {lead_first_name}.
 
-Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
+Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
 
  You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>.
 
  Best,
  {agent_name}
-","removed instructions video, updated verbiage, membership link in second email"
+"
 "Hi {agent_name},
   
  
@@ -1479,13 +1455,13 @@ Hey {lead_first_name} -
 
 Definitely understand and I appreciate you getting back to me during your busy schedule.
 
-Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
+Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
 
 There’s no need for a phone call, you can find everything you need in the RFP and send a quote back to the planner to get that conversation started.  You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>.
   
  Cheers,
  {agent_name}
-",updated verbiage
+"
 "Hey guys,
  Yes, I handle all inquiries and bookings. We don’t do corporate events. Thanks anyway! xo","Example 29: {agent_name} urges a supplier who doesn't do corporate events to respond to make the connection. 
  
@@ -1511,13 +1487,13 @@ Hey {lead_first_name} -
  
 Thanks for the update, I’m not used to hearing that in this industry - do you mind me asking why you have found Corporate groups aren’t a good fit and what types of groups are typical for {supplier_name}?
 
-Happy to provide some additional context - Reposite is a B2B marketplace designed to connect suppliers with our expansive network of professional travel and event planners. For suppliers like you,, Reposite is a business development tool designed to help you create relationships with travel and event professionals who are consistently planning group trips and events in your area; ultimately leading to long-term partnerships and repeat business for you.
+Happy to provide some additional context - Reposite is a B2B marketplace designed to connect suppliers with our expansive network of professional travel and event planners. For suppliers like you, Reposite is a business development tool designed to help you create relationships with travel and event professionals who are consistently planning group trips and events in your area; ultimately leading to long-term partnerships and repeat business for you.
 
 I definitely think it would be worth replying in case  {reseller_org_name} is working with a group more suited to your preferences in the future. You can view the details and respond directly to them <a href={nmqrurl}> here </a>.
 
  Cheers,
  {agent_name}
-","updated verbiage, NMQR link added"
+"
 "Hi {agent_name},
   
  We already use CVENT for group bookings.","Example 30: {agent_name} differentiates between CVENT and Reposite and encourages the prospect to sign up.
@@ -1551,7 +1527,7 @@ If you would like to get in contact with the planner on this request, you can vi
   
  Cheers, 
  {agent_name}
-",updated Cvent verbiage
+"
 "I think you may have us confused with another company or group. We are a graphic design and printing company. You can remove our information from your database.
  {lead_first_name}","Example 31: {agent_name} clarifies that Reposite also works with printing companies.
  
@@ -1596,7 +1572,7 @@ Have you been looking to drive more bookings in the corporate sector?
  
  Cheers,
  {agent_name}
-",updated verbiage
+"
 "{agent_name}, 
  
 
@@ -1623,11 +1599,11 @@ What kind of groups are you typically looking to work with?
 
 Happy to provide additional context about us - Reposite is a B2B marketplace designed to connect suppliers with our expansive network of professional travel and event planners. For suppliers like you,, Reposite is a business development tool designed to help you create relationships with travel and event professionals who are consistently planning group trips and events in your area; ultimately leading to long-term partnerships and repeat business for you.
 
-Reposite is not just a way to book private parties at {supplier_name} but a way to expand your relationships to drive more business your way. We offer the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
+Reposite is not just a way to book private parties at {supplier_name} but a way to expand your relationships to drive more business your way. We offer the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
 
 Cheers,
 {agent_name}
-","updated verbiage, included membership info"
+"
 "{agent_name}, 
  
 
@@ -1668,12 +1644,11 @@ I'm glad to hear that your business has been growing, that’s a good problem to
 
 Happy to answer any questions you have but also  wanted to provide a little more context for when you have a few minutes later today:
 
-One of the travel planners using Reposite, he is looking for a {category} for their group and after doing some research we thought you looked like a great fit so we figured we’d give you the opportunity to respond with a quote. 
+One of the travel planners using Reposite,he is looking for a {category} for their group and after doing some research we thought you looked like a great fit so we figured we’d give you the opportunity to respond with a quote. 
 
 Meeting & event planners leverage Reposite as their all-in-one workspace to discover new suppliers, organize their trips & quotes, & build their itineraries. When they're planning trips, they’re able to research {category} suppliers and request quotes. You were invited to Reposite from one of these quote requests.
   
- 
-You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
+ You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
  
  Please let me know if you have any further questions.
  
@@ -1701,7 +1676,7 @@ Of course, you can check out this short <a href={demo_link}> demo </a> of the pl
 
  Cheers,
  {agent_name}
-","updated verbiage, added calendar link when call was requested"
+"
 "Hello
  We only fly 4 to 5 passengers plus the pilot. We specialize in smaller and more personal groups. If you’re looking to fly large groups, call Arizona Balloons.
  Thank you
@@ -1738,7 +1713,7 @@ Please let me know if you have any further questions.
  
  Best, 
  {agent_name}
-","verbiage, removed video link"
+"
 "Hi {agent_name}, 
  
 
@@ -1785,7 +1760,7 @@ Please let me know if you have any further questions.
  
  Cheers,
  {agent_name}
-",updated NMQR link verbiage
+"
 "I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
  
 
@@ -1819,7 +1794,7 @@ Please let me know if there’s anything else I can do to help/
 
  Best,
  {agent_name}
-","support email, verbiage NMQR link"
+"
 yes,"Example 37: {agent_name} responds to someone who is the right person for groups.
  
 
@@ -1848,7 +1823,7 @@ Please let me know if you have any further questions.
  
  Cheers,
  {agent_name}
-",verbiage
+"
 urgency,"Example 38: {agent_name} clarifies the specifics of the quote request and encourages prospect to respond quickly.
  
 Assistant:
@@ -1876,7 +1851,7 @@ Assistant:
  
   Best, 
  {agent_name}
-",
+"
 "Hi Taylor
 Is there a cost to us that we need to pay you for the lead? 
 We are not familiar with your company nor do we have a profile on there.
@@ -1907,7 +1882,7 @@ Any help would be appreciated
 
 Happy to provide some additional context for you:
 
-Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. You can respond directly to the request by registering via <a href={nmqrurl}> this link </a>.
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! You can respond directly to the request by registering via <a href={nmqrurl}> this link </a>.
 
 After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>! !
 
@@ -1917,7 +1892,7 @@ If you would like to set up a call to discuss this further, one of my colleagues
  
   Best, 
  {agent_name}
-",new example - NMQR and membership overview
+"
 "Hi Katie! I have a very large event today however I’ll move forward with it tomorrow. Thank you for your patience.
 
 Thanks!","Example 40: {agent_name} thanks prospect for replying to {reseller_org_name} tomorrow when they have the time.
@@ -1947,7 +1922,7 @@ Sounds great, thank you for that update. Looking forward to getting you in touch
 Let me know if you run into any issues or have any additional questions! 
 
 {agent_name}
-",new example - response coming tomorrow
+"
 "User:
 Hello {agent_name},
 
@@ -1995,7 +1970,7 @@ We've helped brands like the Hard Rock, Rosa Mexicano, Topgolf, Standard Hotels,
 Please don't hesitate to reach out if you run into any issues creating your account! 
 
 {agent_name}
-",new example - brand name drop
+"
 "Taylor
 
 We have never heard of you. and I am not sure why am getting a request for services through your platform as we are not registed on it. 
@@ -2027,14 +2002,14 @@ No problem at all, we thought that you might be interested in working with one o
 
 To provide a little more context - Reposite is a marketplace connecting travel & event professionals to sought-after suppliers like yourself. Through Reposite you can gain access to hundreds of new travel & event planners who are planning trips in your area. In this instance one of our planners is actively planning a trip, thought you looked like a great fit, and reached out to request a quote.
 
-There’s no cost to sign up, create your profile, connect to existing partners, and respond to this lead within Reposite. On our basic free plan, there is a commission owed to Reposite for successful bookings but through our Membership program, you receive matching inbound leads and group planner partnerships with all commissions and fees waived.
+There’s no cost to sign up, create your profile, connect to existing partners, and respond to this lead within Reposite. Through our Membership program, you receive matching inbound leads and group planner partnerships and there is no additional fees or commission.
 
 You can view all of the quote details and respond by registering using this <a href={nmqrurl}> link </a> or check out our member benefits page <a href={membership_link}> here </a>! 
 
 Sounds like this isn't a good fit but just figured it was worth giving you all the information, best of luck!
 
 {agent_name}
-","new example - not interested, NMQR link & membership link"
+"
 "Hi {agent_name},
   
   How did we get on your platform?
@@ -2071,7 +2046,7 @@ Thanks for getting back to me, happy to provide some additional context for you:
 
 One of the planners using Reposite, {reseller_org_name}, is looking for a {category} for their group. After doing some research, we thought you looked like a great fit so we figured we’d give you the opportunity to respond with a quote.  You are not currently on our platform yet but you can claim your account <a href={nmqrurl}> here </a> and after inputting your basic information, the request will be in your quotes dashboard. 
 
-Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite.
+Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them!
 
 We've helped brands like the Hard Rock, Rosa Mexicano, Topgolf, Standard Hotels, Carmine's, STK, Pinstripes, Live Nation and more connect with professional planners who book large meetings, corporate outings, and leisure group itineraries. On the planner side of the platform we work with brands like ConferenceDirect, Global Travel Collection, Meetings Made Easy, Amex Global Business Travel, and more to streamline the group planning process from A to Z. 
 
@@ -2079,7 +2054,7 @@ Please don’t hesitate to reach out if you have any issues creating your accoun
 
 Cheers,
 {agent_name}
-","new example - context, name drop"
+"
 "Hi there Kate,
 
 Thank you for submitting this request. We have the following details: one EMT on 8/12/24 from 2PM-4:30PM at a location to be confirmed in Canarsie, Brooklyn, NY. Please note that we do have a 4 hour minimum, which will be reflected in our quote.
@@ -2122,7 +2097,7 @@ We've helped brands like the Hard Rock, Rosa Mexicano, Topgolf, Standard Hotels,
 Please don't hesitate to reach out if you run into any issues creating your account! 
 
 {agent_name}
-",new example - confirm quote details/name drop
+"
 "User:
  Hi {agent_name}, 
 
@@ -2181,7 +2156,7 @@ If you change your mind and want to sign up (for free) to respond to this reques
 If you would like to set up a call to discuss this further, one of my colleagues is available, you can schedule a call on the <a href={calendar_link}> calendar </a> that works best for you.
 
 {agent_name}
-","new example - comms on platform, membership last ditch"
+"
 "User:
 Hi {agent_name} - great to connect with you. 
 
@@ -2219,14 +2194,14 @@ Happy to provide additional context about us as well - Reposite is a B2B marketp
 
 {reseller_org_name} is looking for a {category} for {group_size} people in {destination} on {trip_dates}. 
 
-Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite.  You can claim your account <a href={nmqrurl}> here </a> and after inputting your basic information, the request will be in your quotes dashboard. 
+Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! You can claim your account <a href={nmqrurl}> here </a> and after inputting your basic information, the request will be in your quotes dashboard. 
 
 We've helped brands like the Hard Rock, Rosa Mexicano, Topgolf, Standard Hotels, Carmine's, STK, Pinstripes, Live Nation and more connect with professional planners who book large meetings, corporate outings, and leisure group itineraries. On the planner side of the platform we work with brands like ConferenceDirect, Global Travel Collection, Meetings Made Easy, Amex Global Business Travel, and more to streamline the group planning process from A to Z. 
 
 If you would like to set up a call to discuss this further, one of my colleagues is available, you can schedule a call on the <a href={calendar_link}> calendar </a> that works best for you.
 
  {agent_name}
-","new example - name drop, calendar link, quote details"
+"
 "User:
 {agent_name}, 
 
@@ -2260,7 +2235,7 @@ If you are new to the platform and are interested in our current membership offe
 
 Cheers,
 {agent_name}
-",new example - already has an account
+"
 "User:
 Hello  {agent_name},
 
@@ -2296,14 +2271,14 @@ No problem at all, we thought that you might be interested in working with one o
 
 To provide a little more context - Reposite is a marketplace connecting travel & event professionals to sought-after suppliers like yourself. Through Reposite you can gain access to hundreds of new travel & event planners who are planning trips in your area. In this instance one of our planners is actively planning a trip, thought you looked like a great fit, and reached out to request a quote.
 
-There’s no cost to sign up, create your profile, connect to existing partners, and respond to this lead within Reposite. On our basic free plan, there is a commission owed to Reposite for successful bookings but through our Membership program, you receive matching inbound leads and group planner partnerships with all commissions and fees waived.
+There’s no cost to sign up, create your profile, connect to existing partners, and respond to this lead within Reposite. Through our Membership program, you receive matching inbound leads and group planner partnerships with no additional commissions or fees.
 
 If you change your mind you can view all of the quote details and respond by registering using this <a href={nmqrurl}> link </a> or check out our member benefits page <a href={membership_link}> here </a>! 
 
 Sounds like this isn't a good fit but just figured it was worth giving you all the information, best of luck!
 
 {agent_name}
-",new example - sligthly different not interested verbiage
+"
 "User:
  Dear {agent_name},
   
@@ -2343,10 +2318,10 @@ Hi {lead_first_name},
 
 Thanks for getting back to me. 
 
-Definitely understand that you might not have authority to purchase a membership but Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! If it books, there is a commission owed to Reposite. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
+Definitely understand that you might not have authority to purchase a membership but Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
  
 If you would like to pass me along to the best contact at {supplier_name} who evaluates sales and marketing tools, that would be greatly appreciated.
 
 {agent_name}
-","new example - ask for new contact, free first lead"
-,You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!,
+"
+,You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!

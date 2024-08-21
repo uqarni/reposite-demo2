@@ -803,7 +803,7 @@ commissionable rate,"Example 21: {agent_name} confirms commission
  Hey {lead_first_name},
  
 
- At the moment, you are on our Basic Plan which requires no upfront cost but you would owe a commission should the booking finalize. To avoid any commission fees on booked business and receive consistent group requests like this one, I recommend upgrading to our <a href={membership_link}> membership plan </a>. Beyond just inbound requests, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
+ At the moment, you are on our free Basic Plan. On the basic plan lead generation isn't included, so if you'd like to get more requests or connect with our expansive network of planners I recommend upgrading to our <a href={membership_link}> membership plan </a>. Beyond just inbound requests, the membership plan offers unlimited access to our Discover tool to allow you to find and connect with professional planners who consistently plan meetings, events, and leisure travel itineraries in your city.
  
 If you choose not to upgrade to our membership plan, you are able to maintain your free profile but you will not have access to the business development tools that the platform offers (i.e. the Marketplace and the Discover tool). You may receive a lead from time to time, but only when Reposite’s current network of suppliers in your area cannot fulfill the request, as was the case in this instance.
  
@@ -898,7 +898,7 @@ urgency,"Examples 23: {agent_name} encourages user to respond within 24 hours an
 "User:
 Hi {agent_name},
 
-{supplier_name) does currently have availability for {reseller_org_name} request.  We do not however have a relationship with Reposite.
+{supplier_name} does currently have availability for {reseller_org_name} request.  We do not however have a relationship with Reposite.
  
 Best regards,
 {lead_first_name}","

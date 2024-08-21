@@ -111,7 +111,7 @@ urgency
 "User:
 Hi {agent_name},
 
-{supplier_name) does currently have availability for {reseller_org_name} request.  We do not however have a relationship with Reposite.
+{supplier_name} does currently have availability for {reseller_org_name} request.  We do not however have a relationship with Reposite.
  
 Best regards,
 {lead_first_name}"
