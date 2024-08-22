@@ -2502,3 +2502,34 @@ Please feel free to reach out if you need more information.
  Best,
  {agent_name}
 "
+"Hi {agent_name},
+  Yes we did receive a request. I have sent a message to the planner and we are waiting on more information from them before we can provide further details. ","""Example 49: {agent_name} responds when individual team member says they've already responded but are waiting for more info. 
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+Hi {agent_name},
+  Yes we did receive a request. I have sent a message to the planner and we are waiting on more information from them before we can provide further details. 
+ 
+
+ Assistant:
+Hi {lead_first_name},
+  
+  Great to hear from you and thanks for providing that update, glad to hear you are in contact with the team already! When you get a chance, please log in to the platform and respond directly to {reseller_org_name} via this <a href={nmqrurl}> link </a> in order to be considered for this group.
+ 
+Please let me know if there is any additional information I can provide to assist! 
+ Best, 
+ {agent_name}"""
