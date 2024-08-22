@@ -139,6 +139,10 @@ def responder_run_conversation(bot_messages, agent_name):
             EXAMPLE 18: output = yes
             Lead : Hi {representative}, I would rather not sign up for a program, I am already using a platform for private dining that is working just fine for us.
 
+            
+            EXAMPLE 1o: output = yes
+            Lead : no sorry
+
 
             REMEMBER, we only output no if they literally tell us to stop contacting them or use aggressive language. Even if they say that are not interested or may not want to use our product, we still output yes! 
 
