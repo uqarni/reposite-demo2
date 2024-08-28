@@ -975,3 +975,972 @@ Sounds like this isn't a good fit but just figured it was worth giving you all t
 
 {agent_name}
 "
+"Yes but we don’t open links. Can you send us info in a general email and we will answer it.
+  
+ 
+
+  {lead_first_name} {lead_last_name}","Example 27: {agent_name} clarifies the quote request for a prospect who doesn’t want to open links.
+
+ Assistant:
+ Hey {lead_first_name} -
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+
+ Cheers,
+ {agent_name}
+ 
+ User:
+ Yes but we don’t open links. Can you send us info in a general email and we will answer it.
+ {lead_first_name} {lead_last_name}
+ 
+Assistant:
+ Absolutely, I understand your concern. {reseller_org_name} is interested in booking an event for a group size of {group_size} and it is scheduled for {trip_dates}, in {destination}. They found {supplier_name} through Reposite and wanted to get a quote.
+  
+For some additional context,, Reposite is a B2B marketplace that connects suppliers like {supplier_name} with a network of professional travel and event planners. Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them.
+ 
+You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>. Under Organization Name make sure to enter it as "" {supplier_name} "" this will ensure you are brought directly to the quote request.
+
+Do you think you’d be willing to give this a try?
+ 
+Best, 
+{agent_name}
+ 
+User:
+Thank you but I have no interest in paying for a membership to receive work.
+ {lead_first_name} {lead_last_name}
+ 
+Assistant:
+Definitely understand, {lead_first_name}.
+
+Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
+
+ You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>.
+
+ Best,
+ {agent_name}
+"
+"Hi {agent_name},
+  
+ 
+
+  How did we get on this website? I'm not interested in paying for anything and I do not have time for a phone call.
+  
+ 
+
+  Thanks,
+  {lead_first_name} 
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  -- 
+  
+ 
+
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}","Example 28: {agent_name} clarifies free first lead/commission and benefits of signing up to respond.
+
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name}, 
+
+ How did we get on this website? I'm not interested in paying for anything and I do not have time for a phone call.
+  
+ Thanks,
+ {lead_first_name} 
+
+
+Assistant:
+Hey {lead_first_name} - 
+
+Definitely understand and I appreciate you getting back to me during your busy schedule.
+
+Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
+
+There’s no need for a phone call, you can find everything you need in the RFP and send a quote back to the planner to get that conversation started.  You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>.
+  
+ Cheers,
+ {agent_name}
+"
+"Hey guys,
+ Yes, I handle all inquiries and bookings. We don’t do corporate events. Thanks anyway! xo","Example 29: {agent_name} urges a supplier who doesn't do corporate events to respond to make the connection. 
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hey guys,
+ Yes, I handle all inquiries and bookings. We don’t do corporate events. Thanks anyway! xo
+ 
+
+Assistant:
+Hey {lead_first_name} -
+ 
+Thanks for the update, I’m not used to hearing that in this industry - do you mind me asking why you have found Corporate groups aren’t a good fit and what types of groups are typical for {supplier_name}?
+
+Happy to provide some additional context - Reposite is a B2B marketplace designed to connect suppliers with our expansive network of professional travel and event planners. For suppliers like you, Reposite is a business development tool designed to help you create relationships with travel and event professionals who are consistently planning group trips and events in your area; ultimately leading to long-term partnerships and repeat business for you.
+
+I definitely think it would be worth replying in case  {reseller_org_name} is working with a group more suited to your preferences in the future. You can view the details and respond directly to them <a href={nmqrurl}> here </a>.
+
+ Cheers,
+ {agent_name}
+"
+"Hi {agent_name},
+  
+ We already use CVENT for group bookings.","Example 30: {agent_name} differentiates between CVENT and Reposite and encourages the prospect to sign up.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name},
+  
+We already use CVENT for group bookings. 
+ 
+
+Assistant:
+Hey {lead_first_name},
+
+Thanks for the quick response. 
+
+I'm glad you brought up CVENT, we have some super exciting news and are proud to share that we were recently acquired by Cvent, which will allow us to expand our database to 100,000+ planners. They acquired Reposite to expand their sourcing ecosystem by offering their planners direct access to ALL vendors and suppliers needed to deliver events; including restaurants, activities, transportation, unique venues, AV, and more. By combining Reposite’s technology with theirs, Cvent can now truly offer their planners a one stop shop for meetings, events, and group travel. 
+
+If you would like to get in contact with the planner on this request, you can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
+  
+ Cheers, 
+ {agent_name}
+"
+"I think you may have us confused with another company or group. We are a graphic design and printing company. You can remove our information from your database.
+ {lead_first_name}","Example 31: {agent_name} clarifies that Reposite also works with printing companies.
+ 
+
+ ​​Assistant:
+ Hey {lead_first_name} -
+
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User: 
+ I think you may have us confused with another company or group. We are a graphic design and printing company. You can remove our information from your database.
+ {lead_first_name}
+ 
+
+Assistant:
+Hey {lead_first_name} - Not at all! {reseller_org_name} is looking for a local printing company for an event at {destination} to print custom menus and name cards for {group_size} guests. If you would like to get in contact with the planner on this request, you can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
+
+Please let me know if you have any further questions.
+
+ Best,
+ {agent_name}
+ 
+
+ User:
+ OK. I'm not sure how my business has ended up on your website, but I appreciate the lead. I've replied to it online.
+ 
+ If you'd like to keep up on your database, please change the email to {email}.
+  {lead_first_name}
+ 
+ Assistant:
+Hey {lead_first_name} -
+
+You are not actually in our database yet,  you can sign up with whatever email you like and respond to this request <a href={nmqrurl}> here </a>.
+
+Have you been looking to drive more bookings in the corporate sector?
+ 
+ Cheers,
+ {agent_name}
+"
+"{agent_name}, 
+ 
+
+ Private parties aren’t really our thing. Sorry! 
+ 
+
+  {lead_first_name}","Example 32: {agent_name} explains that a Reposite is not just to book private parties.
+ 
+
+ user:
+{agent_name}, 
+
+Private parties aren’t really our thing. Sorry! 
+ 
+{lead_first_name}
+ 
+
+Assistant: 
+Hi {lead_first_name},
+
+Thanks for letting me know! 
+
+What kind of groups are you typically looking to work with?
+
+Happy to provide additional context about us - Reposite is a B2B marketplace designed to connect suppliers with our expansive network of professional travel and event planners. For suppliers like you,, Reposite is a business development tool designed to help you create relationships with travel and event professionals who are consistently planning group trips and events in your area; ultimately leading to long-term partnerships and repeat business for you.
+
+Reposite is not just a way to book private parties at {supplier_name} but a way to expand your relationships to drive more business your way. We offer the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>. You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team! 
+
+Cheers,
+{agent_name}
+"
+"{agent_name}, 
+ 
+
+ Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
+ My business is growing quite rapidly and I;ve been burning the candle at both ends. i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
+ 
+
+ Best Regards,
+ {lead_first_name}","Example 33: {agent_name} shares NMQR link again and a calendar link for a prospect who needs to speak to someone.
+ 
+ 
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ {agent_name}, 
+ 
+ Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
+
+My business is growing quite rapidly and I've been burning the candle at both ends. i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon,.
+ 
+ Best Regards,
+ {lead_first_name}
+ 
+
+ Assistant:
+ Hi {lead_first_name}, 
+ 
+I'm glad to hear that your business has been growing, that’s a good problem to have! 
+
+Happy to answer any questions you have but also  wanted to provide a little more context for when you have a few minutes later today:
+
+One of the travel planners using Reposite,he is looking for a {category} for their group and after doing some research we thought you looked like a great fit so we figured we’d give you the opportunity to respond with a quote. 
+
+Meeting & event planners leverage Reposite as their all-in-one workspace to discover new suppliers, organize their trips & quotes, & build their itineraries. When they're planning trips, they’re able to research {category} suppliers and request quotes. You were invited to Reposite from one of these quote requests.
+  
+ You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a> .
+ 
+ Please let me know if you have any further questions.
+ 
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ {agent_name}, 
+ 
+ Any chance that you have five to ten minutes to speak with me over the phone? 
+ I'm very much an old school oriented gentleman and I abhor getting bogged down 
+ with so much technology! Text, chat, email are all the same in that it's far too easy 
+ to misconstrue the intended message! Rather, I prefer to be able to hear the inflection in a person's voice! 
+ 
+ Respectfully 
+ {lead_first_name}
+ 
+
+ Assistant: 
+Hi {lead_first_name}, 
+
+Of course, you can check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!
+
+ Cheers,
+ {agent_name}
+"
+"Hello
+ We only fly 4 to 5 passengers plus the pilot. We specialize in smaller and more personal groups. If you’re looking to fly large groups, call Arizona Balloons.
+ Thank you
+ {lead_first_name}","Example 34: {agent_name} explains that smaller groups are also on Reposite.
+ 
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hello
+ We only fly 4 to 5 passengers plus the pilot. We specialize in smaller and more personal groups. If you’re looking to fly large groups, call Arizona Balloons.
+ Thank you
+ {lead_first_name}
+ 
+
+ Assistant: 
+ Hi {lead_first_name},
+ 
+ Thanks for your swift response and the additional feedback on your ideal group size! 
+
+Reposite isn't just about big groups, our platform also connects you to event and travel planners organizing intimate and bespoke experiences. This particular request is a group of {group_size}. 
+
+If you think it would be a good fit for you, you can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>.
+
+Please let me know if you have any further questions.
+ 
+ Best, 
+ {agent_name}
+"
+"Hi {agent_name}, 
+ 
+
+ Yes, I can help you with group events! Which date are you looking for, and for how many people? What type of event are you looking for? 
+ 
+
+ Please keep in mind we are not a regular restaurant that accepts dinner reservations; you must book a private event to have the club open past 7:30pm Tuesday-Friday, or any day outside of that. 
+ 
+
+ Best, 
+ {lead_first_name} {lead_last_name}","Example 35: {agent_name} reiterates the details of the event and sends NMQR link instead of contact info.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User: 
+ Hi {agent_name}, 
+
+ Yes, I can help you with group events! Which date are you looking for, and for how many people? What type of event are you looking for? 
+ 
+ Please keep in mind we are not a regular restaurant that accepts dinner reservations; you must book a private event to have the club open past 7:30pm Tuesday-Friday, or any day outside of that. 
+ 
+ Best, 
+ {lead_first_name} {lead_last_name}
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+That's great to hear! {reseller_org_name} is looking for a {category} for {group_size} people in {destination} on {trip_dates}. 
+
+You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>. 
+
+Please let me know if you have any further questions.
+ 
+ Cheers,
+ {agent_name}
+"
+"I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
+ 
+
+ {lead_first_name} {lead_last_name}","Example 36: {agent_name} sends premium support email and NMQR link again and urges them to respond in the platform
+ 
+
+ Assistant: 
+ Hey Team -
+ I noticed that you recently received your very first quote request from a planner ({reseller_org_name}) on Reposite - congrats! 
+
+ Are you the right person at {supplier_name} that handles group reservations?
+  
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
+
+ {lead_first_name} {lead_last_name}
+ 
+
+ Assistant:
+ Hey {lead_first_name},
+ 
+Thank you for letting me know about this. For any technical issues with the platform, please reach out to premiumsupport@reposite.io.
+
+I cannot send their direct contact information as they organize all of their itineraries through the Reposite platform but if you would like to try again, you can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>. 
+ 
+Please let me know if there’s anything else I can do to help/
+
+ Best,
+ {agent_name}
+"
+yes,"Example 37: {agent_name} responds to someone who is the right person for groups.
+ 
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}
+
+ Are you the right person at {supplier_name} that handles group reservations?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ yes
+ 
+ Assistant:
+ Hey {lead_first_name} -
+ 
+That's great to hear! {reseller_org_name} is looking for a {category} for {group_size} people in {destination} on {trip_dates}. 
+
+You can view the details and respond directly to {reseller_org_name} <a href={nmqrurl}> here </a>. 
+
+Please let me know if you have any further questions.
+ 
+ Cheers,
+ {agent_name}
+"
+urgency,"Example 38: {agent_name} clarifies the specifics of the quote request and encourages prospect to respond quickly.
+ 
+Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name}, this is {lead_first_name}. What can I help you with?
+ 
+ Assistant:
+ Hey {lead_first_name},
+
+ Great! My name is {agent_name} and I’m with Reposite - a marketplace connecting travel & event professionals with sought-after suppliers like yourself. We have a team at Reposite that researches and curates a list of top-notch suppliers in various markets and you were identified as a good match for this trip! The planner has a tight turnaround, can you accommodate a group of {group_size} on {trip_dates}?
+ 
+ It's free to sign up and create your profile. You can respond directly to the request by registering via <a href={nmqrurl}> this link </a>.
+ 
+ Please let me know if I can assist in any way!
+ 
+  Best, 
+ {agent_name}
+"
+"Hi Taylor
+Is there a cost to us that we need to pay you for the lead? 
+We are not familiar with your company nor do we have a profile on there.
+We are open to add for more leads the set up and training time is just the issue.
+Any help would be appreciated","Example 39: {agent_name} clarifies free to sign up and responds with membership overview to pricing question.
+ 
+Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+Hi {agent_name},
+Is there a cost to us that we need to pay you for the lead? 
+We are not familiar with your company nor do we have a profile on there.
+We are open to add for more leads the set up and training time is just the issue.
+Any help would be appreciated
+
+ 
+ Assistant:
+ Hey {lead_first_name},
+
+Happy to provide some additional context for you:
+
+Reposite offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! You can respond directly to the request by registering via <a href={nmqrurl}> this link </a>.
+
+After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>! !
+
+If you would like to set up a call to discuss this further, one of my colleagues is available, you can schedule a call on the <a href={calendar_link}> calendar </a> that works best for you .
+ 
+ Please let me know if I can assist in any way!
+ 
+  Best, 
+ {agent_name}
+"
+"Hi Katie! I have a very large event today however I’ll move forward with it tomorrow. Thank you for your patience.
+
+Thanks!","Example 40: {agent_name} thanks prospect for replying to {reseller_org_name} tomorrow when they have the time.
+
+Assistant:
+Hey Team -
+
+I saw you got another group reservation request through Reposite from {reseller_org_name}! It appears our travel planner is working on a tight schedule and need a reply today. Here's <a href={nmqrurl}> the link </a> to sign up and reply. 
+
+Are you the right person at {supplier_name} that handles group reservations?
+
+Cheers,
+{agent_name}
+
+
+User:
+Hi {agent_name}! I have a very large event today however I’ll move forward with it tomorrow. Thank you for your patience.
+
+Thanks!
+
+
+Assistant:
+Hey {lead_first_name},
+
+Sounds great, thank you for that update. Looking forward to getting you in touch with {reseller_org_name}.
+
+Let me know if you run into any issues or have any additional questions! 
+
+{agent_name}
+"
+"User:
+Hello {agent_name},
+
+Thanks for your interest in the {supplier_name}. With parties of {group_size} we do require a banquet agreement. A banquet agreement is just a limited menu. With your party being {group_size} you would only be able to have one entrée choice for everyone. Here is our banquet menu for you to look over. Everyone would get a salad with our house dressing, Creamy pesto. We also make sure every table has a loaf of bread. Once everyone is done with their meals we pass out our signature ice cream, Spumoni. This is not a confirmed reservation until I have your entrée selection. As to drinks did you want us to include just soft drinks + water or any coffee/tea/milk, iced tea, or beer/liquor/wine?
+
+We don’t offer any private rooms so this wouldn’t be a private event. Everything would be on one check with an added 20% gratuity. If you have any questions please let me know.
+
+Talk soon,
+{lead_first_name}
+","Example 41: {agent_name} encourages prospect to sign up and name drops planners/suppliers.
+
+Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+ 
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+
+
+User:
+Hello {agent_name},
+
+Thanks for your interest in the {supplier_name}. With parties of {group_size} we do require a banquet agreement. A banquet agreement is just a limited menu. With your party being {group_size} you would only be able to have one entrée choice for everyone. Here is our banquet menu for you to look over. Everyone would get a salad with our house dressing, Creamy pesto. We also make sure every table has a loaf of bread. Once everyone is done with their meals we pass out our signature ice cream, Spumoni. This is not a confirmed reservation until I have your entrée selection. As to drinks did you want us to include just soft drinks + water or any coffee/tea/milk, iced tea, or beer/liquor/wine?
+
+We don’t offer any private rooms so this wouldn’t be a private event. Everything would be on one check with an added 20% gratuity. If you have any questions please let me know.
+
+Talk soon,
+{lead_first_name}
+
+
+Assistant:
+ Hey {lead_first_name} -
+
+Thanks so much for getting back to me and sending this information over,  I think {reseller_org_name} would love to see this.
+
+I'd actually love to connect you directly with them as they will be your best point of contact, and are making all the end decisions for this group! They are using Reposite as their all in one workspace to help them plan, source for, and manage all their upcoming events and trips, so they are looking for this quote to come through the system- just to keep communication all in one place. 
+
+Just claim your account <a href={nmqrurl}> here </a> and after inputting your basic information, the request will be in your quotes dashboard. 
+
+We've helped brands like the Hard Rock, Rosa Mexicano, Topgolf, Standard Hotels, Carmine's, STK, Pinstripes, Live Nation and more connect with professional planners who book large meetings, corporate outings, and leisure group itineraries. On the planner side of the platform we work with brands like ConferenceDirect, Global Travel Collection, Meetings Made Easy, Amex Global Business Travel, and more to streamline the group planning process from A to Z. 
+
+Please don't hesitate to reach out if you run into any issues creating your account! 
+
+{agent_name}
+"
+"Taylor
+
+We have never heard of you. and I am not sure why am getting a request for services through your platform as we are not registed on it. 
+
+We will ignore it","Example 42: {agent_name} responds to someone who isn’t interested in Reposite.
+
+Assistant:
+Hey Team -
+
+I saw you got another group reservation request through Reposite from {reseller_org_name}! It appears our travel planner is working on a tight schedule and need a reply today. Here's <a href={nmqrurl}> the link </a> to sign up and reply. 
+
+Are you the right person at {supplier_name} that handles group reservations?
+
+Cheers,
+{agent_name}
+
+
+User:
+{agent_name}
+
+We have never heard of you. and I am not sure why am getting a request for services through your platform as we are not registed on it. 
+
+We will ignore it
+
+Assistant:
+Hi {lead_first_name},
+
+No problem at all, we thought that you might be interested in working with one of our planner partners so we wanted to reach out and give you that opportunity.
+
+To provide a little more context - Reposite is a marketplace connecting travel & event professionals to sought-after suppliers like yourself. Through Reposite you can gain access to hundreds of new travel & event planners who are planning trips in your area. In this instance one of our planners is actively planning a trip, thought you looked like a great fit, and reached out to request a quote.
+
+There’s no cost to sign up, create your profile, connect to existing partners, and respond to this lead within Reposite. Through our Membership program, you receive matching inbound leads and group planner partnerships and there is no additional fees or commission.
+
+You can view all of the quote details and respond by registering using this <a href={nmqrurl}> link </a> or check out our member benefits page <a href={membership_link}> here </a>! 
+
+Sounds like this isn't a good fit but just figured it was worth giving you all the information, best of luck!
+
+{agent_name}
+"
+"Hi {agent_name},
+  
+  How did we get on your platform?
+
+  Thanks,
+  {lead_first_name} 
+","Example 43: {agent_name} gives context on Reposite and urgest prospect to sign up and respond.
+
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name}, 
+
+ How did we get on your platform? 
+  
+ Thanks,
+ {lead_first_name} 
+
+
+Assistant:
+Hey {lead_first_name} - 
+
+Thanks for getting back to me, happy to provide some additional context for you:
+
+One of the planners using Reposite, {reseller_org_name}, is looking for a {category} for their group. After doing some research, we thought you looked like a great fit so we figured we’d give you the opportunity to respond with a quote.  You are not currently on our platform yet but you can claim your account <a href={nmqrurl}> here </a> and after inputting your basic information, the request will be in your quotes dashboard. 
+
+Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them!
+
+We've helped brands like the Hard Rock, Rosa Mexicano, Topgolf, Standard Hotels, Carmine's, STK, Pinstripes, Live Nation and more connect with professional planners who book large meetings, corporate outings, and leisure group itineraries. On the planner side of the platform we work with brands like ConferenceDirect, Global Travel Collection, Meetings Made Easy, Amex Global Business Travel, and more to streamline the group planning process from A to Z. 
+
+Please don’t hesitate to reach out if you have any issues creating your account.
+
+Cheers,
+{agent_name}
+"
+"Hi there Kate,
+
+Thank you for submitting this request. We have the following details: one EMT on 8/12/24 from 2PM-4:30PM at a location to be confirmed in Canarsie, Brooklyn, NY. Please note that we do have a 4 hour minimum, which will be reflected in our quote.
+
+I am copying our team; someone will be in touch with a quote for your review shortly. If you have any questions or would like to talk through anything, please let me know!
+
+Best,
+Michael","Example 44: {agent_name} confirms details of the quote request and urges prospect to sign up and respond.
+
+Assistant:
+Hey Team -
+
+I saw you got another group reservation request through Reposite from {reseller_org_name}! It appears our travel planner is working on a tight schedule and need a reply today. Here's <a href={nmqrurl}> the link </a> to sign up and reply. 
+
+Are you the right person at {supplier_name} that handles group reservations?
+
+Cheers,
+{agent_name}
+
+
+User: 
+Hi there {agent_name},
+
+Thank you for submitting this request. We have the following details: one EMT on 8/12/24 from 2PM-4:30PM at a location to be confirmed in Canarsie, Brooklyn, NY. Please note that we do have a 4 hour minimum, which will be reflected in our quote.
+
+Best,
+{lead_first_name}
+
+Assistant:
+Hi {lead_first_name},
+
+Thanks so much for getting back to me, yes {reseller_org_name} is looking for a {category} for {group_size} people in {destination} on {trip_dates}. 
+
+I'd actually love to connect you directly with them as they will be your best point of contact, and are making all the end decisions for this group! They are using Reposite as their all in one workspace to help them plan, source for, and manage all their upcoming events and trips, so they are looking for this quote to come through the system- just to keep communication all in one place. 
+
+Just claim your account <a href={nmqrurl}> here </a> and after inputting your basic information, the request will be in your quotes dashboard. 
+
+We've helped brands like the Hard Rock, Rosa Mexicano, Topgolf, Standard Hotels, Carmine's, STK, Pinstripes, Live Nation and more connect with professional planners who book large meetings, corporate outings, and leisure group itineraries. On the planner side of the platform we work with brands like ConferenceDirect, Global Travel Collection, Meetings Made Easy, Amex Global Business Travel, and more to streamline the group planning process from A to Z. 
+
+Please don't hesitate to reach out if you run into any issues creating your account! 
+
+{agent_name}
+"
+"User:
+ Hi {agent_name}, 
+
+More than happy to connect with your client directly so we can have everything that's needed from our end in place. Please include the following emails, including myself: accounting@paradocsworldwide.com, anna@paradocsworldwide.com, melissa@paradocsworldwide.com, mturman@paradocsworldwide.com and jen@paradocsworldwide.com. Thank you!
+
+ Thanks,
+ {lead_first_name} 
+","Example 45: {agent_name} explains why communication must stay on the platform.
+
+ Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+
+ Cheers,
+ {agent_name}
+ 
+
+ User:
+ Hi {agent_name}, 
+
+More than happy to connect with your client directly so we can have everything that's needed from our end in place. Please include the following emails, including myself: accounting@paradocsworldwide.com, anna@paradocsworldwide.com, melissa@paradocsworldwide.com, mturman@paradocsworldwide.com and jen@paradocsworldwide.com. Thank you!
+
+  Thanks,
+ {lead_first_name} 
+
+
+Assistant: 
+Hi  {lead_first_name},
+ 
+Thanks so much for getting back to me and following up! I won't be able to provide as much detail as my client, the event planner I'm working with, so I'd actually love to connect you directly with them since they'll be your best point of contact for this group and can help answer these questions.
+ 
+They are using Reposite as their all in one workspace to help them plan, source for, and manage all their upcoming events and trips, so they are looking for this quote to come through the system- just to keep communication all in one place. Just claim your account <a href={nmqrurl}> here </a> and after inputting your basic information, the request will be in your quotes dashboard. 
+
+It's the best and easiest way to connect and discuss these details since the event planners we work with pretty much use our software everyday, but let me know if you have any other questions!  
+ 
+Thanks so much again,
+{agent_name}
+
+
+User: 
+Hi {agent_name},
+
+Unfortunately, we don't use outside companies to send quotes to a client. We have our own system set up in house. If your client could reach out directly to us that would be great!
+
+
+Assistant:
+Hi {lead_first_name},
+
+Okay, I’m sorry to hear that as unfortunately, that’s the only way to work with this group.
+
+If you change your mind and want to sign up (for free) to respond to this request, you can register <a href={nmqrurl}> here </a>. After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>!
+
+If you would like to set up a call to discuss this further, one of my colleagues is available, you can schedule a call on the <a href={calendar_link}> calendar </a> that works best for you.
+
+{agent_name}
+"
+"User:
+Hi {agent_name} - great to connect with you. 
+
+I’m a bit confused as I’m not sure what you mean by the “event planner” is that a person or the program Reposite you are talking about. 
+
+Did you reach out to book an event or are you interested in having a sales meeting about this program? 
+If it’s about the program, I think we’d like to learn a bit more before signing up although we appreciate the free admission and all the information you shared!","Example 46: {agent_name} sends quote details and urges prospect to sign up and confirms quote details.
+ 
+Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+
+
+User:
+Hi {agent_name} - great to connect with you. 
+
+I’m a bit confused as I’m not sure what you mean by the “event planner” is that a person or the program Reposite you are talking about. 
+
+Did you reach out to book an event or are you interested in having a sales meeting about this program? 
+If it’s about the program, I think we’d like to learn a bit more before signing up although we appreciate the free admission and all the information you shared!
+
+
+Assistant 
+Hi {lead_first_name},
+
+Thanks so much for getting back to me.
+
+Happy to provide additional context about us as well - Reposite is a B2B marketplace designed to connect suppliers with our expansive network of professional travel and event planners. For suppliers like you,, Reposite is a business development tool designed to help you create relationships with travel and event professionals who are consistently planning group trips and events in your area; ultimately leading to long-term partnerships and repeat business for you.
+
+{reseller_org_name} is looking for a {category} for {group_size} people in {destination} on {trip_dates}. 
+
+Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! You can claim your account <a href={nmqrurl}> here </a> and after inputting your basic information, the request will be in your quotes dashboard. 
+
+We've helped brands like the Hard Rock, Rosa Mexicano, Topgolf, Standard Hotels, Carmine's, STK, Pinstripes, Live Nation and more connect with professional planners who book large meetings, corporate outings, and leisure group itineraries. On the planner side of the platform we work with brands like ConferenceDirect, Global Travel Collection, Meetings Made Easy, Amex Global Business Travel, and more to streamline the group planning process from A to Z. 
+
+If you would like to set up a call to discuss this further, one of my colleagues is available, you can schedule a call on the <a href={calendar_link}> calendar </a> that works best for you.
+
+ {agent_name}
+"
+"User:
+{agent_name}, 
+
+We already had an account with Reposite.  It was owned by a prior employee Mel Masi.  I have reclaimed the account and update the notifications (but cannot find where to update the ""owner"" of the account. ","Example 47: {agent_name} responds to someone who already has an account with Reposite.
+ 
+Assistant:
+ Hey {lead_first_name} -
+ 
+ I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+
+
+User:
+{agent_name}, 
+
+We already had an account with Reposite.  It was owned by a prior employee Mel Masi.  I have reclaimed the account and update the notifications (but cannot find where to update the ""owner"" of the account. 
+
+
+Assistant:
+Hi {lead_first_name}, 
+
+Thanks for getting back to me and providing that additional context. 
+
+For any technical issues with the platform, please reach out to premiumsupport@reposite.io. 
+
+If you are new to the platform and are interested in our current membership offer, you can check out our member benefits page <a href={membership_link}> here </a>, you can also book a time on the <a href={calendar_link}> calendar </a> that works best for you to get a demo of the premium membership benefits.
+
+Cheers,
+{agent_name}
+"
+"User:
+Hello  {agent_name},
+
+I did receive another email from ‘Reposite’ earlier today and I am not interested. I would rather not sign up for a program, I am already using a platform for private dining that is working just fine for us. If your client would like to gather more information on our program and check availability, they are more than welcome to reach me via email, my cell number below, or they can go to MatthewsRestaurant.com and fill out the inquiry form on the private dining section of the website. That form will also come directly to me 😊 Thank you for your call.
+
+Thank You,
+{lead_first_name} ","Example 48: {agent_name} responds to someone who received the request and is not interested.
+ 
+Assistant:
+Hey {lead_first_name} -
+ 
+I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+
+
+User:
+Hello  {agent_name},
+
+I did receive another email from ‘Reposite’ earlier today and I am not interested. I would rather not sign up for a program, I am already using a platform for private dining that is working just fine for us. If your client would like to gather more information on our program and check availability, they are more than welcome to reach me via email, my cell number below, or they can go to MatthewsRestaurant.com and fill out the inquiry form on the private dining section of the website. That form will also come directly to me 😊 Thank you for your call.
+
+Thank You,
+{lead_first_name} 
+
+
+Assistant: 
+Hi {lead_first_name},
+
+No problem at all, we thought that you might be interested in working with one of our planner partners so we wanted to reach out and give you that opportunity. However, I am unable to pass along your contact information as they organize all of their itineraries through the platform..
+
+To provide a little more context - Reposite is a marketplace connecting travel & event professionals to sought-after suppliers like yourself. Through Reposite you can gain access to hundreds of new travel & event planners who are planning trips in your area. In this instance one of our planners is actively planning a trip, thought you looked like a great fit, and reached out to request a quote.
+
+There’s no cost to sign up, create your profile, connect to existing partners, and respond to this lead within Reposite. Through our Membership program, you receive matching inbound leads and group planner partnerships with no additional commissions or fees.
+
+If you change your mind you can view all of the quote details and respond by registering using this <a href={nmqrurl}> link </a> or check out our member benefits page <a href={membership_link}> here </a>! 
+
+Sounds like this isn't a good fit but just figured it was worth giving you all the information, best of luck!
+
+{agent_name}
+"
+"User:
+ Dear {agent_name},
+  
+ I hope this email finds you well.
+  
+ Unfortunately, I am not authorized to access to this portal and get a membership, therefore, I won’t be able to provide a proposal for you.
+  
+  I will remain attentive to any other request, and I will be glad to assist you directly via email.
+  Kind regards / Saludos cordiales,
+  {lead_first_name} {lead_last_name}","Example 49: {agent_name} responds to a prospect who doesn’t have authority to sign up.
+ 
+Assistant:
+Hey {lead_first_name} -
+ 
+I just saw you got a group reservation request through Reposite from {reseller_org_name}!
+
+ Are you the right person at {supplier_name} that handles group reservations?
+ 
+ Cheers,
+ {agent_name}
+
+
+User:
+ Dear {agent_name},
+  
+ I hope this email finds you well.
+  
+ Unfortunately, I am not authorized to access to this portal and get a membership, therefore, I won’t be able to provide a proposal for you.
+  
+  I will remain attentive to any other request, and I will be glad to assist you directly via email.
+  Kind regards / Saludos cordiales,
+  {lead_first_name} {lead_last_name}
+ 
+
+Assistant:
+Hi {lead_first_name},
+
+Thanks for getting back to me. 
+
+Definitely understand that you might not have authority to purchase a membership but Reposite actually offers the first lead for free so that our clients can sign up, experience the platform, and potentially land a booking at no risk to them! After the first lead, you have the opportunity to choose between our Basic Plan and Membership Plan which are both detailed on our member benefits page <a href={membership_link}> here </a>.
+ 
+If you would like to pass me along to the best contact at {supplier_name} who evaluates sales and marketing tools, that would be greatly appreciated.
+
+{agent_name}
+"
+,You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!

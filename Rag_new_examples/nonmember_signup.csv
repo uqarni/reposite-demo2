@@ -2533,3 +2533,4 @@ Hi {lead_first_name},
 Please let me know if there is any additional information I can provide to assist! 
  Best, 
  {agent_name}"""
+,You can also check out this short <a href={demo_link}> demo </a> of the platform to see everything in action or book a meeting on the <a href={calendar_link}> calendar </a> to discuss with the team!

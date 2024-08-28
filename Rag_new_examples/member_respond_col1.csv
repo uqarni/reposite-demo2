@@ -121,3 +121,152 @@ Best regards,
 I have never heard of you and I am not sure why am getting a request for services through your platform as we are not registered on it. 
 
 We will ignore it"
+"Yes but we don’t open links. Can you send us info in a general email and we will answer it.
+  
+ 
+
+  {lead_first_name} {lead_last_name}"
+"Hi {agent_name},
+  
+ 
+
+  How did we get on this website? I'm not interested in paying for anything and I do not have time for a phone call.
+  
+ 
+
+  Thanks,
+  {lead_first_name} 
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  -- 
+  
+ 
+
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}"
+"Hey guys,
+ Yes, I handle all inquiries and bookings. We don’t do corporate events. Thanks anyway! xo"
+"Hi {agent_name},
+  
+ We already use CVENT for group bookings."
+"I think you may have us confused with another company or group. We are a graphic design and printing company. You can remove our information from your database.
+ {lead_first_name}"
+"{agent_name}, 
+ 
+
+ Private parties aren’t really our thing. Sorry! 
+ 
+
+  {lead_first_name}"
+"{agent_name}, 
+ 
+
+ Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
+ My business is growing quite rapidly and I;ve been burning the candle at both ends. i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
+ 
+
+ Best Regards,
+ {lead_first_name}"
+"Hello
+ We only fly 4 to 5 passengers plus the pilot. We specialize in smaller and more personal groups. If you’re looking to fly large groups, call Arizona Balloons.
+ Thank you
+ {lead_first_name}"
+"Hi {agent_name}, 
+ 
+
+ Yes, I can help you with group events! Which date are you looking for, and for how many people? What type of event are you looking for? 
+ 
+
+ Please keep in mind we are not a regular restaurant that accepts dinner reservations; you must book a private event to have the club open past 7:30pm Tuesday-Friday, or any day outside of that. 
+ 
+
+ Best, 
+ {lead_first_name} {lead_last_name}"
+"I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
+ 
+
+ {lead_first_name} {lead_last_name}"
+yes
+urgency
+"Hi Taylor
+Is there a cost to us that we need to pay you for the lead? 
+We are not familiar with your company nor do we have a profile on there.
+We are open to add for more leads the set up and training time is just the issue.
+Any help would be appreciated"
+"Hi Katie! I have a very large event today however I’ll move forward with it tomorrow. Thank you for your patience.
+
+Thanks!"
+"User:
+Hello {agent_name},
+
+Thanks for your interest in the {supplier_name}. With parties of {group_size} we do require a banquet agreement. A banquet agreement is just a limited menu. With your party being {group_size} you would only be able to have one entrée choice for everyone. Here is our banquet menu for you to look over. Everyone would get a salad with our house dressing, Creamy pesto. We also make sure every table has a loaf of bread. Once everyone is done with their meals we pass out our signature ice cream, Spumoni. This is not a confirmed reservation until I have your entrée selection. As to drinks did you want us to include just soft drinks + water or any coffee/tea/milk, iced tea, or beer/liquor/wine?
+
+We don’t offer any private rooms so this wouldn’t be a private event. Everything would be on one check with an added 20% gratuity. If you have any questions please let me know.
+
+Talk soon,
+{lead_first_name}
+"
+"Taylor
+
+We have never heard of you. and I am not sure why am getting a request for services through your platform as we are not registed on it. 
+
+We will ignore it"
+"Hi {agent_name},
+  
+  How did we get on your platform?
+
+  Thanks,
+  {lead_first_name} 
+"
+"Hi there Kate,
+
+Thank you for submitting this request. We have the following details: one EMT on 8/12/24 from 2PM-4:30PM at a location to be confirmed in Canarsie, Brooklyn, NY. Please note that we do have a 4 hour minimum, which will be reflected in our quote.
+
+I am copying our team; someone will be in touch with a quote for your review shortly. If you have any questions or would like to talk through anything, please let me know!
+
+Best,
+Michael"
+"User:
+ Hi {agent_name}, 
+
+More than happy to connect with your client directly so we can have everything that's needed from our end in place. Please include the following emails, including myself: accounting@paradocsworldwide.com, anna@paradocsworldwide.com, melissa@paradocsworldwide.com, mturman@paradocsworldwide.com and jen@paradocsworldwide.com. Thank you!
+
+ Thanks,
+ {lead_first_name} 
+"
+"User:
+Hi {agent_name} - great to connect with you. 
+
+I’m a bit confused as I’m not sure what you mean by the “event planner” is that a person or the program Reposite you are talking about. 
+
+Did you reach out to book an event or are you interested in having a sales meeting about this program? 
+If it’s about the program, I think we’d like to learn a bit more before signing up although we appreciate the free admission and all the information you shared!"
+"User:
+{agent_name}, 
+
+We already had an account with Reposite.  It was owned by a prior employee Mel Masi.  I have reclaimed the account and update the notifications (but cannot find where to update the ""owner"" of the account. "
+"User:
+Hello  {agent_name},
+
+I did receive another email from ‘Reposite’ earlier today and I am not interested. I would rather not sign up for a program, I am already using a platform for private dining that is working just fine for us. If your client would like to gather more information on our program and check availability, they are more than welcome to reach me via email, my cell number below, or they can go to MatthewsRestaurant.com and fill out the inquiry form on the private dining section of the website. That form will also come directly to me 😊 Thank you for your call.
+
+Thank You,
+{lead_first_name} "
+"User:
+ Dear {agent_name},
+  
+ I hope this email finds you well.
+  
+ Unfortunately, I am not authorized to access to this portal and get a membership, therefore, I won’t be able to provide a proposal for you.
+  
+  I will remain attentive to any other request, and I will be glad to assist you directly via email.
+  Kind regards / Saludos cordiales,
+  {lead_first_name} {lead_last_name}"

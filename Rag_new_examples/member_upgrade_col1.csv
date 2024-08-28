@@ -111,3 +111,203 @@ urgency
   Do you want to reach out and see what he would like. 
   Thank you!  
   {lead_first_name}"
+"Most certainly. 
+  We love group reservations 
+  
+ 
+
+  {lead_first_name} {lead_last_name}"
+"Good afternoon, Mr. Bowdin,
+  
+  Greetings from Group Sales Department from {supplier_name}.
+  
+  I will be your contact person if you are looking to book 25 rooms and over. Please let me know the date and number of rooms to verify our availability.
+  
+  I remain attentive to your comments.
+  Kind regards / Saludos cordiales,
+  {lead_first_name} {lead_last_name}"
+"hello.
+  I tried to input the quote in your website.
+  28 pax MiniBus 4hrs(4hrs Minimum)*$169= $676 All Inclusive
+  Please let us know if you are interested .
+  —
+  Best Regards,
+  {lead_first_name}
+  Thank you for choosing {supplier_name}.
+  {supplier_name}  
+  {destination}"
+"No. Thank you for calling our client services team
+  
+ 
+
+  {lead_first_name} {lead_last_name}"
+"Thank you but I have no interest in paying for a membership to receive work.
+  {lead_first_name} {lead_last_name}"
+"Hi {agent_name},
+  
+ 
+
+  How did we get on this website? I'm not interested in paying for anything and I do not have time for a phone call.
+  
+ 
+
+  Thanks,
+  {lead_first_name} 
+  
+ 
+
+  
+ 
+
+  
+ 
+
+  -- 
+  
+ 
+
+  {lead_first_name} {lead_last_name}
+  {supplier_name}
+  {email}"
+"Hey guys,
+ Yes, I handle all inquiries and bookings. We don’t do corporate events. Thanks anyway! xo"
+"Hi there,
+  
+ Thanks for your email. Yes, we already answer the request.
+ Thank you.
+ Best regards,
+ 
+
+ {lead_first_name} {lead_last_name}"
+"Hi {agent_name},
+  
+ We already use CVENT for group bookings."
+"I think you may have us confused with another company or group. We are a graphic design and printing company. You can remove our information from your database.
+ {lead_first_name}"
+"{agent_name}, 
+ 
+
+ Private parties aren’t really our thing. Sorry! 
+ 
+
+  {lead_first_name}"
+"{agent_name}, 
+ 
+
+ Yes I'm very much that person indeed! I've been dealing with some personal family issues as of late that have finally come to rest.  
+ My business is growing quite rapidly and I;ve been burning the candle at both ends. i've already set aside some time to follow up on your opportunity in a much more professional manner sometime this afternoon, 
+ 
+
+ Best Regards,
+ {lead_first_name}"
+"Hi {agent_name}
+ 
+
+ At this early stage, I will wait to see if any events transpire. 
+ 
+
+ Cheers"
+"Hi {agent_name},
+ Thank you for reaching out, and I appreciate your warm words regarding our presence on Reposite and the opportunity with {reseller_org_name}.
+ 
+
+ To provide some insight into our ideal type of group business, we have a strong track record of successfully working with a diverse range of clients, including students, wedding groups, and international groups. We pride ourselves on delivering exceptional experiences tailored to each client's unique needs.
+ 
+
+ I'd also like to highlight that we have our own fleet of buses, which allows us to ensure top-notch transportation services for our clients. Furthermore, we hold permits for exclusive experiences, such as the bioluminescent bay night kayaking tour, access to El Yunque National Forest, and meet-and-greet services inside the airport terminal. It's important to note that we don't subcontract our services because we are the direct providers, which enables us to maintain strict quality control and a seamless customer experience.
+ 
+
+ We look forward to exploring potential opportunities on Reposite.
+ 
+
+ Best regards, 
+ {lead_first_name} {lead_last_name}"
+"Hello {agent_name},  
+ I do have a few more questions. 
+ How many caterings do you have in my area? In my case, we cover all the city, not just the neighborhood of {destination}, does this changes the price? Is there any kind of security that I will receive at least my investment back in the first year? 
+ Thanks 
+ {lead_first_name}"
+"Hello
+ We only fly 4 to 5 passengers plus the pilot. We specialize in smaller and more personal groups. If you’re looking to fly large groups, call Arizona Balloons.
+ Thank you
+ {lead_first_name}"
+"Hi {agent_name}, 
+ 
+
+ Yes, I can help you with group events! Which date are you looking for, and for how many people? What type of event are you looking for? 
+ 
+
+ Please keep in mind we are not a regular restaurant that accepts dinner reservations; you must book a private event to have the club open past 7:30pm Tuesday-Friday, or any day outside of that. 
+ 
+
+ Best, 
+ {lead_first_name} {lead_last_name}"
+"Hi {agent_name},  
+ we really don't work with any group planners as we can only host six guests for overnight and fourteen for the day trips. We get our business mostly directly through our website and only here and there from agents and some last minute requests from local tour operators. 
+ So I am really curious how this could work to our advantage. We would like to extend our advertising in the US and are currently researching what are the most efficient ways to do that. 
+ 
+
+ Best regards 
+ {lead_first_name}"
+"I received the notification. Wasn't able to login. If you'll send over their contact info, I'd be glad to reach out. 
+ 
+
+ {lead_first_name} {lead_last_name}"
+"Hello {agent_name},
+ 
+
+ I am afraid we can not supply your request as we have the intuition that what your company wants is us to be registered in your business. I am sorry to inform you that we do not join any unknown business like yours. 
+ 
+
+ If you want to hire our services please provide the details of your request and we will respond with a quote.
+ 
+
+ Thank you"
+"Dear {agent_name},
+ 
+
+ 
+
+ Unfortunally the restaurant Cañete doesn't have the capacity to receive a table for that amount of people. Cañete belongs to a restaurant group called Olivé in which there are other restaurants with a similar gastronomic offer in which it does have the capacity for groups.
+ 
+
+ We leave the link below:
+ 
+
+ 
+
+ Grup Olivé
+ 
+
+ Sorry for the inconveniences.
+ 
+
+ Best regards,
+ 
+
+ 
+
+ Abigail Ferrazza"
+"Hi {agent_name}-
+ 
+
+ Yes we are accepting group reservations-is there a good time to hop on a call to discuss?
+ 
+
+ Jen"
+"Great, I signed up for a time slot on Friday at 9:15am."
+"Me again! So I understand correctly using the below rfp as an example.
+ 
+
+  
+ 
+
+ Elite Visionary Consulting is requesting a commissionable rate. This means we would pay Elite a commission as well as paying Reposite’s 15% commission, correct?
+ 
+
+  
+ 
+
+ Looking forward to any confirmation you can provide,"
+"Hi {agent_name},
+  Yes we did receive a request. I have sent a message to the planner and we are waiting on more information from them before we can provide further details. "
